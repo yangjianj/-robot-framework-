@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20190910 21:17:08.786" rpa="false">
+<suite id="s1" name="myrobotbase" source="D:\yangjian\project\ui-api-robotframework\uitest_base">
+<suite id="s1-s1" name="Uitest Base" source="D:\yangjian\project\ui-api-robotframework\uitest_base\uitest_base.robot">
+<kw name="Suite Envirment Setup" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://baidu.com</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20190910 21:17:09.283" level="INFO">Opening browser 'Chrome' to base url 'http://baidu.com'.</msg>
+<status status="PASS" starttime="20190910 21:17:09.282" endtime="20190910 21:17:17.733"></status>
+</kw>
+<status status="PASS" starttime="20190910 21:17:09.282" endtime="20190910 21:17:17.734"></status>
+</kw>
+<test id="s1-s1-t1" name="Test_001">
+<kw name="Test Envirment Setup" type="setup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test_Envirment_Setup</arg>
+</arguments>
+<msg timestamp="20190910 21:17:17.738" level="INFO">Test_Envirment_Setup</msg>
+<status status="PASS" starttime="20190910 21:17:17.736" endtime="20190910 21:17:17.738"></status>
+</kw>
+<status status="PASS" starttime="20190910 21:17:17.736" endtime="20190910 21:17:17.738"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>123</arg>
+</arguments>
+<msg timestamp="20190910 21:17:17.741" level="INFO">123</msg>
+<status status="PASS" starttime="20190910 21:17:17.740" endtime="20190910 21:17:17.741"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${name}</arg>
+</arguments>
+<msg timestamp="20190910 21:17:17.744" level="INFO">yangjian</msg>
+<status status="PASS" starttime="20190910 21:17:17.742" endtime="20190910 21:17:17.744"></status>
+</kw>
+<kw name="Test Envirment Teardown" type="teardown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test_Envirment_Teardown</arg>
+</arguments>
+<msg timestamp="20190910 21:17:17.747" level="INFO">Test_Envirment_Teardown</msg>
+<status status="PASS" starttime="20190910 21:17:17.746" endtime="20190910 21:17:17.747"></status>
+</kw>
+<status status="PASS" starttime="20190910 21:17:17.746" endtime="20190910 21:17:17.747"></status>
+</kw>
+<tags>
+<tag>suit-tag1</tag>
+<tag>suit-tag2</tag>
+<tag>test-tag1</tag>
+<tag>test-tag2</tag>
+</tags>
+<timeout value="5 seconds"></timeout>
+<status status="PASS" starttime="20190910 21:17:17.734" endtime="20190910 21:17:17.748" critical="yes"></status>
+</test>
+<kw name="Suite Envirment Teardown" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190910 21:17:17.751" endtime="20190910 21:17:20.427"></status>
+</kw>
+<status status="PASS" starttime="20190910 21:17:17.751" endtime="20190910 21:17:20.427"></status>
+</kw>
+<status status="PASS" starttime="20190910 21:17:08.869" endtime="20190910 21:17:20.427"></status>
+</suite>
+<suite id="s1-s2" name="Uitest Template" source="D:\yangjian\project\ui-api-robotframework\uitest_base\uitest_template.robot">
+<kw name="Suite Envirment Setup" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://baidu.com</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20190910 21:17:20.438" level="INFO">Opening browser 'Chrome' to base url 'http://baidu.com'.</msg>
+<status status="PASS" starttime="20190910 21:17:20.438" endtime="20190910 21:17:36.061"></status>
+</kw>
+<status status="PASS" starttime="20190910 21:17:20.437" endtime="20190910 21:17:36.061"></status>
+</kw>
+<test id="s1-s2-t1" name="Test_001">
+<kw name="Test Envirment Setup" type="setup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test_Envirment_Setup</arg>
+</arguments>
+<msg timestamp="20190910 21:17:36.065" level="INFO">Test_Envirment_Setup</msg>
+<status status="PASS" starttime="20190910 21:17:36.064" endtime="20190910 21:17:36.065"></status>
+</kw>
+<status status="PASS" starttime="20190910 21:17:36.063" endtime="20190910 21:17:36.065"></status>
+</kw>
+<kw name="Template_001">
+<arguments>
+<arg>xxxx</arg>
+<arg>yyyy</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${username} ${password}</arg>
+</arguments>
+<msg timestamp="20190910 21:17:36.073" level="INFO">xxxx yyyy</msg>
+<status status="PASS" starttime="20190910 21:17:36.067" endtime="20190910 21:17:36.073"></status>
+</kw>
+<status status="PASS" starttime="20190910 21:17:36.067" endtime="20190910 21:17:36.074"></status>
+</kw>
+<kw name="Template_001">
+<arguments>
+<arg>11111</arg>
+<arg>22222</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${username} ${password}</arg>
+</arguments>
+<msg timestamp="20190910 21:17:36.077" level="INFO">11111 22222</msg>
+<status status="PASS" starttime="20190910 21:17:36.076" endtime="20190910 21:17:36.077"></status>
+</kw>
+<status status="PASS" starttime="20190910 21:17:36.075" endtime="20190910 21:17:36.078"></status>
+</kw>
+<kw name="Test Envirment Teardown" type="teardown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test_Envirment_Teardown</arg>
+</arguments>
+<msg timestamp="20190910 21:17:36.080" level="INFO">Test_Envirment_Teardown</msg>
+<status status="PASS" starttime="20190910 21:17:36.080" endtime="20190910 21:17:36.080"></status>
+</kw>
+<status status="PASS" starttime="20190910 21:17:36.079" endtime="20190910 21:17:36.080"></status>
+</kw>
+<tags>
+<tag>suit-tag1</tag>
+<tag>suit-tag2</tag>
+<tag>test-tag1</tag>
+<tag>test-tag2</tag>
+</tags>
+<timeout value="5 seconds"></timeout>
+<status status="PASS" starttime="20190910 21:17:36.062" endtime="20190910 21:17:36.081" critical="yes"></status>
+</test>
+<kw name="Suite Envirment Teardown" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190910 21:17:36.085" endtime="20190910 21:17:39.077"></status>
+</kw>
+<status status="PASS" starttime="20190910 21:17:36.084" endtime="20190910 21:17:39.078"></status>
+</kw>
+<status status="PASS" starttime="20190910 21:17:20.431" endtime="20190910 21:17:39.078"></status>
+</suite>
+<status status="PASS" starttime="20190910 21:17:08.812" endtime="20190910 21:17:39.087"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0">suit-tag1</stat>
+<stat pass="2" fail="0">suit-tag2</stat>
+<stat pass="2" fail="0">test-tag1</stat>
+<stat pass="2" fail="0">test-tag2</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="myrobotbase">myrobotbase</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Uitest Base">myrobotbase.Uitest Base</stat>
+<stat pass="1" fail="0" id="s1-s2" name="Uitest Template">myrobotbase.Uitest Template</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
