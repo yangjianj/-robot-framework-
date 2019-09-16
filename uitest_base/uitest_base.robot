@@ -1,18 +1,22 @@
 *** Settings ***
 Library           SeleniumLibrary
+Library           Collections
 
 Suite Setup       Suite Envirment Setup
 Suite Teardown    Suite Envirment Teardown
 Test Setup        Test Envirment Setup
 Test Teardown     Test Envirment Teardown
 
-#Test Template     Template_001
 #Resource          resource.txt
 
 Force Tags    suit-tag1   suit-tag2
 Default Tags    dafault-test1   dafault-test2
 
 Test Timeout    10s
+
+
+***Variable***
+@{DATA1}      XYZ   123
 
 ***Test Cases***
 
@@ -32,10 +36,11 @@ Template_001
 
 
 Suite Envirment Setup
-    Open Browser    http://baidu.com    Chrome
+    log  in suite setup
 
 Suite Envirment Teardown
-    Close Browser
+    #Close Browser
+    log  in suite teardown
 
 Test Envirment Setup
     Log    Test_Envirment_Setup
