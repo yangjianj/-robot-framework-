@@ -1,6 +1,7 @@
 *** Settings ***
 Library           SeleniumLibrary
 Library           Collections
+Resource           PageHandler.robot
 
 Suite Setup       Suite Envirment Setup
 Suite Teardown    Suite Envirment Teardown

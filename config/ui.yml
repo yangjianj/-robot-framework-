@@ -1,0 +1,9 @@
+登陆页面:
+    username:
+        type: id
+        value: name
+        timeout: 5
+    password:
+        type: id
+        value: pw
+        timeout: 5

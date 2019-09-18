@@ -50,7 +50,6 @@ Template_001
     [Arguments]    ${username}    ${password}
     Log    ${username} ${password}
 
-
 Suite Envirment Setup
     #Open Browser    http://baidu.com    Chrome
     set suite variable   @{ITEMS}    x    y    z

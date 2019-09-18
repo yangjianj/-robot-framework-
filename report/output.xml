@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20190916 17:59:45.630" rpa="false">
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20190917 15:57:16.453" rpa="false">
 <suite id="s1" name="myrobotbase" source="D:\yangjian\project\ui-api-robotframework\uitest_base">
 <suite id="s1-s1" name="Uitest Base" source="D:\yangjian\project\ui-api-robotframework\uitest_base\uitest_base.robot">
 <kw name="Suite Envirment Setup" type="setup">
@@ -8,10 +8,10 @@
 <arguments>
 <arg>in suite setup</arg>
 </arguments>
-<msg timestamp="20190916 17:59:46.126" level="INFO">in suite setup</msg>
-<status status="PASS" starttime="20190916 17:59:46.126" endtime="20190916 17:59:46.126"></status>
+<msg timestamp="20190917 15:57:17.004" level="INFO">in suite setup</msg>
+<status status="PASS" starttime="20190917 15:57:17.003" endtime="20190917 15:57:17.004"></status>
 </kw>
-<status status="PASS" starttime="20190916 17:59:46.125" endtime="20190916 17:59:46.126"></status>
+<status status="PASS" starttime="20190917 15:57:17.003" endtime="20190917 15:57:17.004"></status>
 </kw>
 <test id="s1-s1-t1" name="Test_001">
 <kw name="Test Envirment Setup" type="setup">
@@ -20,26 +20,26 @@
 <arguments>
 <arg>Test_Envirment_Setup</arg>
 </arguments>
-<msg timestamp="20190916 17:59:46.129" level="INFO">Test_Envirment_Setup</msg>
-<status status="PASS" starttime="20190916 17:59:46.128" endtime="20190916 17:59:46.129"></status>
+<msg timestamp="20190917 15:57:17.006" level="INFO">Test_Envirment_Setup</msg>
+<status status="PASS" starttime="20190917 15:57:17.006" endtime="20190917 15:57:17.007"></status>
 </kw>
-<status status="PASS" starttime="20190916 17:59:46.128" endtime="20190916 17:59:46.129"></status>
+<status status="PASS" starttime="20190917 15:57:17.005" endtime="20190917 15:57:17.007"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>123</arg>
 </arguments>
-<msg timestamp="20190916 17:59:46.132" level="INFO">123</msg>
-<status status="PASS" starttime="20190916 17:59:46.131" endtime="20190916 17:59:46.132"></status>
+<msg timestamp="20190917 15:57:17.010" level="INFO">123</msg>
+<status status="PASS" starttime="20190917 15:57:17.009" endtime="20190917 15:57:17.010"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${name}</arg>
 </arguments>
-<msg timestamp="20190916 17:59:46.134" level="INFO">yangjian</msg>
-<status status="PASS" starttime="20190916 17:59:46.133" endtime="20190916 17:59:46.134"></status>
+<msg timestamp="20190917 15:57:17.012" level="INFO">yangjian</msg>
+<status status="PASS" starttime="20190917 15:57:17.012" endtime="20190917 15:57:17.013"></status>
 </kw>
 <kw name="Test Envirment Teardown" type="teardown">
 <kw name="Log" library="BuiltIn">
@@ -47,10 +47,10 @@
 <arguments>
 <arg>Test_Envirment_Teardown</arg>
 </arguments>
-<msg timestamp="20190916 17:59:46.136" level="INFO">Test_Envirment_Teardown</msg>
-<status status="PASS" starttime="20190916 17:59:46.136" endtime="20190916 17:59:46.137"></status>
+<msg timestamp="20190917 15:57:17.015" level="INFO">Test_Envirment_Teardown</msg>
+<status status="PASS" starttime="20190917 15:57:17.014" endtime="20190917 15:57:17.015"></status>
 </kw>
-<status status="PASS" starttime="20190916 17:59:46.135" endtime="20190916 17:59:46.137"></status>
+<status status="PASS" starttime="20190917 15:57:17.014" endtime="20190917 15:57:17.015"></status>
 </kw>
 <tags>
 <tag>suit-tag1</tag>
@@ -59,7 +59,7 @@
 <tag>test-tag2</tag>
 </tags>
 <timeout value="5 seconds"></timeout>
-<status status="PASS" starttime="20190916 17:59:46.126" endtime="20190916 17:59:46.138" critical="yes"></status>
+<status status="PASS" starttime="20190917 15:57:17.004" endtime="20190917 15:57:17.016" critical="yes"></status>
 </test>
 <kw name="Suite Envirment Teardown" type="teardown">
 <kw name="Log" library="BuiltIn">
@@ -67,12 +67,12 @@
 <arguments>
 <arg>in suite teardown</arg>
 </arguments>
-<msg timestamp="20190916 17:59:46.142" level="INFO">in suite teardown</msg>
-<status status="PASS" starttime="20190916 17:59:46.141" endtime="20190916 17:59:46.142"></status>
+<msg timestamp="20190917 15:57:17.019" level="INFO">in suite teardown</msg>
+<status status="PASS" starttime="20190917 15:57:17.019" endtime="20190917 15:57:17.019"></status>
 </kw>
-<status status="PASS" starttime="20190916 17:59:46.141" endtime="20190916 17:59:46.142"></status>
+<status status="PASS" starttime="20190917 15:57:17.019" endtime="20190917 15:57:17.020"></status>
 </kw>
-<status status="PASS" starttime="20190916 17:59:45.684" endtime="20190916 17:59:46.142"></status>
+<status status="PASS" starttime="20190917 15:57:16.515" endtime="20190917 15:57:17.020"></status>
 </suite>
 <suite id="s1-s2" name="Uitest Template" source="D:\yangjian\project\ui-api-robotframework\uitest_base\uitest_template.robot">
 <kw name="Suite Envirment Setup" type="setup">
@@ -81,10 +81,10 @@
 <arguments>
 <arg>in suite setup</arg>
 </arguments>
-<msg timestamp="20190916 17:59:46.152" level="INFO">in suite setup</msg>
-<status status="PASS" starttime="20190916 17:59:46.152" endtime="20190916 17:59:46.152"></status>
+<msg timestamp="20190917 15:57:17.029" level="INFO">in suite setup</msg>
+<status status="PASS" starttime="20190917 15:57:17.029" endtime="20190917 15:57:17.030"></status>
 </kw>
-<status status="PASS" starttime="20190916 17:59:46.151" endtime="20190916 17:59:46.152"></status>
+<status status="PASS" starttime="20190917 15:57:17.029" endtime="20190917 15:57:17.030"></status>
 </kw>
 <test id="s1-s2-t1" name="Test_001">
 <kw name="Test Envirment Setup" type="setup">
@@ -93,10 +93,10 @@
 <arguments>
 <arg>Test_Envirment_Setup</arg>
 </arguments>
-<msg timestamp="20190916 17:59:46.155" level="INFO">Test_Envirment_Setup</msg>
-<status status="PASS" starttime="20190916 17:59:46.154" endtime="20190916 17:59:46.155"></status>
+<msg timestamp="20190917 15:57:17.033" level="INFO">Test_Envirment_Setup</msg>
+<status status="PASS" starttime="20190917 15:57:17.032" endtime="20190917 15:57:17.034"></status>
 </kw>
-<status status="PASS" starttime="20190916 17:59:46.153" endtime="20190916 17:59:46.155"></status>
+<status status="PASS" starttime="20190917 15:57:17.031" endtime="20190917 15:57:17.034"></status>
 </kw>
 <kw name="Template_001">
 <arguments>
@@ -108,10 +108,10 @@
 <arguments>
 <arg>${username} ${password}</arg>
 </arguments>
-<msg timestamp="20190916 17:59:46.158" level="INFO">xxxx yyyy</msg>
-<status status="PASS" starttime="20190916 17:59:46.157" endtime="20190916 17:59:46.158"></status>
+<msg timestamp="20190917 15:57:17.038" level="INFO">xxxx yyyy</msg>
+<status status="PASS" starttime="20190917 15:57:17.036" endtime="20190917 15:57:17.038"></status>
 </kw>
-<status status="PASS" starttime="20190916 17:59:46.156" endtime="20190916 17:59:46.158"></status>
+<status status="PASS" starttime="20190917 15:57:17.036" endtime="20190917 15:57:17.038"></status>
 </kw>
 <kw name="Template_001">
 <arguments>
@@ -123,10 +123,10 @@
 <arguments>
 <arg>${username} ${password}</arg>
 </arguments>
-<msg timestamp="20190916 17:59:46.161" level="INFO">11111 22222</msg>
-<status status="PASS" starttime="20190916 17:59:46.160" endtime="20190916 17:59:46.161"></status>
+<msg timestamp="20190917 15:57:17.042" level="INFO">11111 22222</msg>
+<status status="PASS" starttime="20190917 15:57:17.042" endtime="20190917 15:57:17.044"></status>
 </kw>
-<status status="PASS" starttime="20190916 17:59:46.159" endtime="20190916 17:59:46.161"></status>
+<status status="PASS" starttime="20190917 15:57:17.041" endtime="20190917 15:57:17.044"></status>
 </kw>
 <kw name="Test Envirment Teardown" type="teardown">
 <kw name="Log" library="BuiltIn">
@@ -134,10 +134,10 @@
 <arguments>
 <arg>Test_Envirment_Teardown</arg>
 </arguments>
-<msg timestamp="20190916 17:59:46.163" level="INFO">Test_Envirment_Teardown</msg>
-<status status="PASS" starttime="20190916 17:59:46.163" endtime="20190916 17:59:46.163"></status>
+<msg timestamp="20190917 15:57:17.047" level="INFO">Test_Envirment_Teardown</msg>
+<status status="PASS" starttime="20190917 15:57:17.046" endtime="20190917 15:57:17.047"></status>
 </kw>
-<status status="PASS" starttime="20190916 17:59:46.162" endtime="20190916 17:59:46.163"></status>
+<status status="PASS" starttime="20190917 15:57:17.046" endtime="20190917 15:57:17.047"></status>
 </kw>
 <tags>
 <tag>suit-tag1</tag>
@@ -146,7 +146,7 @@
 <tag>test-tag2</tag>
 </tags>
 <timeout value="5 seconds"></timeout>
-<status status="PASS" starttime="20190916 17:59:46.152" endtime="20190916 17:59:46.164" critical="yes"></status>
+<status status="PASS" starttime="20190917 15:57:17.030" endtime="20190917 15:57:17.048" critical="yes"></status>
 </test>
 <test id="s1-s2-t2" name="Test_002">
 <kw name="Test Envirment Setup" type="setup">
@@ -155,10 +155,10 @@
 <arguments>
 <arg>Test_Envirment_Setup</arg>
 </arguments>
-<msg timestamp="20190916 17:59:46.169" level="INFO">Test_Envirment_Setup</msg>
-<status status="PASS" starttime="20190916 17:59:46.169" endtime="20190916 17:59:46.170"></status>
+<msg timestamp="20190917 15:57:17.054" level="INFO">Test_Envirment_Setup</msg>
+<status status="PASS" starttime="20190917 15:57:17.053" endtime="20190917 15:57:17.054"></status>
 </kw>
-<status status="PASS" starttime="20190916 17:59:46.168" endtime="20190916 17:59:46.170"></status>
+<status status="PASS" starttime="20190917 15:57:17.052" endtime="20190917 15:57:17.055"></status>
 </kw>
 <kw name="Template_001">
 <arguments>
@@ -170,10 +170,10 @@
 <arguments>
 <arg>${username} ${password}</arg>
 </arguments>
-<msg timestamp="20190916 17:59:46.173" level="INFO">xxxx yyyy</msg>
-<status status="PASS" starttime="20190916 17:59:46.172" endtime="20190916 17:59:46.173"></status>
+<msg timestamp="20190917 15:57:17.057" level="INFO">xxxx yyyy</msg>
+<status status="PASS" starttime="20190917 15:57:17.056" endtime="20190917 15:57:17.057"></status>
 </kw>
-<status status="PASS" starttime="20190916 17:59:46.171" endtime="20190916 17:59:46.173"></status>
+<status status="PASS" starttime="20190917 15:57:17.056" endtime="20190917 15:57:17.058"></status>
 </kw>
 <kw name="Template_001">
 <arguments>
@@ -185,10 +185,10 @@
 <arguments>
 <arg>${username} ${password}</arg>
 </arguments>
-<msg timestamp="20190916 17:59:46.176" level="INFO">11111 22222</msg>
-<status status="PASS" starttime="20190916 17:59:46.175" endtime="20190916 17:59:46.176"></status>
+<msg timestamp="20190917 15:57:17.061" level="INFO">11111 22222</msg>
+<status status="PASS" starttime="20190917 15:57:17.059" endtime="20190917 15:57:17.062"></status>
 </kw>
-<status status="PASS" starttime="20190916 17:59:46.174" endtime="20190916 17:59:46.176"></status>
+<status status="PASS" starttime="20190917 15:57:17.059" endtime="20190917 15:57:17.062"></status>
 </kw>
 <kw name="Test Envirment Teardown" type="teardown">
 <kw name="Log" library="BuiltIn">
@@ -196,10 +196,10 @@
 <arguments>
 <arg>Test_Envirment_Teardown</arg>
 </arguments>
-<msg timestamp="20190916 17:59:46.178" level="INFO">Test_Envirment_Teardown</msg>
-<status status="PASS" starttime="20190916 17:59:46.178" endtime="20190916 17:59:46.179"></status>
+<msg timestamp="20190917 15:57:17.064" level="INFO">Test_Envirment_Teardown</msg>
+<status status="PASS" starttime="20190917 15:57:17.064" endtime="20190917 15:57:17.065"></status>
 </kw>
-<status status="PASS" starttime="20190916 17:59:46.177" endtime="20190916 17:59:46.179"></status>
+<status status="PASS" starttime="20190917 15:57:17.064" endtime="20190917 15:57:17.065"></status>
 </kw>
 <tags>
 <tag>suit-tag1</tag>
@@ -208,7 +208,7 @@
 <tag>test-tag2</tag>
 </tags>
 <timeout value="5 seconds"></timeout>
-<status status="PASS" starttime="20190916 17:59:46.167" endtime="20190916 17:59:46.180" critical="yes"></status>
+<status status="PASS" starttime="20190917 15:57:17.051" endtime="20190917 15:57:17.067" critical="yes"></status>
 </test>
 <kw name="Suite Envirment Teardown" type="teardown">
 <kw name="Log" library="BuiltIn">
@@ -216,12 +216,12 @@
 <arguments>
 <arg>in suite teardown</arg>
 </arguments>
-<msg timestamp="20190916 17:59:46.183" level="INFO">in suite teardown</msg>
-<status status="PASS" starttime="20190916 17:59:46.183" endtime="20190916 17:59:46.184"></status>
+<msg timestamp="20190917 15:57:17.070" level="INFO">in suite teardown</msg>
+<status status="PASS" starttime="20190917 15:57:17.070" endtime="20190917 15:57:17.070"></status>
 </kw>
-<status status="PASS" starttime="20190916 17:59:46.183" endtime="20190916 17:59:46.184"></status>
+<status status="PASS" starttime="20190917 15:57:17.069" endtime="20190917 15:57:17.070"></status>
 </kw>
-<status status="PASS" starttime="20190916 17:59:46.145" endtime="20190916 17:59:46.184"></status>
+<status status="PASS" starttime="20190917 15:57:17.023" endtime="20190917 15:57:17.070"></status>
 </suite>
 <suite id="s1-s3" name="Uitest Template1" source="D:\yangjian\project\ui-api-robotframework\uitest_base\uitest_template1.robot">
 <kw name="Suite Envirment Setup" type="setup">
@@ -233,8 +233,8 @@
 <arg>y</arg>
 <arg>z</arg>
 </arguments>
-<msg timestamp="20190916 17:59:46.197" level="INFO">@{ITEMS} = [ x | y | z ]</msg>
-<status status="PASS" starttime="20190916 17:59:46.196" endtime="20190916 17:59:46.197"></status>
+<msg timestamp="20190917 15:57:17.084" level="INFO">@{ITEMS} = [ x | y | z ]</msg>
+<status status="PASS" starttime="20190917 15:57:17.082" endtime="20190917 15:57:17.084"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -242,21 +242,127 @@
 <arg>@{DATA2}</arg>
 <arg>${empty}</arg>
 </arguments>
-<msg timestamp="20190916 17:59:46.199" level="INFO">@{DATA2} = [  ]</msg>
-<status status="PASS" starttime="20190916 17:59:46.198" endtime="20190916 17:59:46.199"></status>
+<msg timestamp="20190917 15:57:17.086" level="INFO">@{DATA2} = [  ]</msg>
+<status status="PASS" starttime="20190917 15:57:17.084" endtime="20190917 15:57:17.086"></status>
 </kw>
-<kw name="Remove From List" library="Collections">
-<doc>Removes and returns the value specified with an ``index`` from ``list``.</doc>
+<kw name="${item} IN [ @{DATA1} ]" type="for">
+<kw name="${item} = W1" type="foritem">
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${DATA2}</arg>
+<arg>${item}_1</arg>
+</arguments>
+<status status="PASS" starttime="20190917 15:57:17.087" endtime="20190917 15:57:17.087"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.086" endtime="20190917 15:57:17.087"></status>
+</kw>
+<kw name="${item} = Q2" type="foritem">
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${DATA2}</arg>
+<arg>${item}_1</arg>
+</arguments>
+<status status="PASS" starttime="20190917 15:57:17.088" endtime="20190917 15:57:17.088"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.087" endtime="20190917 15:57:17.088"></status>
+</kw>
+<kw name="${item} = T3" type="foritem">
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${DATA2}</arg>
+<arg>${item}_1</arg>
+</arguments>
+<status status="PASS" starttime="20190917 15:57:17.088" endtime="20190917 15:57:17.089"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.088" endtime="20190917 15:57:17.089"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.086" endtime="20190917 15:57:17.089"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${DATA2}</arg>
+</arguments>
+<msg timestamp="20190917 15:57:17.089" level="INFO">['', 'W1_1', 'Q2_1', 'T3_1']</msg>
+<status status="PASS" starttime="20190917 15:57:17.089" endtime="20190917 15:57:17.089"></status>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
 <arguments>
 <arg>@{DATA2}</arg>
-<arg>0</arg>
 </arguments>
-<msg timestamp="20190916 17:59:46.200" level="FAIL">TypeError: Expected argument 1 to be a list or list-like, got string instead.</msg>
-<status status="FAIL" starttime="20190916 17:59:46.199" endtime="20190916 17:59:46.200"></status>
+<msg timestamp="20190917 15:57:17.090" level="INFO"></msg>
+<msg timestamp="20190917 15:57:17.090" level="INFO">W1_1</msg>
+<msg timestamp="20190917 15:57:17.090" level="INFO">Q2_1</msg>
+<msg timestamp="20190917 15:57:17.090" level="INFO">T3_1</msg>
+<status status="PASS" starttime="20190917 15:57:17.090" endtime="20190917 15:57:17.090"></status>
 </kw>
-<status status="FAIL" starttime="20190916 17:59:46.196" endtime="20190916 17:59:46.200"></status>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>in suite setup</arg>
+</arguments>
+<msg timestamp="20190917 15:57:17.091" level="INFO">in suite setup</msg>
+<status status="PASS" starttime="20190917 15:57:17.091" endtime="20190917 15:57:17.091"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.081" endtime="20190917 15:57:17.091"></status>
 </kw>
 <test id="s1-s3-t1" name="Test_001">
+<kw name="Test Envirment Setup" type="setup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test_Envirment_Setup</arg>
+</arguments>
+<msg timestamp="20190917 15:57:17.094" level="INFO">Test_Envirment_Setup</msg>
+<status status="PASS" starttime="20190917 15:57:17.093" endtime="20190917 15:57:17.094"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.093" endtime="20190917 15:57:17.095"></status>
+</kw>
+<kw name="Template_001">
+<arguments>
+<arg>xxxx</arg>
+<arg>yyyy</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${username} ${password}</arg>
+</arguments>
+<msg timestamp="20190917 15:57:17.097" level="INFO">xxxx yyyy</msg>
+<status status="PASS" starttime="20190917 15:57:17.097" endtime="20190917 15:57:17.098"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.096" endtime="20190917 15:57:17.098"></status>
+</kw>
+<kw name="Template_001">
+<arguments>
+<arg>11111</arg>
+<arg>22222</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${username} ${password}</arg>
+</arguments>
+<msg timestamp="20190917 15:57:17.100" level="INFO">11111 22222</msg>
+<status status="PASS" starttime="20190917 15:57:17.099" endtime="20190917 15:57:17.100"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.099" endtime="20190917 15:57:17.101"></status>
+</kw>
+<kw name="Test Envirment Teardown" type="teardown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test_Envirment_Teardown</arg>
+</arguments>
+<msg timestamp="20190917 15:57:17.103" level="INFO">Test_Envirment_Teardown</msg>
+<status status="PASS" starttime="20190917 15:57:17.102" endtime="20190917 15:57:17.103"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.102" endtime="20190917 15:57:17.103"></status>
+</kw>
 <tags>
 <tag>suit-tag1</tag>
 <tag>suit-tag2</tag>
@@ -264,10 +370,88 @@
 <tag>test-tag2</tag>
 </tags>
 <timeout value="5 seconds"></timeout>
-<status status="FAIL" starttime="20190916 17:59:46.200" endtime="20190916 17:59:46.201" critical="yes">Parent suite setup failed:
-TypeError: Expected argument 1 to be a list or list-like, got string instead.</status>
+<status status="PASS" starttime="20190917 15:57:17.091" endtime="20190917 15:57:17.105" critical="yes"></status>
 </test>
 <test id="s1-s3-t2" name="Test_002">
+<kw name="Test Envirment Setup" type="setup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test_Envirment_Setup</arg>
+</arguments>
+<msg timestamp="20190917 15:57:17.110" level="INFO">Test_Envirment_Setup</msg>
+<status status="PASS" starttime="20190917 15:57:17.109" endtime="20190917 15:57:17.110"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.109" endtime="20190917 15:57:17.111"></status>
+</kw>
+<kw name="${item} IN [ @{ITEMS} ]" type="for">
+<kw name="${item} = x" type="foritem">
+<kw name="Template_001">
+<arguments>
+<arg>${item}</arg>
+<arg>1</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${username} ${password}</arg>
+</arguments>
+<msg timestamp="20190917 15:57:17.114" level="INFO">x 1</msg>
+<status status="PASS" starttime="20190917 15:57:17.113" endtime="20190917 15:57:17.114"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.112" endtime="20190917 15:57:17.114"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.112" endtime="20190917 15:57:17.114"></status>
+</kw>
+<kw name="${item} = y" type="foritem">
+<kw name="Template_001">
+<arguments>
+<arg>${item}</arg>
+<arg>1</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${username} ${password}</arg>
+</arguments>
+<msg timestamp="20190917 15:57:17.124" level="INFO">y 1</msg>
+<status status="PASS" starttime="20190917 15:57:17.122" endtime="20190917 15:57:17.124"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.122" endtime="20190917 15:57:17.124"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.121" endtime="20190917 15:57:17.124"></status>
+</kw>
+<kw name="${item} = z" type="foritem">
+<kw name="Template_001">
+<arguments>
+<arg>${item}</arg>
+<arg>1</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${username} ${password}</arg>
+</arguments>
+<msg timestamp="20190917 15:57:17.127" level="INFO">z 1</msg>
+<status status="PASS" starttime="20190917 15:57:17.125" endtime="20190917 15:57:17.128"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.124" endtime="20190917 15:57:17.128"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.124" endtime="20190917 15:57:17.128"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.112" endtime="20190917 15:57:17.128"></status>
+</kw>
+<kw name="Test Envirment Teardown" type="teardown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test_Envirment_Teardown</arg>
+</arguments>
+<msg timestamp="20190917 15:57:17.131" level="INFO">Test_Envirment_Teardown</msg>
+<status status="PASS" starttime="20190917 15:57:17.130" endtime="20190917 15:57:17.131"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.130" endtime="20190917 15:57:17.131"></status>
+</kw>
 <tags>
 <tag>suit-tag1</tag>
 <tag>suit-tag2</tag>
@@ -275,10 +459,106 @@ TypeError: Expected argument 1 to be a list or list-like, got string instead.</s
 <tag>test-tag2</tag>
 </tags>
 <timeout value="5 seconds"></timeout>
-<status status="FAIL" starttime="20190916 17:59:46.205" endtime="20190916 17:59:46.207" critical="yes">Parent suite setup failed:
-TypeError: Expected argument 1 to be a list or list-like, got string instead.</status>
+<status status="PASS" starttime="20190917 15:57:17.108" endtime="20190917 15:57:17.132" critical="yes"></status>
 </test>
 <test id="s1-s3-t3" name="Test_003">
+<kw name="Test Envirment Setup" type="setup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test_Envirment_Setup</arg>
+</arguments>
+<msg timestamp="20190917 15:57:17.138" level="INFO">Test_Envirment_Setup</msg>
+<status status="PASS" starttime="20190917 15:57:17.137" endtime="20190917 15:57:17.138"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.137" endtime="20190917 15:57:17.138"></status>
+</kw>
+<kw name="${item} IN [ @{DATA2} ]" type="for">
+<kw name="${item} = " type="foritem">
+<kw name="Template_001">
+<arguments>
+<arg>${item}</arg>
+<arg>1</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${username} ${password}</arg>
+</arguments>
+<msg timestamp="20190917 15:57:17.142" level="INFO"> 1</msg>
+<status status="PASS" starttime="20190917 15:57:17.141" endtime="20190917 15:57:17.142"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.140" endtime="20190917 15:57:17.142"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.140" endtime="20190917 15:57:17.142"></status>
+</kw>
+<kw name="${item} = W1_1" type="foritem">
+<kw name="Template_001">
+<arguments>
+<arg>${item}</arg>
+<arg>1</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${username} ${password}</arg>
+</arguments>
+<msg timestamp="20190917 15:57:17.145" level="INFO">W1_1 1</msg>
+<status status="PASS" starttime="20190917 15:57:17.144" endtime="20190917 15:57:17.145"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.142" endtime="20190917 15:57:17.145"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.142" endtime="20190917 15:57:17.145"></status>
+</kw>
+<kw name="${item} = Q2_1" type="foritem">
+<kw name="Template_001">
+<arguments>
+<arg>${item}</arg>
+<arg>1</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${username} ${password}</arg>
+</arguments>
+<msg timestamp="20190917 15:57:17.150" level="INFO">Q2_1 1</msg>
+<status status="PASS" starttime="20190917 15:57:17.147" endtime="20190917 15:57:17.150"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.146" endtime="20190917 15:57:17.150"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.146" endtime="20190917 15:57:17.150"></status>
+</kw>
+<kw name="${item} = T3_1" type="foritem">
+<kw name="Template_001">
+<arguments>
+<arg>${item}</arg>
+<arg>1</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${username} ${password}</arg>
+</arguments>
+<msg timestamp="20190917 15:57:17.154" level="INFO">T3_1 1</msg>
+<status status="PASS" starttime="20190917 15:57:17.151" endtime="20190917 15:57:17.154"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.151" endtime="20190917 15:57:17.154"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.151" endtime="20190917 15:57:17.154"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.140" endtime="20190917 15:57:17.154"></status>
+</kw>
+<kw name="Test Envirment Teardown" type="teardown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test_Envirment_Teardown</arg>
+</arguments>
+<msg timestamp="20190917 15:57:17.156" level="INFO">Test_Envirment_Teardown</msg>
+<status status="PASS" starttime="20190917 15:57:17.156" endtime="20190917 15:57:17.157"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.156" endtime="20190917 15:57:17.157"></status>
+</kw>
 <tags>
 <tag>suit-tag1</tag>
 <tag>suit-tag2</tag>
@@ -286,10 +566,39 @@ TypeError: Expected argument 1 to be a list or list-like, got string instead.</s
 <tag>test-tag2</tag>
 </tags>
 <timeout value="5 seconds"></timeout>
-<status status="FAIL" starttime="20190916 17:59:46.211" endtime="20190916 17:59:46.212" critical="yes">Parent suite setup failed:
-TypeError: Expected argument 1 to be a list or list-like, got string instead.</status>
+<status status="PASS" starttime="20190917 15:57:17.135" endtime="20190917 15:57:17.158" critical="yes"></status>
 </test>
 <test id="s1-s3-t4" name="Test_004">
+<kw name="Test Envirment Setup" type="setup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test_Envirment_Setup</arg>
+</arguments>
+<msg timestamp="20190917 15:57:17.164" level="INFO">Test_Envirment_Setup</msg>
+<status status="PASS" starttime="20190917 15:57:17.163" endtime="20190917 15:57:17.164"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.162" endtime="20190917 15:57:17.164"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{DATA2}</arg>
+</arguments>
+<msg timestamp="20190917 15:57:17.167" level="FAIL">Invalid log level 'W1_1'.</msg>
+<status status="FAIL" starttime="20190917 15:57:17.166" endtime="20190917 15:57:17.167"></status>
+</kw>
+<kw name="Test Envirment Teardown" type="teardown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test_Envirment_Teardown</arg>
+</arguments>
+<msg timestamp="20190917 15:57:17.171" level="INFO">Test_Envirment_Teardown</msg>
+<status status="PASS" starttime="20190917 15:57:17.171" endtime="20190917 15:57:17.172"></status>
+</kw>
+<status status="PASS" starttime="20190917 15:57:17.169" endtime="20190917 15:57:17.172"></status>
+</kw>
 <tags>
 <tag>suit-tag1</tag>
 <tag>suit-tag2</tag>
@@ -297,8 +606,7 @@ TypeError: Expected argument 1 to be a list or list-like, got string instead.</s
 <tag>test-tag2</tag>
 </tags>
 <timeout value="5 seconds"></timeout>
-<status status="FAIL" starttime="20190916 17:59:46.217" endtime="20190916 17:59:46.218" critical="yes">Parent suite setup failed:
-TypeError: Expected argument 1 to be a list or list-like, got string instead.</status>
+<status status="FAIL" starttime="20190917 15:57:17.161" endtime="20190917 15:57:17.173" critical="yes">Invalid log level 'W1_1'.</status>
 </test>
 <kw name="Suite Envirment Teardown" type="teardown">
 <kw name="Log" library="BuiltIn">
@@ -306,32 +614,31 @@ TypeError: Expected argument 1 to be a list or list-like, got string instead.</s
 <arguments>
 <arg>in suite teardown</arg>
 </arguments>
-<msg timestamp="20190916 17:59:46.223" level="INFO">in suite teardown</msg>
-<status status="PASS" starttime="20190916 17:59:46.222" endtime="20190916 17:59:46.223"></status>
+<msg timestamp="20190917 15:57:17.180" level="INFO">in suite teardown</msg>
+<status status="PASS" starttime="20190917 15:57:17.179" endtime="20190917 15:57:17.180"></status>
 </kw>
-<status status="PASS" starttime="20190916 17:59:46.222" endtime="20190916 17:59:46.223"></status>
+<status status="PASS" starttime="20190917 15:57:17.179" endtime="20190917 15:57:17.180"></status>
 </kw>
-<status status="FAIL" starttime="20190916 17:59:46.187" endtime="20190916 17:59:46.223">Suite setup failed:
-TypeError: Expected argument 1 to be a list or list-like, got string instead.</status>
+<status status="FAIL" starttime="20190917 15:57:17.073" endtime="20190917 15:57:17.180"></status>
 </suite>
-<status status="FAIL" starttime="20190916 17:59:45.635" endtime="20190916 17:59:46.229"></status>
+<status status="FAIL" starttime="20190917 15:57:16.461" endtime="20190917 15:57:17.186"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="4">Critical Tests</stat>
-<stat pass="3" fail="4">All Tests</stat>
+<stat pass="6" fail="1">Critical Tests</stat>
+<stat pass="6" fail="1">All Tests</stat>
 </total>
 <tag>
-<stat pass="3" fail="4">suit-tag1</stat>
-<stat pass="3" fail="4">suit-tag2</stat>
-<stat pass="3" fail="4">test-tag1</stat>
-<stat pass="3" fail="4">test-tag2</stat>
+<stat pass="6" fail="1">suit-tag1</stat>
+<stat pass="6" fail="1">suit-tag2</stat>
+<stat pass="6" fail="1">test-tag1</stat>
+<stat pass="6" fail="1">test-tag2</stat>
 </tag>
 <suite>
-<stat pass="3" fail="4" id="s1" name="myrobotbase">myrobotbase</stat>
+<stat pass="6" fail="1" id="s1" name="myrobotbase">myrobotbase</stat>
 <stat pass="1" fail="0" id="s1-s1" name="Uitest Base">myrobotbase.Uitest Base</stat>
 <stat pass="2" fail="0" id="s1-s2" name="Uitest Template">myrobotbase.Uitest Template</stat>
-<stat pass="0" fail="4" id="s1-s3" name="Uitest Template1">myrobotbase.Uitest Template1</stat>
+<stat pass="3" fail="1" id="s1-s3" name="Uitest Template1">myrobotbase.Uitest Template1</stat>
 </suite>
 </statistics>
 <errors>
