@@ -1,4 +1,6 @@
+echo %~dp0
 robot --outputdir D:\yangjian\project\ui-api-robotframework\report  ^
---name myrobotbase  --variable  name:yangjian  --pythonpath D:\yangjian\project\ui-api-robotframework\lib  uitest_base
+--name robotbase  --variable  name:yangjian  --pythonpath  %~dp0\lib ^
+--listener  Listener  uitest_base
 pause
 
