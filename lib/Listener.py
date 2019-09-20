@@ -1,25 +1,20 @@
 import os
-import config.settings as Settings
 from robot.libraries.BuiltIn import BuiltIn
+import settings as Settings
 from database_con import DataManager
 
 class Listener():
     ROBOT_LIBRARY_SCOPE = 'GLOBAL'
-    ROBOT_LISTENER_API_VERSION = 2
+    ROBOT_LISTENER_API_VERSION = 3
 
     def __init__(self):
         # get output folder from file _autotest_output (written by run.py)
-        with open(os.path.abspath(__file__) + "/../../../../output/_autotest_output") as infile:
-            output = infile.readline()
-        runlog = os.path.abspath(output + "/" + Settings.RUN_LOG)
-        self.runlog = open(runlog, "a")
+        outputdir = os.path.abspath(__file__)+"/../../output/"
+        self.runlog = open(outputdir + "/" + Settings.RUN_LOG, "a")
 
-        # get output folder from file _autotest_testing (written by run.py)
-        with open(os.path.abspath(__file__) + "/../../../../output/_autotest_testing") as infile:
-            output = infile.readline()
-        faillog = os.path.abspath(output + "/" + Settings.FAIL_LOG)
+        faillog = os.path.abspath(outputdir + "/" + Settings.FAIL_LOG)
         self.faillog = open(faillog, "a")
-        passlog = os.path.abspath(output + "/" + Settings.PASS_LOG)
+        passlog = os.path.abspath(outputdir + "/" + Settings.PASS_LOG)
         self.passlog = open(passlog, "a")
 
         self.current_suite = None
@@ -32,22 +27,30 @@ class Listener():
         self.runlog.close()
 
     def _is_pabot_autorun(self):
-        return False if BuiltIn().get_variable_value('${AUTOTEST_ROBOT_INCLUDED}') == 1 else True
+        return False
+        #return False if BuiltIn().get_variable_value('${AUTOTEST_ROBOT_INCLUDED}') == 1 else True
 
     def start_suite(self, name, attrs):
+        print("############start suite%s:"%(name))
         self.current_suite = name
 
     def start_test(self, name, attrs):
+        print("#######start test:%s"%(name))
         if self._is_pabot_autorun():
             return
 
         self.current_test = name
         self.current_messages = []
 
+        print(">>> %s | %s\n" % (self.current_suite, self.current_test))
         self.runlog.write(">>> %s | %s\n" % (self.current_suite, self.current_test))
         self.runlog.flush()
 
     def log_message(self, data):
+        print("#############in log_message")
+        print(data)
+        print("xxxxxxxxxxxxxxxx")
+        #
         if self._is_pabot_autorun():
             return
 
@@ -77,6 +80,7 @@ class Listener():
         self.current_test = None
 
     def end_suite(self, name, attrs):
+        print("#################end suite:%s"%(name))
         if self._is_pabot_autorun():
             return
 
@@ -84,3 +88,10 @@ class Listener():
             self.passlog.write("%s\n" % (self.current_suite))
         elif attrs["status"] == "FAIL":
             self.faillog.write("%s\n" % (self.current_suite))
+
+    def start_keyword(self):
+        pass
+
+    def end_keyword(self):
+        pass
+
