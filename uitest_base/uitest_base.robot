@@ -25,6 +25,7 @@ Test_001
     [Tags]  test-tag1    test-tag2
     [Timeout]    5s
     log    123
+    sleep    5s
     log    ${name}
 
 

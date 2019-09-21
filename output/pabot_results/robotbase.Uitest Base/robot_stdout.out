@@ -1,0 +1,45 @@
+==============================================================================
+robotbase                                                                     
+==============================================================================
+############start suiterobotbase:
+robotbase.Uitest Base                                                         
+==============================================================================
+############start suiteUitest Base:
+#############in log_message
+{'timestamp': '20190921 17:35:36.853', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:36.853', 'message': 'in suite setup', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+Test_001                                                              #######start test:Test_001
+>>> Uitest Base | Test_001
+
+#############in log_message
+{'timestamp': '20190921 17:35:36.853', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:36.853', 'message': 'Test_Envirment_Setup', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:36.947', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:36.947', 'message': '123', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:42.048', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:42.032', 'message': 'Slept 5 seconds', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:42.048', 'message': 'Test timeout 5 seconds exceeded.', 'level': 'FAIL', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:42.048', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:42.048', 'message': 'Test_Envirment_Teardown', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+| FAIL |
+Test timeout 5 seconds exceeded.
+------------------------------------------------------------------------------
+#############in log_message
+{'timestamp': '20190921 17:35:42.048', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:42.048', 'message': 'in suite teardown', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#################end suite:Uitest Base
+robotbase.Uitest Base                                                 | FAIL |
+1 critical test, 0 passed, 1 failed
+1 test total, 0 passed, 1 failed
+==============================================================================
+#################end suite:robotbase
+robotbase                                                             | FAIL |
+1 critical test, 0 passed, 1 failed
+1 test total, 0 passed, 1 failed
+==============================================================================
+Output:  D:\yangjian\project\ui-api-robotframework\output\pabot_results\robotbase.Uitest Base\output.xml

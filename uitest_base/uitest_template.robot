@@ -33,6 +33,7 @@ Test_002
 Template_001
     [Arguments]    ${username}    ${password}
     Log    ${username} ${password}
+    sleep    2
 
 
 Suite Envirment Setup

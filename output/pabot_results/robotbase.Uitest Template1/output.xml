@@ -1,106 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Rebot 3.1.2 (Python 3.7.4 on win32)" generated="20190921 17:35:51.814" rpa="false">
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20190921 17:35:36.666" rpa="false">
 <suite id="s1" name="robotbase" source="D:\yangjian\project\ui-api-robotframework\uitest_base">
-<suite id="s1-s1" name="Uitest Base" source="D:\yangjian\project\ui-api-robotframework\uitest_base\uitest_base.robot">
-<kw name="Suite Envirment Setup" type="setup">
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>in suite setup</arg>
-</arguments>
-<msg timestamp="20190921 17:35:36.853" level="INFO">in suite setup</msg>
-<msg timestamp="20190921 17:35:36.853" level="INFO">#############in log_message
-{'timestamp': '20190921 17:35:36.853', 'message': 'in suite setup', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190921 17:35:36.853" endtime="20190921 17:35:36.853"></status>
-</kw>
-<status status="PASS" starttime="20190921 17:35:36.853" endtime="20190921 17:35:36.853"></status>
-</kw>
-<kw name="Suite Envirment Teardown" type="teardown">
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>in suite teardown</arg>
-</arguments>
-<msg timestamp="20190921 17:35:42.048" level="INFO">in suite teardown</msg>
-<msg timestamp="20190921 17:35:42.048" level="INFO">#############in log_message
-{'timestamp': '20190921 17:35:42.048', 'message': 'in suite teardown', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190921 17:35:42.048" endtime="20190921 17:35:42.048"></status>
-</kw>
-<status status="PASS" starttime="20190921 17:35:42.048" endtime="20190921 17:35:42.048"></status>
-</kw>
-<test id="s1-s1-t1" name="Test_001">
-<kw name="Test Envirment Setup" type="setup">
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>Test_Envirment_Setup</arg>
-</arguments>
-<msg timestamp="20190921 17:35:36.853" level="INFO">Test_Envirment_Setup</msg>
-<msg timestamp="20190921 17:35:36.853" level="INFO">#############in log_message
-{'timestamp': '20190921 17:35:36.853', 'message': 'Test_Envirment_Setup', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190921 17:35:36.853" endtime="20190921 17:35:36.853"></status>
-</kw>
-<status status="PASS" starttime="20190921 17:35:36.853" endtime="20190921 17:35:36.853"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>123</arg>
-</arguments>
-<msg timestamp="20190921 17:35:36.947" level="INFO">123</msg>
-<msg timestamp="20190921 17:35:36.947" level="INFO">#############in log_message
-{'timestamp': '20190921 17:35:36.947', 'message': '123', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190921 17:35:36.853" endtime="20190921 17:35:36.947"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>5s</arg>
-</arguments>
-<msg timestamp="20190921 17:35:42.032" level="INFO">Slept 5 seconds</msg>
-<msg timestamp="20190921 17:35:42.048" level="INFO">#############in log_message
-{'timestamp': '20190921 17:35:42.032', 'message': 'Slept 5 seconds', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190921 17:35:36.947" endtime="20190921 17:35:42.048"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${name}</arg>
-</arguments>
-<msg timestamp="20190921 17:35:42.048" level="FAIL">Test timeout 5 seconds exceeded.</msg>
-<status status="FAIL" starttime="20190921 17:35:42.048" endtime="20190921 17:35:42.048"></status>
-</kw>
-<kw name="Test Envirment Teardown" type="teardown">
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>Test_Envirment_Teardown</arg>
-</arguments>
-<msg timestamp="20190921 17:35:42.048" level="INFO">Test_Envirment_Teardown</msg>
-<msg timestamp="20190921 17:35:42.048" level="INFO">#############in log_message
-{'timestamp': '20190921 17:35:42.048', 'message': 'Test_Envirment_Teardown', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190921 17:35:42.048" endtime="20190921 17:35:42.048"></status>
-</kw>
-<status status="PASS" starttime="20190921 17:35:42.048" endtime="20190921 17:35:42.048"></status>
-</kw>
-<tags>
-<tag>suit-tag1</tag>
-<tag>suit-tag2</tag>
-<tag>test-tag1</tag>
-<tag>test-tag2</tag>
-</tags>
-<timeout value="5 seconds"></timeout>
-<status status="FAIL" starttime="20190921 17:35:36.853" endtime="20190921 17:35:42.048" critical="yes">Test timeout 5 seconds exceeded.</status>
-</test>
-<status status="FAIL" starttime="20190921 17:35:36.369" endtime="20190921 17:35:42.048"></status>
-</suite>
-<suite id="s1-s2" name="Uitest Template1" source="D:\yangjian\project\ui-api-robotframework\uitest_base\uitest_template1.robot">
+<suite id="s1-s1" name="Uitest Template1" source="D:\yangjian\project\ui-api-robotframework\uitest_base\uitest_template1.robot">
 <kw name="Suite Envirment Setup" type="setup">
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -193,21 +94,7 @@ xxxxxxxxxxxxxxxx</msg>
 </kw>
 <status status="PASS" starttime="20190921 17:35:37.399" endtime="20190921 17:35:37.399"></status>
 </kw>
-<kw name="Suite Envirment Teardown" type="teardown">
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>in suite teardown</arg>
-</arguments>
-<msg timestamp="20190921 17:35:51.534" level="INFO">in suite teardown</msg>
-<msg timestamp="20190921 17:35:51.534" level="INFO">#############in log_message
-{'timestamp': '20190921 17:35:51.534', 'message': 'in suite teardown', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190921 17:35:51.534" endtime="20190921 17:35:51.534"></status>
-</kw>
-<status status="PASS" starttime="20190921 17:35:51.534" endtime="20190921 17:35:51.534"></status>
-</kw>
-<test id="s1-s2-t1" name="Test_001">
+<test id="s1-s1-t1" name="Test_001">
 <kw name="Test Envirment Setup" type="setup">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
@@ -303,7 +190,7 @@ xxxxxxxxxxxxxxxx</msg>
 <timeout value="5 seconds"></timeout>
 <status status="PASS" starttime="20190921 17:35:37.399" endtime="20190921 17:35:41.455" critical="yes"></status>
 </test>
-<test id="s1-s2-t2" name="Test_002">
+<test id="s1-s1-t2" name="Test_002">
 <kw name="Test Envirment Setup" type="setup">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
@@ -437,7 +324,7 @@ xxxxxxxxxxxxxxxx</msg>
 <timeout value="5 seconds"></timeout>
 <status status="FAIL" starttime="20190921 17:35:41.455" endtime="20190921 17:35:46.479" critical="yes">Test timeout 5 seconds exceeded.</status>
 </test>
-<test id="s1-s2-t3" name="Test_003">
+<test id="s1-s1-t3" name="Test_003">
 <kw name="Test Envirment Setup" type="setup">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
@@ -571,7 +458,7 @@ xxxxxxxxxxxxxxxx</msg>
 <timeout value="5 seconds"></timeout>
 <status status="FAIL" starttime="20190921 17:35:46.479" endtime="20190921 17:35:51.502" critical="yes">Test timeout 5 seconds exceeded.</status>
 </test>
-<test id="s1-s2-t4" name="Test_004">
+<test id="s1-s1-t4" name="Test_004">
 <kw name="Test Envirment Setup" type="setup">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
@@ -617,250 +504,38 @@ xxxxxxxxxxxxxxxx</msg>
 <timeout value="5 seconds"></timeout>
 <status status="FAIL" starttime="20190921 17:35:51.502" endtime="20190921 17:35:51.518" critical="yes">Invalid log level 'W1_1'.</status>
 </test>
-<status status="FAIL" starttime="20190921 17:35:36.822" endtime="20190921 17:35:51.534"></status>
-</suite>
-<suite id="s1-s3" name="Uitest Template" source="D:\yangjian\project\ui-api-robotframework\uitest_base\uitest_template.robot">
-<kw name="Suite Envirment Setup" type="setup">
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>in suite setup</arg>
-</arguments>
-<msg timestamp="20190921 17:35:37.259" level="INFO">in suite setup</msg>
-<msg timestamp="20190921 17:35:37.259" level="INFO">#############in log_message
-{'timestamp': '20190921 17:35:37.259', 'message': 'in suite setup', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190921 17:35:37.259" endtime="20190921 17:35:37.274"></status>
-</kw>
-<status status="PASS" starttime="20190921 17:35:37.259" endtime="20190921 17:35:37.274"></status>
-</kw>
 <kw name="Suite Envirment Teardown" type="teardown">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>in suite teardown</arg>
 </arguments>
-<msg timestamp="20190921 17:35:46.152" level="INFO">in suite teardown</msg>
-<msg timestamp="20190921 17:35:46.152" level="INFO">#############in log_message
-{'timestamp': '20190921 17:35:46.152', 'message': 'in suite teardown', 'level': 'INFO', 'html': 'no'}
+<msg timestamp="20190921 17:35:51.534" level="INFO">in suite teardown</msg>
+<msg timestamp="20190921 17:35:51.534" level="INFO">#############in log_message
+{'timestamp': '20190921 17:35:51.534', 'message': 'in suite teardown', 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190921 17:35:46.152" endtime="20190921 17:35:46.167"></status>
+<status status="PASS" starttime="20190921 17:35:51.534" endtime="20190921 17:35:51.534"></status>
 </kw>
-<status status="PASS" starttime="20190921 17:35:46.152" endtime="20190921 17:35:46.167"></status>
+<status status="PASS" starttime="20190921 17:35:51.534" endtime="20190921 17:35:51.534"></status>
 </kw>
-<test id="s1-s3-t1" name="Test_001">
-<kw name="Test Envirment Setup" type="setup">
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>Test_Envirment_Setup</arg>
-</arguments>
-<msg timestamp="20190921 17:35:37.274" level="INFO">Test_Envirment_Setup</msg>
-<msg timestamp="20190921 17:35:37.274" level="INFO">#############in log_message
-{'timestamp': '20190921 17:35:37.274', 'message': 'Test_Envirment_Setup', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190921 17:35:37.274" endtime="20190921 17:35:37.274"></status>
-</kw>
-<status status="PASS" starttime="20190921 17:35:37.274" endtime="20190921 17:35:37.274"></status>
-</kw>
-<kw name="Template_001">
-<arguments>
-<arg>xxxx</arg>
-<arg>yyyy</arg>
-</arguments>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${username} ${password}</arg>
-</arguments>
-<msg timestamp="20190921 17:35:37.274" level="INFO">xxxx yyyy</msg>
-<msg timestamp="20190921 17:35:37.274" level="INFO">#############in log_message
-{'timestamp': '20190921 17:35:37.274', 'message': 'xxxx yyyy', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190921 17:35:37.274" endtime="20190921 17:35:37.274"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2</arg>
-</arguments>
-<msg timestamp="20190921 17:35:39.302" level="INFO">Slept 2 seconds</msg>
-<msg timestamp="20190921 17:35:39.302" level="INFO">#############in log_message
-{'timestamp': '20190921 17:35:39.302', 'message': 'Slept 2 seconds', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190921 17:35:37.274" endtime="20190921 17:35:39.302"></status>
-</kw>
-<status status="PASS" starttime="20190921 17:35:37.274" endtime="20190921 17:35:39.302"></status>
-</kw>
-<kw name="Template_001">
-<arguments>
-<arg>11111</arg>
-<arg>22222</arg>
-</arguments>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${username} ${password}</arg>
-</arguments>
-<msg timestamp="20190921 17:35:39.302" level="INFO">11111 22222</msg>
-<msg timestamp="20190921 17:35:39.302" level="INFO">#############in log_message
-{'timestamp': '20190921 17:35:39.302', 'message': '11111 22222', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190921 17:35:39.302" endtime="20190921 17:35:39.302"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2</arg>
-</arguments>
-<msg timestamp="20190921 17:35:41.315" level="INFO">Slept 2 seconds</msg>
-<msg timestamp="20190921 17:35:41.315" level="INFO">#############in log_message
-{'timestamp': '20190921 17:35:41.315', 'message': 'Slept 2 seconds', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190921 17:35:39.302" endtime="20190921 17:35:41.315"></status>
-</kw>
-<status status="PASS" starttime="20190921 17:35:39.302" endtime="20190921 17:35:41.315"></status>
-</kw>
-<kw name="Test Envirment Teardown" type="teardown">
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>Test_Envirment_Teardown</arg>
-</arguments>
-<msg timestamp="20190921 17:35:41.315" level="INFO">Test_Envirment_Teardown</msg>
-<msg timestamp="20190921 17:35:41.315" level="INFO">#############in log_message
-{'timestamp': '20190921 17:35:41.315', 'message': 'Test_Envirment_Teardown', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190921 17:35:41.315" endtime="20190921 17:35:41.315"></status>
-</kw>
-<status status="PASS" starttime="20190921 17:35:41.315" endtime="20190921 17:35:41.315"></status>
-</kw>
-<tags>
-<tag>suit-tag1</tag>
-<tag>suit-tag2</tag>
-<tag>test-tag1</tag>
-<tag>test-tag2</tag>
-</tags>
-<timeout value="5 seconds"></timeout>
-<status status="PASS" starttime="20190921 17:35:37.274" endtime="20190921 17:35:41.315" critical="yes"></status>
-</test>
-<test id="s1-s3-t2" name="Test_002">
-<kw name="Test Envirment Setup" type="setup">
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>Test_Envirment_Setup</arg>
-</arguments>
-<msg timestamp="20190921 17:35:42.063" level="INFO">Test_Envirment_Setup</msg>
-<msg timestamp="20190921 17:35:42.063" level="INFO">#############in log_message
-{'timestamp': '20190921 17:35:42.063', 'message': 'Test_Envirment_Setup', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190921 17:35:41.315" endtime="20190921 17:35:42.063"></status>
-</kw>
-<status status="PASS" starttime="20190921 17:35:41.315" endtime="20190921 17:35:42.063"></status>
-</kw>
-<kw name="Template_001">
-<arguments>
-<arg>xxxx</arg>
-<arg>yyyy</arg>
-</arguments>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${username} ${password}</arg>
-</arguments>
-<msg timestamp="20190921 17:35:42.110" level="INFO">xxxx yyyy</msg>
-<msg timestamp="20190921 17:35:42.110" level="INFO">#############in log_message
-{'timestamp': '20190921 17:35:42.110', 'message': 'xxxx yyyy', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190921 17:35:42.063" endtime="20190921 17:35:42.110"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2</arg>
-</arguments>
-<msg timestamp="20190921 17:35:44.139" level="INFO">Slept 2 seconds</msg>
-<msg timestamp="20190921 17:35:44.139" level="INFO">#############in log_message
-{'timestamp': '20190921 17:35:44.139', 'message': 'Slept 2 seconds', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190921 17:35:42.110" endtime="20190921 17:35:44.139"></status>
-</kw>
-<status status="PASS" starttime="20190921 17:35:42.063" endtime="20190921 17:35:44.139"></status>
-</kw>
-<kw name="Template_001">
-<arguments>
-<arg>11111</arg>
-<arg>22222</arg>
-</arguments>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${username} ${password}</arg>
-</arguments>
-<msg timestamp="20190921 17:35:44.139" level="INFO">11111 22222</msg>
-<msg timestamp="20190921 17:35:44.139" level="INFO">#############in log_message
-{'timestamp': '20190921 17:35:44.139', 'message': '11111 22222', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190921 17:35:44.139" endtime="20190921 17:35:44.139"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2</arg>
-</arguments>
-<msg timestamp="20190921 17:35:46.152" level="INFO">Slept 2 seconds</msg>
-<msg timestamp="20190921 17:35:46.152" level="INFO">#############in log_message
-{'timestamp': '20190921 17:35:46.152', 'message': 'Slept 2 seconds', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190921 17:35:44.139" endtime="20190921 17:35:46.152"></status>
-</kw>
-<status status="PASS" starttime="20190921 17:35:44.139" endtime="20190921 17:35:46.152"></status>
-</kw>
-<kw name="Test Envirment Teardown" type="teardown">
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>Test_Envirment_Teardown</arg>
-</arguments>
-<msg timestamp="20190921 17:35:46.152" level="INFO">Test_Envirment_Teardown</msg>
-<msg timestamp="20190921 17:35:46.152" level="INFO">#############in log_message
-{'timestamp': '20190921 17:35:46.152', 'message': 'Test_Envirment_Teardown', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190921 17:35:46.152" endtime="20190921 17:35:46.152"></status>
-</kw>
-<status status="PASS" starttime="20190921 17:35:46.152" endtime="20190921 17:35:46.152"></status>
-</kw>
-<tags>
-<tag>suit-tag1</tag>
-<tag>suit-tag2</tag>
-<tag>test-tag1</tag>
-<tag>test-tag2</tag>
-</tags>
-<timeout value="5 seconds"></timeout>
-<status status="PASS" starttime="20190921 17:35:41.315" endtime="20190921 17:35:46.152" critical="yes"></status>
-</test>
-<status status="PASS" starttime="20190921 17:35:36.713" endtime="20190921 17:35:46.167"></status>
+<status status="FAIL" starttime="20190921 17:35:36.822" endtime="20190921 17:35:51.534"></status>
 </suite>
-<doc>[https://pabot.org/?ref=log|Pabot] result from 3 executions.</doc>
-<status status="FAIL" starttime="20190921 17:35:36.323" endtime="20190921 17:35:51.534"></status>
+<status status="FAIL" starttime="20190921 17:35:36.744" endtime="20190921 17:35:51.534"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="4">Critical Tests</stat>
-<stat pass="3" fail="4">All Tests</stat>
+<stat pass="1" fail="3">Critical Tests</stat>
+<stat pass="1" fail="3">All Tests</stat>
 </total>
 <tag>
-<stat pass="3" fail="4">suit-tag1</stat>
-<stat pass="3" fail="4">suit-tag2</stat>
-<stat pass="3" fail="4">test-tag1</stat>
-<stat pass="3" fail="4">test-tag2</stat>
+<stat pass="1" fail="3">suit-tag1</stat>
+<stat pass="1" fail="3">suit-tag2</stat>
+<stat pass="1" fail="3">test-tag1</stat>
+<stat pass="1" fail="3">test-tag2</stat>
 </tag>
 <suite>
-<stat pass="3" fail="4" id="s1" name="robotbase">robotbase</stat>
-<stat pass="0" fail="1" id="s1-s1" name="Uitest Base">robotbase.Uitest Base</stat>
-<stat pass="1" fail="3" id="s1-s2" name="Uitest Template1">robotbase.Uitest Template1</stat>
-<stat pass="2" fail="0" id="s1-s3" name="Uitest Template">robotbase.Uitest Template</stat>
+<stat pass="1" fail="3" id="s1" name="robotbase">robotbase</stat>
+<stat pass="1" fail="3" id="s1-s1" name="Uitest Template1">robotbase.Uitest Template1</stat>
 </suite>
 </statistics>
 <errors>

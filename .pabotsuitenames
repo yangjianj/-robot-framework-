@@ -1,0 +1,7 @@
+datasources:122f315146db0aff6653ed0be25b7182f8b52263
+commandlineoptions:571a67fbf7c24cb1c107db3bea5c42dea8a715a5
+suitesfrom:no-suites-from-option
+file:55ab00ac2dd4e6c08deb03e23cb85f9df0b225ea
+--suite robotbase.Uitest Base
+--suite robotbase.Uitest Template
+--suite robotbase.Uitest Template1

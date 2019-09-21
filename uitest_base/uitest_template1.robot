@@ -49,6 +49,7 @@ Test_004
 Template_001
     [Arguments]    ${username}    ${password}
     Log    ${username} ${password}
+    sleep    2s
 
 Suite Envirment Setup
     #Open Browser    http://baidu.com    Chrome

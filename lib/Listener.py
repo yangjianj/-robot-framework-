@@ -5,7 +5,7 @@ from database_con import DataManager
 
 class Listener():
     ROBOT_LIBRARY_SCOPE = 'GLOBAL'
-    ROBOT_LISTENER_API_VERSION = 3
+    ROBOT_LISTENER_API_VERSION = 2
 
     def __init__(self):
         # get output folder from file _autotest_output (written by run.py)
@@ -56,6 +56,9 @@ class Listener():
 
         self.current_messages.append((data["level"], data["message"]))
 
+    def message(self,message):
+        pass
+
     def end_test(self, name, attrs):
         # extract tid from TEST TAGS
         BuiltIn().set_suite_variable('${PREV TEST TID}', "notid")
@@ -89,9 +92,23 @@ class Listener():
         elif attrs["status"] == "FAIL":
             self.faillog.write("%s\n" % (self.current_suite))
 
-    def start_keyword(self):
+    def start_keyword(self,name,attributes):
         pass
 
-    def end_keyword(self):
+    def end_keyword(self,name,attributes):
         pass
 
+    def output_file(self,path):
+        pass
+
+    def report_file(self,path):
+        pass
+
+    def log_file(self,path):
+        pass
+
+    def debug_file(self,path):
+        pass
+
+    def close(self):
+        pass

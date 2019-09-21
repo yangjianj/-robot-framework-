@@ -1,0 +1,143 @@
+==============================================================================
+robotbase                                                                     
+==============================================================================
+############start suiterobotbase:
+robotbase.Uitest Template1                                                    
+==============================================================================
+############start suiteUitest Template1:
+#############in log_message
+{'timestamp': '20190921 17:35:37.399', 'message': '@{ITEMS} = [ x | y | z ]', 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:37.399', 'message': '@{DATA2} = [  ]', 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:37.399', 'message': '#############in log_message\n{\'timestamp\': \'20190921 17:35:37.399\', \'message\': "[\'\', \'W1_1\', \'Q2_1\', \'T3_1\']", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:37.399', 'message': '', 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:37.399', 'message': 'W1_1', 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:37.399', 'message': 'Q2_1', 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:37.399', 'message': 'T3_1', 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:37.399', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:37.399', 'message': 'in suite setup', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+Test_001                                                              #######start test:Test_001
+>>> Uitest Template1 | Test_001
+
+#############in log_message
+{'timestamp': '20190921 17:35:37.415', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:37.415', 'message': 'Test_Envirment_Setup', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:37.415', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:37.415', 'message': 'xxxx yyyy', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:39.427', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:39.427', 'message': 'Slept 2 seconds', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:39.427', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:39.427', 'message': '11111 22222', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:41.455', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:41.455', 'message': 'Slept 2 seconds', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:41.455', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:41.455', 'message': 'Test_Envirment_Teardown', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+| PASS |
+------------------------------------------------------------------------------
+Test_002                                                              #######start test:Test_002
+>>> Uitest Template1 | Test_002
+
+#############in log_message
+{'timestamp': '20190921 17:35:42.063', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:42.063', 'message': 'Test_Envirment_Setup', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:42.110', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:42.110', 'message': 'x 1', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:44.139', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:44.139', 'message': 'Slept 2 seconds', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:44.139', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:44.139', 'message': 'y 1', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:46.152', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:46.152', 'message': 'Slept 2 seconds', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:46.167', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:46.167', 'message': 'z 1', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:46.479', 'message': 'Test timeout 5 seconds exceeded.', 'level': 'FAIL', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:46.479', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:46.479', 'message': 'Test_Envirment_Teardown', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+| FAIL |
+Test timeout 5 seconds exceeded.
+------------------------------------------------------------------------------
+Test_003                                                              #######start test:Test_003
+>>> Uitest Template1 | Test_003
+
+#############in log_message
+{'timestamp': '20190921 17:35:46.495', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:46.495', 'message': 'Test_Envirment_Setup', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:46.495', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:46.495', 'message': ' 1', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:48.507', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:48.507', 'message': 'Slept 2 seconds', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:48.507', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:48.507', 'message': 'W1_1 1', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:50.520', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:50.520', 'message': 'Slept 2 seconds', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:50.520', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:50.520', 'message': 'Q2_1 1', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:51.502', 'message': 'Test timeout 5 seconds exceeded.', 'level': 'FAIL', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:51.502', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:51.502', 'message': 'Test_Envirment_Teardown', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+| FAIL |
+Test timeout 5 seconds exceeded.
+------------------------------------------------------------------------------
+Test_004                                                              #######start test:Test_004
+>>> Uitest Template1 | Test_004
+
+#############in log_message
+{'timestamp': '20190921 17:35:51.518', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:51.518', 'message': 'Test_Envirment_Setup', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:51.518', 'message': "Invalid log level 'W1_1'.", 'level': 'FAIL', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190921 17:35:51.518', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:51.518', 'message': 'Test_Envirment_Teardown', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+| FAIL |
+Invalid log level 'W1_1'.
+------------------------------------------------------------------------------
+#############in log_message
+{'timestamp': '20190921 17:35:51.534', 'message': "#############in log_message\n{'timestamp': '20190921 17:35:51.534', 'message': 'in suite teardown', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#################end suite:Uitest Template1
+robotbase.Uitest Template1                                            | FAIL |
+4 critical tests, 1 passed, 3 failed
+4 tests total, 1 passed, 3 failed
+==============================================================================
+#################end suite:robotbase
+robotbase                                                             | FAIL |
+4 critical tests, 1 passed, 3 failed
+4 tests total, 1 passed, 3 failed
+==============================================================================
+Output:  D:\yangjian\project\ui-api-robotframework\output\pabot_results\robotbase.Uitest Template1\output.xml
