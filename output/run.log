@@ -12,3 +12,17 @@
 <<< Uitest Template1 | Test_003
 >>> Uitest Template1 | Test_004
 <<< Uitest Template1 | Test_004
+>>> Uitest Template | Test_001
+>>> Uitest Template1 | Test_001
+>>> Uitest Base | Test_001
+<<< Uitest Template | Test_001
+>>> Uitest Template | Test_002
+<<< Uitest Template1 | Test_001
+>>> Uitest Template1 | Test_002
+<<< Uitest Base | Test_001
+<<< Uitest Template | Test_002
+<<< Uitest Template1 | Test_002
+>>> Uitest Template1 | Test_003
+<<< Uitest Template1 | Test_003
+>>> Uitest Template1 | Test_004
+<<< Uitest Template1 | Test_004
