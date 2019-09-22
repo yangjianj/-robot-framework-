@@ -1,7 +1,7 @@
 *** Settings ***
 Library           SeleniumLibrary
 Library           Collections
-Resource           PageHandler.robot
+Resource          system.robot
 
 Suite Setup       Suite Envirment Setup
 Suite Teardown    Suite Envirment Teardown
@@ -13,7 +13,7 @@ Test Teardown     Test Envirment Teardown
 Force Tags    suit-tag1   suit-tag2
 Default Tags    dafault-test1   dafault-test2
 
-Test Timeout    10s
+Test Timeout    30s
 
 
 ***Variable***
@@ -23,7 +23,7 @@ Test Timeout    10s
 
 Test_001
     [Tags]  test-tag1    test-tag2
-    [Timeout]    5s
+    [Timeout]    10s
     log    123
     sleep    5s
     log    ${name}

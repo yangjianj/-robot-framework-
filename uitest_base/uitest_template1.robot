@@ -10,7 +10,7 @@ Test Teardown     Test Envirment Teardown
 Force Tags    suit-tag1   suit-tag2
 Default Tags    dafault-test1   dafault-test2
 
-Test Timeout    10s
+Test Timeout    30s
 
 
 ***Variable***
@@ -28,7 +28,7 @@ Test_001
 
 Test_002
     [Tags]  test-tag1    test-tag2
-    [Timeout]    5s
+    [Timeout]    10s
     [Template]     Template_001
     :FOR  ${item}  IN    @{ITEMS}
     \    ${item}    1
