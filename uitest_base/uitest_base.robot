@@ -1,7 +1,7 @@
 *** Settings ***
 Library           SeleniumLibrary
 Library           Collections
-Resource          system.robot
+Resource          System.robot
 
 Suite Setup       Suite Envirment Setup
 Suite Teardown    Suite Envirment Teardown
