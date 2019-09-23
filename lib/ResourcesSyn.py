@@ -1,3 +1,4 @@
+import copy
 from robot.libraries.BuiltIn import BuiltIn
 from pabot.pabotlib import PabotLib
 
@@ -11,5 +12,20 @@ class ResourcesSyn():
           ]
         return slaves
 
-    def aquire_slave(self,type):
-        BuiltIn.wait_until_keyword_succeeds('10 min','2 s','aquire_lock','slave')
+    def search_slave(self,typelist,avialable_salves):
+        avialable_salves_cp = copy.deepcopy(avialable_salves)
+        suite_salves = []
+        for type in typelist:
+            for slave in avialable_salves_cp:
+                if type == slave['type']:
+                    suite_salves.append(slave)
+                    avialable_salves_cp.remove(slave)
+                    break
+        if len(suite_salves) == len(typelist):
+            return [suite_salves,avialable_salves_cp]
+        else:
+            return False
+
+
+
+
