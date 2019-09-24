@@ -13,10 +13,15 @@ class ResourcesSyn():
         return slaves
 
     def search_slave(self,typelist,avialable_salves):
+        print(typelist)
+        print(avialable_salves)
         avialable_salves_cp = copy.deepcopy(avialable_salves)
         suite_salves = []
         for type in typelist:
             for slave in avialable_salves_cp:
+                print(111111111)
+                print(type)
+                print(slave['type'])
                 if type == slave['type']:
                     suite_salves.append(slave)
                     avialable_salves_cp.remove(slave)
