@@ -92,3 +92,7 @@
 <<< Suite2 | Test_001
 >>> Suite1 | Test_001
 <<< Suite1 | Test_001
+>>> Suite1 | Test_001
+<<< Suite1 | Test_001
+>>> Suite2 | Test_001
+<<< Suite2 | Test_001

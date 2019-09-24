@@ -29,7 +29,7 @@ Acquire Slave
 Release Slave
     #Acquire Lock  'SlaveLock'
     ${avialable}=    Get Parallel Value For Key    'avialable_salves'
-    :FOR  ${slave}  IN  ${suite_salves}
+    :FOR  ${slave}  IN  @{suite_salves}
     \    Append To List    ${avialable}    ${slave}
     Set Parallel Value For Key    'avialable_salves'    ${avialable}
     log    ${avialable}
