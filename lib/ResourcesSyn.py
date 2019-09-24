@@ -12,22 +12,17 @@ class ResourcesSyn():
           ]
         return slaves
 
-    def search_slave(self,typelist,avialable_salves):
-        print(typelist)
-        print(avialable_salves)
-        avialable_salves_cp = copy.deepcopy(avialable_salves)
-        suite_salves = []
+    def search_device(self,typelist,avialable_devices):
+        avialable_devices_cp = copy.deepcopy(avialable_devices)
+        suite_devices = []
         for type in typelist:
-            for slave in avialable_salves_cp:
-                print(111111111)
-                print(type)
-                print(slave['type'])
-                if type == slave['type']:
-                    suite_salves.append(slave)
-                    avialable_salves_cp.remove(slave)
+            for device in avialable_devices_cp:
+                if type == device['type']:
+                    suite_devices.append(device)
+                    avialable_devices_cp.remove(device)
                     break
-        if len(suite_salves) == len(typelist):
-            return [suite_salves,avialable_salves_cp]
+        if len(suite_devices) == len(typelist):
+            return [suite_devices,avialable_devices_cp]
         else:
             return False
 

@@ -8,30 +8,29 @@ ${HOST}        127.0.0.1
 
 *** Keywords ***
 Init Resource
-    log    ${SLAVE_LIST}
-    Acquire Lock    avialable_salves_lock
-    ${avialable_salves} =  read_resources
-    Set Parallel Value For Key    'avialable_salves'    ${avialable_salves}
-    Release Lock    avialable_salves_lock
+    log many    @{DEVICE_LIST}
+    Acquire Lock    'DeviceLock'
+    ${avialable_devices} =  read_resources
+    Set Parallel Value For Key    'avialable_devices'    ${avialable_devices}
+    Release Lock    'DeviceLock'
 
-Acquire Slave
-    [Arguments]    ${typelist}
-    Acquire Lock  'SlaveLock'
-    ${avialable}=    Get Parallel Value For Key    'avialable_salves'
+Acquire Device
+    Acquire Lock  'DeviceLock'
+    ${avialable}=    Get Parallel Value For Key    'avialable_devices'
     log    ${avialable}
-    ${result}=    search_slave    ${typelist}    ${avialable}
-    Run Keyword If  ${result}==${False}    Release Lock    'SlaveLock'
+    ${result}=    search_device    ${DEVICE_LIST}    ${avialable}
+    Run Keyword If  ${result}==${False}    Release Lock    'DeviceLock'
     Run Keyword If  ${result}==${False}    Should Be True  ${1} == ${0}
-    Set Suite Variable    ${suite_salves}    ${result}[0]
-    Set Parallel Value For Key    'avialable_salves'    ${result}[1]
-    Release Lock    'SlaveLock'
+    Set Suite Variable    ${suite_devices}    ${result}[0]
+    Set Parallel Value For Key    'avialable_devices'    ${result}[1]
+    Release Lock    'DeviceLock'
 
-Release Slave
-    #Acquire Lock  'SlaveLock'
-    ${avialable}=    Get Parallel Value For Key    'avialable_salves'
-    :FOR  ${slave}  IN  @{suite_salves}
-    \    Append To List    ${avialable}    ${slave}
-    Set Parallel Value For Key    'avialable_salves'    ${avialable}
+Release Device
+    #Acquire Lock  'DeviceLock'
+    ${avialable}=    Get Parallel Value For Key    'avialable_devices'
+    :FOR  ${device}  IN  @{suite_devices}
+    \    Append To List    ${avialable}    ${device}
+    Set Parallel Value For Key    'avialable_devices'    ${avialable}
     log    ${avialable}
-    #Release Lock    'SlaveLock'
+    #Release Lock    'DeviceLock'
 

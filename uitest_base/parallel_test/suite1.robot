@@ -14,7 +14,7 @@ Test Timeout    30s
 
 ***Variable***
 @{DATA1}      XYZ   123
-@{SLAVE_LIST}    ui    ui
+@{DEVICE_LIST}    ui    ui
 
 ***Test Cases***
 

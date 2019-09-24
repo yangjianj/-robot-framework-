@@ -1,4 +1,5 @@
 *** Settings ***
+Library            Compute.py
 Library            Collections
 Resource           PageHandler.robot
 Resource           ResourcesSyn.robot
@@ -10,13 +11,14 @@ ${HOST}        127.0.0.1
 *** Keywords ***
 Ui Suite Setup
     Run Only Once    Init Resource
-    log  ${SLAVE_LIST}
-    Wait Until Keyword Succeeds  2min  5s    Acquire Slave  ${SLAVE_LIST}
-    log    ${suite_salves}
+    log  ${DEVICE_LIST}
+    ${interval}=    return_randint  3  10
+    Wait Until Keyword Succeeds  2min  ${interval}s    Acquire Device
+    log    ${suite_devices}
     
 
 Ui Suite Teardown
-    Release Slave
+    Release Device
 
 Ui Test Setup
     log    1

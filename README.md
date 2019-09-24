@@ -31,6 +31,6 @@
  3.1记录用例状态到本地/数据库
  3.2提送当前执行状态到指定监控平台
 4.pabot分布式库使用
-
+5.robot脚本中python调用
 
 Python自动化框架对比：https://www.jianshu.com/p/b87ec158aad8    
