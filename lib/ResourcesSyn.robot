@@ -30,7 +30,7 @@ Release Device
     ${avialable}=    Get Parallel Value For Key    'avialable_devices'
     :FOR  ${device}  IN  @{suite_devices}
     \    Append To List    ${avialable}    ${device}
-    Set Parallel Value For Key    'avialable_devices'    ${avialable}
     log    ${avialable}
+    Set Parallel Value For Key    'avialable_devices'    ${avialable}
     #Release Lock    'DeviceLock'
 

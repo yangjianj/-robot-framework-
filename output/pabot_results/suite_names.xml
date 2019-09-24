@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20190925 15:11:42.694" rpa="false">
+<suite id="s1" name="robotbase" source="D:\yangjian\project\ui-api-robotframework\uitest_base">
+<suite id="s1-s1" name="Parallel Test" source="D:\yangjian\project\ui-api-robotframework\uitest_base\parallel_test">
+<suite id="s1-s1-s1" name="Suite1" source="D:\yangjian\project\ui-api-robotframework\uitest_base\parallel_test\suite1.robot">
+<kw name="Ui Suite Setup" type="setup">
+<msg timestamp="20190925 15:11:42.783" level="FAIL">No keyword with name 'Ui Suite Setup' found.</msg>
+<status status="FAIL" starttime="20190925 15:11:42.783" endtime="20190925 15:11:42.783"></status>
+</kw>
+<test id="s1-s1-s1-t1" name="Test_001">
+<tags>
+<tag>para-test</tag>
+<tag>test-tag1</tag>
+<tag>test-tag2</tag>
+</tags>
+<timeout value="2 minutes 30 seconds"></timeout>
+<status status="FAIL" starttime="20190925 15:11:42.783" endtime="20190925 15:11:42.783" critical="yes">Parent suite setup failed:
+No keyword with name 'Ui Suite Setup' found.</status>
+</test>
+<kw name="Ui Suite Teardown" type="teardown">
+<msg timestamp="20190925 15:11:42.783" level="FAIL">No keyword with name 'Ui Suite Teardown' found.</msg>
+<status status="FAIL" starttime="20190925 15:11:42.783" endtime="20190925 15:11:42.783">No keyword with name 'Ui Suite Teardown' found.</status>
+</kw>
+<status status="FAIL" starttime="20190925 15:11:42.767" endtime="20190925 15:11:42.783">Suite setup failed:
+No keyword with name 'Ui Suite Setup' found.
+
+Also suite teardown failed:
+No keyword with name 'Ui Suite Teardown' found.</status>
+</suite>
+<suite id="s1-s1-s2" name="Suite2" source="D:\yangjian\project\ui-api-robotframework\uitest_base\parallel_test\suite2.robot">
+<kw name="Ui Suite Setup" type="setup">
+<msg timestamp="20190925 15:11:42.798" level="FAIL">No keyword with name 'Ui Suite Setup' found.</msg>
+<status status="FAIL" starttime="20190925 15:11:42.798" endtime="20190925 15:11:42.798"></status>
+</kw>
+<test id="s1-s1-s2-t1" name="Test_001">
+<tags>
+<tag>para-test</tag>
+<tag>test-tag1</tag>
+<tag>test-tag2</tag>
+</tags>
+<timeout value="10 seconds"></timeout>
+<status status="FAIL" starttime="20190925 15:11:42.798" endtime="20190925 15:11:42.798" critical="yes">Parent suite setup failed:
+No keyword with name 'Ui Suite Setup' found.</status>
+</test>
+<kw name="Ui Suite Teardown" type="teardown">
+<msg timestamp="20190925 15:11:42.798" level="FAIL">No keyword with name 'Ui Suite Teardown' found.</msg>
+<status status="FAIL" starttime="20190925 15:11:42.798" endtime="20190925 15:11:42.798">No keyword with name 'Ui Suite Teardown' found.</status>
+</kw>
+<status status="FAIL" starttime="20190925 15:11:42.783" endtime="20190925 15:11:42.798">Suite setup failed:
+No keyword with name 'Ui Suite Setup' found.
+
+Also suite teardown failed:
+No keyword with name 'Ui Suite Teardown' found.</status>
+</suite>
+<suite id="s1-s1-s3" name="Suite3" source="D:\yangjian\project\ui-api-robotframework\uitest_base\parallel_test\suite3.robot">
+<kw name="Ui Suite Setup" type="setup">
+<msg timestamp="20190925 15:11:42.814" level="FAIL">No keyword with name 'Ui Suite Setup' found.</msg>
+<status status="FAIL" starttime="20190925 15:11:42.814" endtime="20190925 15:11:42.814"></status>
+</kw>
+<test id="s1-s1-s3-t1" name="Test_001">
+<tags>
+<tag>para-test</tag>
+<tag>test-tag1</tag>
+<tag>test-tag2</tag>
+</tags>
+<timeout value="10 seconds"></timeout>
+<status status="FAIL" starttime="20190925 15:11:42.814" endtime="20190925 15:11:42.814" critical="yes">Parent suite setup failed:
+No keyword with name 'Ui Suite Setup' found.</status>
+</test>
+<kw name="Ui Suite Teardown" type="teardown">
+<msg timestamp="20190925 15:11:42.814" level="FAIL">No keyword with name 'Ui Suite Teardown' found.</msg>
+<status status="FAIL" starttime="20190925 15:11:42.814" endtime="20190925 15:11:42.814">No keyword with name 'Ui Suite Teardown' found.</status>
+</kw>
+<status status="FAIL" starttime="20190925 15:11:42.798" endtime="20190925 15:11:42.814">Suite setup failed:
+No keyword with name 'Ui Suite Setup' found.
+
+Also suite teardown failed:
+No keyword with name 'Ui Suite Teardown' found.</status>
+</suite>
+<suite id="s1-s1-s4" name="Suite4" source="D:\yangjian\project\ui-api-robotframework\uitest_base\parallel_test\suite4.robot">
+<kw name="Ui Suite Setup" type="setup">
+<msg timestamp="20190925 15:11:42.830" level="FAIL">No keyword with name 'Ui Suite Setup' found.</msg>
+<status status="FAIL" starttime="20190925 15:11:42.830" endtime="20190925 15:11:42.830"></status>
+</kw>
+<test id="s1-s1-s4-t1" name="Test_001">
+<tags>
+<tag>para-test</tag>
+<tag>test-tag1</tag>
+<tag>test-tag2</tag>
+</tags>
+<timeout value="10 seconds"></timeout>
+<status status="FAIL" starttime="20190925 15:11:42.830" endtime="20190925 15:11:42.830" critical="yes">Parent suite setup failed:
+No keyword with name 'Ui Suite Setup' found.</status>
+</test>
+<kw name="Ui Suite Teardown" type="teardown">
+<msg timestamp="20190925 15:11:42.830" level="FAIL">No keyword with name 'Ui Suite Teardown' found.</msg>
+<status status="FAIL" starttime="20190925 15:11:42.830" endtime="20190925 15:11:42.830">No keyword with name 'Ui Suite Teardown' found.</status>
+</kw>
+<status status="FAIL" starttime="20190925 15:11:42.814" endtime="20190925 15:11:42.830">Suite setup failed:
+No keyword with name 'Ui Suite Setup' found.
+
+Also suite teardown failed:
+No keyword with name 'Ui Suite Teardown' found.</status>
+</suite>
+<suite id="s1-s1-s5" name="Suite5" source="D:\yangjian\project\ui-api-robotframework\uitest_base\parallel_test\suite5.robot">
+<kw name="Ui Suite Setup" type="setup">
+<msg timestamp="20190925 15:11:42.845" level="FAIL">No keyword with name 'Ui Suite Setup' found.</msg>
+<status status="FAIL" starttime="20190925 15:11:42.845" endtime="20190925 15:11:42.845"></status>
+</kw>
+<test id="s1-s1-s5-t1" name="Test_001">
+<tags>
+<tag>para-test</tag>
+<tag>test-tag1</tag>
+<tag>test-tag2</tag>
+</tags>
+<timeout value="10 seconds"></timeout>
+<status status="FAIL" starttime="20190925 15:11:42.845" endtime="20190925 15:11:42.845" critical="yes">Parent suite setup failed:
+No keyword with name 'Ui Suite Setup' found.</status>
+</test>
+<kw name="Ui Suite Teardown" type="teardown">
+<msg timestamp="20190925 15:11:42.845" level="FAIL">No keyword with name 'Ui Suite Teardown' found.</msg>
+<status status="FAIL" starttime="20190925 15:11:42.845" endtime="20190925 15:11:42.845">No keyword with name 'Ui Suite Teardown' found.</status>
+</kw>
+<status status="FAIL" starttime="20190925 15:11:42.830" endtime="20190925 15:11:42.845">Suite setup failed:
+No keyword with name 'Ui Suite Setup' found.
+
+Also suite teardown failed:
+No keyword with name 'Ui Suite Teardown' found.</status>
+</suite>
+<status status="FAIL" starttime="20190925 15:11:42.767" endtime="20190925 15:11:42.845"></status>
+</suite>
+<status status="FAIL" starttime="20190925 15:11:42.702" endtime="20190925 15:11:42.861"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="5">Critical Tests</stat>
+<stat pass="0" fail="5">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="5">para-test</stat>
+<stat pass="0" fail="5">test-tag1</stat>
+<stat pass="0" fail="5">test-tag2</stat>
+</tag>
+<suite>
+<stat pass="0" fail="5" id="s1" name="robotbase">robotbase</stat>
+<stat pass="0" fail="5" id="s1-s1" name="Parallel Test">robotbase.Parallel Test</stat>
+<stat pass="0" fail="1" id="s1-s1-s1" name="Suite1">robotbase.Parallel Test.Suite1</stat>
+<stat pass="0" fail="1" id="s1-s1-s2" name="Suite2">robotbase.Parallel Test.Suite2</stat>
+<stat pass="0" fail="1" id="s1-s1-s3" name="Suite3">robotbase.Parallel Test.Suite3</stat>
+<stat pass="0" fail="1" id="s1-s1-s4" name="Suite4">robotbase.Parallel Test.Suite4</stat>
+<stat pass="0" fail="1" id="s1-s1-s5" name="Suite5">robotbase.Parallel Test.Suite5</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20190925 15:11:42.783" level="ERROR">Error in file 'D:\yangjian\project\ui-api-robotframework\uitest_base\parallel_test\suite1.robot': Resource file 'autotest.robot' does not exist.</msg>
+<msg timestamp="20190925 15:11:42.798" level="ERROR">Error in file 'D:\yangjian\project\ui-api-robotframework\uitest_base\parallel_test\suite2.robot': Resource file 'autotest.robot' does not exist.</msg>
+<msg timestamp="20190925 15:11:42.814" level="ERROR">Error in file 'D:\yangjian\project\ui-api-robotframework\uitest_base\parallel_test\suite3.robot': Resource file 'autotest.robot' does not exist.</msg>
+<msg timestamp="20190925 15:11:42.830" level="ERROR">Error in file 'D:\yangjian\project\ui-api-robotframework\uitest_base\parallel_test\suite4.robot': Resource file 'autotest.robot' does not exist.</msg>
+<msg timestamp="20190925 15:11:42.845" level="ERROR">Error in file 'D:\yangjian\project\ui-api-robotframework\uitest_base\parallel_test\suite5.robot': Resource file 'autotest.robot' does not exist.</msg>
+</errors>
+</robot>

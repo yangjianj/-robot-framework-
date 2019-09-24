@@ -26,11 +26,10 @@
  1.1github地址：https://github.com/robotframework/robotframework/blob/v3.1.1/src/robot/libraries/BuiltIn.py    
  1.2文档：https://robot-framework.readthedocs.io/en/v3.1.1/autodoc/robot.libraries.html#module-robot.libraries.BuiltIn   
  1.3可通过纯python代码引入关键字库实现用例；python实现的扩展库可引用robot库实现相应功能,例如listener类中使用BuiltIn().set_suite_variable()    
-2.robot的分布式测试库-Remote
+2.robot的分布式测试库-Remote;pabot分布式库使用
 3.listener使用的想法：
  3.1记录用例状态到本地/数据库
  3.2提送当前执行状态到指定监控平台
-4.pabot分布式库使用
-5.robot脚本中python调用
+4.robot脚本中python调用
 
 Python自动化框架对比：https://www.jianshu.com/p/b87ec158aad8    

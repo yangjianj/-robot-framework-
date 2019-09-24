@@ -1,6 +1,9 @@
-datasources:5dde64965fee8cbc0e60190ecab08f35cf4eb165
+datasources:9dcacc26972798aa88601b182ce9b60173f9fe9a
 commandlineoptions:a08dde50fcadcaeb2709996f37c11b5bc346c432
 suitesfrom:no-suites-from-option
-file:e07a9caec2d45d1335080ab5141471f70b17ec86
+file:b29349e532535b997413d8e779969d42a3203460
 --suite robotbase.Parallel Test.Suite1
 --suite robotbase.Parallel Test.Suite2
+--suite robotbase.Parallel Test.Suite3
+--suite robotbase.Parallel Test.Suite4
+--suite robotbase.Parallel Test.Suite5

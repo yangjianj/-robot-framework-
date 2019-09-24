@@ -7,7 +7,7 @@ class ResourcesSyn():
         pass
 
     def read_resources(self,path = 'filepath'):
-        slaves = [{'type':'api','ip':'192.168.100.2','health':'1'},{'type':'api','ip':'192.168.100.3','health':'1'}, \
+        slaves = [{'type':'api','ip':'192.168.100.2','health':'1'},{'type':'api','ip':'192.168.100.1','health':'1'}, \
                   {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'},{'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}
           ]
         return slaves

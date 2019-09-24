@@ -9,18 +9,18 @@ Test Teardown     Ui Test Teardown
 
 Force Tags    para-test
 
-Test Timeout    150s
+Test Timeout    30s
 
 
 ***Variable***
 @{DATA1}      XYZ   123
-@{DEVICE_LIST}    ui    ui
+@{DEVICE_LIST}    ui    api
 
 ***Test Cases***
 
 Test_001
     [Tags]  test-tag1    test-tag2
-    [Timeout]    150s
+    [Timeout]    10s
     log    123
-    sleep    130s
+    sleep    5s
     log    ${name}
