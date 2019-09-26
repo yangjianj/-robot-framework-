@@ -9,90 +9,54 @@ robotbase.Parallel Test.Suite1
 ==============================================================================
 ############start suiteSuite1:
 #############in log_message
-{'timestamp': '20190925 15:11:45.505', 'message': "#############in log_message\n{'timestamp': '20190925 15:11:45.489', 'message': 'Skipped in this item', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+{'timestamp': '20190926 09:52:06.558', 'message': '#############in log_message\n{\'timestamp\': \'20190926 09:52:06.471\', \'message\': \'ui\', \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx\n#############in log_message\n{\'timestamp\': \'20190926 09:52:06.471\', \'message\': \'ui\', \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx\n#############in log_message\n{\'timestamp\': \'20190926 09:52:06.481\', \'message\': "${avialable_devices} = [{\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'ui\', \'ip\': \'192.168.100.3\', \'health\': \'1\'}, {\'type\': \'ui\', \'ip\': \'192.168.100.4...", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx
 #############in log_message
-{'timestamp': '20190925 15:11:45.505', 'message': '#############in log_message\n{\'timestamp\': \'20190925 15:11:45.505\', \'message\': "[\'ui\', \'ui\']", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
+{'timestamp': '20190926 09:52:06.559', 'message': '#############in log_message\n{\'timestamp\': \'20190926 09:52:06.559\', \'message\': "[\'ui\', \'ui\']", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx
 #############in log_message
-{'timestamp': '20190925 15:11:45.505', 'message': '${interval} = 8', 'level': 'INFO', 'html': 'no'}
+{'timestamp': '20190926 09:52:06.561', 'message': '${interval} = 4', 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx
 #############in log_message
-{'timestamp': '20190925 15:11:45.614', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
+{'timestamp': '20190926 09:52:06.574', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4...", 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx
 #############in log_message
-{'timestamp': '20190925 15:11:45.614', 'message': '#############in log_message\n{\'timestamp\': \'20190925 15:11:45.614\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'ui\', \'ip\': \'192.168.100.4\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
+{'timestamp': '20190926 09:52:06.576', 'message': '#############in log_message\n{\'timestamp\': \'20190926 09:52:06.575\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'ui\', \'ip\': \'192.168.100.3\', \'health\': \'1\'}, {\'type\': \'ui\', \'ip\': \'192.168.100.4\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx
 #############in log_message
-{'timestamp': '20190925 15:11:45.614', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
+{'timestamp': '20190926 09:52:06.580', 'message': "${result} = [[{'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}], [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.10...", 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx
 #############in log_message
-{'timestamp': '20190925 15:11:45.629', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
+{'timestamp': '20190926 09:52:06.585', 'message': "${suite_devices} = [{'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx
 #############in log_message
-{'timestamp': '20190925 15:11:53.641', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190925 15:11:53.642', 'message': '#############in log_message\n{\'timestamp\': \'20190925 15:11:53.642\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190925 15:11:53.642', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190925 15:11:53.674', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190925 15:12:01.688', 'message': '${avialable} = []', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190925 15:12:01.704', 'message': "#############in log_message\n{'timestamp': '20190925 15:12:01.688', 'message': '[]', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190925 15:12:01.704', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190925 15:12:01.720', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190925 15:12:09.726', 'message': "${avialable} = [{'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2...", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190925 15:12:09.742', 'message': '#############in log_message\n{\'timestamp\': \'20190925 15:12:09.742\', \'message\': "[{\'type\': \'ui\', \'ip\': \'192.168.100.4\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'ui\', \'ip\': \'192.168.100.3\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190925 15:12:09.742', 'message': "${result} = [[{'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}], [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.10...", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190925 15:12:09.742', 'message': "${suite_devices} = [{'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190925 15:12:09.757', 'message': '#############in log_message\n{\'timestamp\': \'20190925 15:12:09.757\', \'message\': "[{\'type\': \'ui\', \'ip\': \'192.168.100.4\', \'health\': \'1\'}, {\'type\': \'ui\', \'ip\': \'192.168.100.3\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
+{'timestamp': '20190926 09:52:06.599', 'message': '#############in log_message\n{\'timestamp\': \'20190926 09:52:06.599\', \'message\': "[{\'type\': \'ui\', \'ip\': \'192.168.100.3\', \'health\': \'1\'}, {\'type\': \'ui\', \'ip\': \'192.168.100.4\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx
 Test_001                                                              #######start test:Test_001
 >>> Suite1 | Test_001
 
 #############in log_message
-{'timestamp': '20190925 15:12:09.757', 'message': "#############in log_message\n{'timestamp': '20190925 15:12:09.757', 'message': '1', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+{'timestamp': '20190926 09:52:06.604', 'message': "#############in log_message\n{'timestamp': '20190926 09:52:06.604', 'message': '1', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx
 #############in log_message
-{'timestamp': '20190925 15:12:09.757', 'message': "#############in log_message\n{'timestamp': '20190925 15:12:09.757', 'message': '123', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+{'timestamp': '20190926 09:52:06.606', 'message': "#############in log_message\n{'timestamp': '20190926 09:52:06.606', 'message': '123', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx
 #############in log_message
-{'timestamp': '20190925 15:14:19.776', 'message': "#############in log_message\n{'timestamp': '20190925 15:14:19.776', 'message': 'Slept 2 minutes 10 seconds', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+{'timestamp': '20190926 09:54:16.609', 'message': "#############in log_message\n{'timestamp': '20190926 09:54:16.609', 'message': 'Slept 2 minutes 10 seconds', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx
 #############in log_message
-{'timestamp': '20190925 15:14:19.776', 'message': "#############in log_message\n{'timestamp': '20190925 15:14:19.776', 'message': 'yangjian', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+{'timestamp': '20190926 09:54:16.612', 'message': "#############in log_message\n{'timestamp': '20190926 09:54:16.611', 'message': 'yangjian', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx
 #############in log_message
-{'timestamp': '20190925 15:14:19.776', 'message': "#############in log_message\n{'timestamp': '20190925 15:14:19.776', 'message': '1', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+{'timestamp': '20190926 09:54:16.614', 'message': "#############in log_message\n{'timestamp': '20190926 09:54:16.614', 'message': '1', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx
 | PASS |
 ------------------------------------------------------------------------------
 #############in log_message
-{'timestamp': '20190925 15:14:19.791', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
+{'timestamp': '20190926 09:54:16.624', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx
 #############in log_message
-{'timestamp': '20190925 15:14:19.807', 'message': '#############in log_message\n{\'timestamp\': \'20190925 15:14:19.807\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}, {\'type\': \'ui\', \'ip\': \'192.168.100.4\', \'health\': \'1\'}, {\'type\': \'ui\', \'ip\': \'192.168.100.3\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
+{'timestamp': '20190926 09:54:16.630', 'message': '#############in log_message\n{\'timestamp\': \'20190926 09:54:16.630\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'ui\', \'ip\': \'192.168.100.3\', \'health\': \'1\'}, {\'type\': \'ui\', \'ip\': \'192.168.100.4\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx
 #################end suite:Suite1
 robotbase.Parallel Test.Suite1                                        | PASS |

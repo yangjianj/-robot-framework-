@@ -20,6 +20,7 @@ class Listener():
         self.current_suite = None
         self.current_test = None
         self.current_messages = []
+        self.datamanager = DataManager()
 
     def __del__(self):
         self.passlog.close()

@@ -9,7 +9,7 @@ Test Teardown     Ui Test Teardown
 
 Force Tags    para-test
 
-Test Timeout    30s
+Test Timeout    150s
 
 
 ***Variable***
@@ -20,7 +20,7 @@ Test Timeout    30s
 
 Test_001
     [Tags]  test-tag1    test-tag2
-    [Timeout]    20s
+    [Timeout]    150s
     log    123
-    sleep    15s
+    sleep    130s
     log    ${name}

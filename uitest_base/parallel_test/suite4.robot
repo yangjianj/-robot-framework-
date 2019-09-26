@@ -20,7 +20,7 @@ Test Timeout    30s
 
 Test_001
     [Tags]  test-tag1    test-tag2
-    [Timeout]    10s
+    [Timeout]    20s
     log    123
-    sleep    5s
+    sleep    15s
     log    ${name}
