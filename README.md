@@ -7,8 +7,9 @@
 6.监听事件：--listener参数导入监听库     
 7.失败用例收集：listener库方法记录异常用例并输出收集    
 8.异常防范：case级超时，suite级超时,keyword级超时        
-9.pabot并行执行、分布式执行:并行执行资源锁+同步的使用    
-10.
+9.pabot并行执行并行执行资源锁+同步的使用    
+10.分布式执行解决方案：remote库/ssh库/rabbitmq/运行web服务
+11.日志查看-同suite各版本日志关联:版本/suitepath/suite.log--time
 
 
 

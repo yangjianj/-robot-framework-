@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 3.1.2 (Python 3.7.2 on win32)" generated="20190927 00:36:39.198" rpa="false">
+<suite id="s1" name="robotbase" source="F:\work\project\ui-api-robotframework\uitest_base">
+<suite id="s1-s1" name="Parallel Test" source="F:\work\project\ui-api-robotframework\uitest_base\parallel_test">
+<suite id="s1-s1-s1" name="Suite111" source="F:\work\project\ui-api-robotframework\uitest_base\parallel_test\suite111.robot">
+<kw name="Ui Suite Setup" type="setup">
+<msg timestamp="20190927 00:36:34.506" level="FAIL">No keyword with name 'Ui Suite Setup' found.</msg>
+<status status="FAIL" starttime="20190927 00:36:34.505" endtime="20190927 00:36:34.506"></status>
+</kw>
+<kw name="Ui Suite Teardown" type="teardown">
+<msg timestamp="20190927 00:36:34.519" level="FAIL">No keyword with name 'Ui Suite Teardown' found.</msg>
+<status status="FAIL" starttime="20190927 00:36:34.519" endtime="20190927 00:36:34.519">No keyword with name 'Ui Suite Teardown' found.</status>
+</kw>
+<test id="s1-s1-s1-t1" name="Test_001">
+<tags>
+<tag>para-test</tag>
+<tag>test-tag1</tag>
+<tag>test-tag2</tag>
+</tags>
+<timeout value="2 minutes 30 seconds"></timeout>
+<status status="FAIL" starttime="20190927 00:36:34.506" endtime="20190927 00:36:34.509" critical="yes">Parent suite setup failed:
+No keyword with name 'Ui Suite Setup' found.
+
+Also parent suite teardown failed:
+No keyword with name 'Ui Suite Teardown' found.</status>
+</test>
+<status status="FAIL" starttime="20190927 00:36:34.425" endtime="20190927 00:36:34.520">Suite setup failed:
+No keyword with name 'Ui Suite Setup' found.
+
+Also suite teardown failed:
+No keyword with name 'Ui Suite Teardown' found.</status>
+</suite>
+<suite id="s1-s1-s2" name="Suite1" source="F:\work\project\ui-api-robotframework\uitest_base\parallel_test\suite1.robot">
+<kw name="Ui Suite Setup" type="setup">
+<msg timestamp="20190927 00:36:32.502" level="FAIL">No keyword with name 'Ui Suite Setup' found.</msg>
+<status status="FAIL" starttime="20190927 00:36:32.502" endtime="20190927 00:36:32.503"></status>
+</kw>
+<kw name="Ui Suite Teardown" type="teardown">
+<msg timestamp="20190927 00:36:32.511" level="FAIL">No keyword with name 'Ui Suite Teardown' found.</msg>
+<status status="FAIL" starttime="20190927 00:36:32.510" endtime="20190927 00:36:32.511">No keyword with name 'Ui Suite Teardown' found.</status>
+</kw>
+<test id="s1-s1-s2-t1" name="Test_001">
+<tags>
+<tag>para-test</tag>
+<tag>test-tag1</tag>
+<tag>test-tag2</tag>
+</tags>
+<timeout value="2 minutes 30 seconds"></timeout>
+<status status="FAIL" starttime="20190927 00:36:32.503" endtime="20190927 00:36:32.504" critical="yes">Parent suite setup failed:
+No keyword with name 'Ui Suite Setup' found.
+
+Also parent suite teardown failed:
+No keyword with name 'Ui Suite Teardown' found.</status>
+</test>
+<status status="FAIL" starttime="20190927 00:36:32.354" endtime="20190927 00:36:32.511">Suite setup failed:
+No keyword with name 'Ui Suite Setup' found.
+
+Also suite teardown failed:
+No keyword with name 'Ui Suite Teardown' found.</status>
+</suite>
+<suite id="s1-s1-s3" name="Suite211" source="F:\work\project\ui-api-robotframework\uitest_base\parallel_test\suite211.robot">
+<kw name="Ui Suite Setup" type="setup">
+<msg timestamp="20190927 00:36:37.077" level="FAIL">No keyword with name 'Ui Suite Setup' found.</msg>
+<status status="FAIL" starttime="20190927 00:36:37.077" endtime="20190927 00:36:37.077"></status>
+</kw>
+<kw name="Ui Suite Teardown" type="teardown">
+<msg timestamp="20190927 00:36:37.085" level="FAIL">No keyword with name 'Ui Suite Teardown' found.</msg>
+<status status="FAIL" starttime="20190927 00:36:37.084" endtime="20190927 00:36:37.085">No keyword with name 'Ui Suite Teardown' found.</status>
+</kw>
+<test id="s1-s1-s3-t1" name="Test_001">
+<tags>
+<tag>para-test</tag>
+<tag>test-tag1</tag>
+<tag>test-tag2</tag>
+</tags>
+<timeout value="20 seconds"></timeout>
+<status status="FAIL" starttime="20190927 00:36:37.077" endtime="20190927 00:36:37.078" critical="yes">Parent suite setup failed:
+No keyword with name 'Ui Suite Setup' found.
+
+Also parent suite teardown failed:
+No keyword with name 'Ui Suite Teardown' found.</status>
+</test>
+<status status="FAIL" starttime="20190927 00:36:37.060" endtime="20190927 00:36:37.085">Suite setup failed:
+No keyword with name 'Ui Suite Setup' found.
+
+Also suite teardown failed:
+No keyword with name 'Ui Suite Teardown' found.</status>
+</suite>
+<suite id="s1-s1-s4" name="Suite2" source="F:\work\project\ui-api-robotframework\uitest_base\parallel_test\suite2.robot">
+<kw name="Ui Suite Setup" type="setup">
+<msg timestamp="20190927 00:36:32.366" level="FAIL">No keyword with name 'Ui Suite Setup' found.</msg>
+<status status="FAIL" starttime="20190927 00:36:32.366" endtime="20190927 00:36:32.366"></status>
+</kw>
+<kw name="Ui Suite Teardown" type="teardown">
+<msg timestamp="20190927 00:36:32.374" level="FAIL">No keyword with name 'Ui Suite Teardown' found.</msg>
+<status status="FAIL" starttime="20190927 00:36:32.373" endtime="20190927 00:36:32.374">No keyword with name 'Ui Suite Teardown' found.</status>
+</kw>
+<test id="s1-s1-s4-t1" name="Test_001">
+<tags>
+<tag>para-test</tag>
+<tag>test-tag1</tag>
+<tag>test-tag2</tag>
+</tags>
+<timeout value="20 seconds"></timeout>
+<status status="FAIL" starttime="20190927 00:36:32.366" endtime="20190927 00:36:32.368" critical="yes">Parent suite setup failed:
+No keyword with name 'Ui Suite Setup' found.
+
+Also parent suite teardown failed:
+No keyword with name 'Ui Suite Teardown' found.</status>
+</test>
+<status status="FAIL" starttime="20190927 00:36:32.350" endtime="20190927 00:36:32.374">Suite setup failed:
+No keyword with name 'Ui Suite Setup' found.
+
+Also suite teardown failed:
+No keyword with name 'Ui Suite Teardown' found.</status>
+</suite>
+<suite id="s1-s1-s5" name="Suite311" source="F:\work\project\ui-api-robotframework\uitest_base\parallel_test\suite311.robot">
+<kw name="Ui Suite Setup" type="setup">
+<msg timestamp="20190927 00:36:37.083" level="FAIL">No keyword with name 'Ui Suite Setup' found.</msg>
+<status status="FAIL" starttime="20190927 00:36:37.083" endtime="20190927 00:36:37.083"></status>
+</kw>
+<kw name="Ui Suite Teardown" type="teardown">
+<msg timestamp="20190927 00:36:37.091" level="FAIL">No keyword with name 'Ui Suite Teardown' found.</msg>
+<status status="FAIL" starttime="20190927 00:36:37.091" endtime="20190927 00:36:37.091">No keyword with name 'Ui Suite Teardown' found.</status>
+</kw>
+<test id="s1-s1-s5-t1" name="Test_001">
+<tags>
+<tag>para-test</tag>
+<tag>test-tag1</tag>
+<tag>test-tag2</tag>
+</tags>
+<timeout value="15 seconds"></timeout>
+<status status="FAIL" starttime="20190927 00:36:37.083" endtime="20190927 00:36:37.085" critical="yes">Parent suite setup failed:
+No keyword with name 'Ui Suite Setup' found.
+
+Also parent suite teardown failed:
+No keyword with name 'Ui Suite Teardown' found.</status>
+</test>
+<status status="FAIL" starttime="20190927 00:36:37.065" endtime="20190927 00:36:37.091">Suite setup failed:
+No keyword with name 'Ui Suite Setup' found.
+
+Also suite teardown failed:
+No keyword with name 'Ui Suite Teardown' found.</status>
+</suite>
+<suite id="s1-s1-s6" name="Suite3" source="F:\work\project\ui-api-robotframework\uitest_base\parallel_test\suite3.robot">
+<kw name="Ui Suite Setup" type="setup">
+<msg timestamp="20190927 00:36:32.371" level="FAIL">No keyword with name 'Ui Suite Setup' found.</msg>
+<status status="FAIL" starttime="20190927 00:36:32.371" endtime="20190927 00:36:32.371"></status>
+</kw>
+<kw name="Ui Suite Teardown" type="teardown">
+<msg timestamp="20190927 00:36:32.379" level="FAIL">No keyword with name 'Ui Suite Teardown' found.</msg>
+<status status="FAIL" starttime="20190927 00:36:32.379" endtime="20190927 00:36:32.380">No keyword with name 'Ui Suite Teardown' found.</status>
+</kw>
+<test id="s1-s1-s6-t1" name="Test_001">
+<tags>
+<tag>para-test</tag>
+<tag>test-tag1</tag>
+<tag>test-tag2</tag>
+</tags>
+<timeout value="20 seconds"></timeout>
+<status status="FAIL" starttime="20190927 00:36:32.372" endtime="20190927 00:36:32.373" critical="yes">Parent suite setup failed:
+No keyword with name 'Ui Suite Setup' found.
+
+Also parent suite teardown failed:
+No keyword with name 'Ui Suite Teardown' found.</status>
+</test>
+<status status="FAIL" starttime="20190927 00:36:32.353" endtime="20190927 00:36:32.380">Suite setup failed:
+No keyword with name 'Ui Suite Setup' found.
+
+Also suite teardown failed:
+No keyword with name 'Ui Suite Teardown' found.</status>
+</suite>
+<suite id="s1-s1-s7" name="Suite411" source="F:\work\project\ui-api-robotframework\uitest_base\parallel_test\suite411.robot">
+<kw name="Ui Suite Setup" type="setup">
+<msg timestamp="20190927 00:36:37.127" level="FAIL">No keyword with name 'Ui Suite Setup' found.</msg>
+<status status="FAIL" starttime="20190927 00:36:37.127" endtime="20190927 00:36:37.127"></status>
+</kw>
+<kw name="Ui Suite Teardown" type="teardown">
+<msg timestamp="20190927 00:36:37.135" level="FAIL">No keyword with name 'Ui Suite Teardown' found.</msg>
+<status status="FAIL" starttime="20190927 00:36:37.134" endtime="20190927 00:36:37.135">No keyword with name 'Ui Suite Teardown' found.</status>
+</kw>
+<test id="s1-s1-s7-t1" name="Test_001">
+<tags>
+<tag>para-test</tag>
+<tag>test-tag1</tag>
+<tag>test-tag2</tag>
+</tags>
+<timeout value="20 seconds"></timeout>
+<status status="FAIL" starttime="20190927 00:36:37.127" endtime="20190927 00:36:37.129" critical="yes">Parent suite setup failed:
+No keyword with name 'Ui Suite Setup' found.
+
+Also parent suite teardown failed:
+No keyword with name 'Ui Suite Teardown' found.</status>
+</test>
+<status status="FAIL" starttime="20190927 00:36:37.111" endtime="20190927 00:36:37.135">Suite setup failed:
+No keyword with name 'Ui Suite Setup' found.
+
+Also suite teardown failed:
+No keyword with name 'Ui Suite Teardown' found.</status>
+</suite>
+<suite id="s1-s1-s8" name="Suite4" source="F:\work\project\ui-api-robotframework\uitest_base\parallel_test\suite4.robot">
+<kw name="Ui Suite Setup" type="setup">
+<msg timestamp="20190927 00:36:34.505" level="FAIL">No keyword with name 'Ui Suite Setup' found.</msg>
+<status status="FAIL" starttime="20190927 00:36:34.505" endtime="20190927 00:36:34.505"></status>
+</kw>
+<kw name="Ui Suite Teardown" type="teardown">
+<msg timestamp="20190927 00:36:34.519" level="FAIL">No keyword with name 'Ui Suite Teardown' found.</msg>
+<status status="FAIL" starttime="20190927 00:36:34.518" endtime="20190927 00:36:34.519">No keyword with name 'Ui Suite Teardown' found.</status>
+</kw>
+<test id="s1-s1-s8-t1" name="Test_001">
+<tags>
+<tag>para-test</tag>
+<tag>test-tag1</tag>
+<tag>test-tag2</tag>
+</tags>
+<timeout value="20 seconds"></timeout>
+<status status="FAIL" starttime="20190927 00:36:34.506" endtime="20190927 00:36:34.508" critical="yes">Parent suite setup failed:
+No keyword with name 'Ui Suite Setup' found.
+
+Also parent suite teardown failed:
+No keyword with name 'Ui Suite Teardown' found.</status>
+</test>
+<status status="FAIL" starttime="20190927 00:36:34.349" endtime="20190927 00:36:34.519">Suite setup failed:
+No keyword with name 'Ui Suite Setup' found.
+
+Also suite teardown failed:
+No keyword with name 'Ui Suite Teardown' found.</status>
+</suite>
+<suite id="s1-s1-s9" name="Suite511" source="F:\work\project\ui-api-robotframework\uitest_base\parallel_test\suite511.robot">
+<kw name="Ui Suite Setup" type="setup">
+<msg timestamp="20190927 00:36:38.869" level="FAIL">No keyword with name 'Ui Suite Setup' found.</msg>
+<status status="FAIL" starttime="20190927 00:36:38.869" endtime="20190927 00:36:38.869"></status>
+</kw>
+<kw name="Ui Suite Teardown" type="teardown">
+<msg timestamp="20190927 00:36:38.876" level="FAIL">No keyword with name 'Ui Suite Teardown' found.</msg>
+<status status="FAIL" starttime="20190927 00:36:38.876" endtime="20190927 00:36:38.877">No keyword with name 'Ui Suite Teardown' found.</status>
+</kw>
+<test id="s1-s1-s9-t1" name="Test_001">
+<tags>
+<tag>para-test</tag>
+<tag>test-tag1</tag>
+<tag>test-tag2</tag>
+</tags>
+<timeout value="10 seconds"></timeout>
+<status status="FAIL" starttime="20190927 00:36:38.869" endtime="20190927 00:36:38.871" critical="yes">Parent suite setup failed:
+No keyword with name 'Ui Suite Setup' found.
+
+Also parent suite teardown failed:
+No keyword with name 'Ui Suite Teardown' found.</status>
+</test>
+<status status="FAIL" starttime="20190927 00:36:38.853" endtime="20190927 00:36:38.877">Suite setup failed:
+No keyword with name 'Ui Suite Setup' found.
+
+Also suite teardown failed:
+No keyword with name 'Ui Suite Teardown' found.</status>
+</suite>
+<suite id="s1-s1-s10" name="Suite5" source="F:\work\project\ui-api-robotframework\uitest_base\parallel_test\suite5.robot">
+<kw name="Ui Suite Setup" type="setup">
+<msg timestamp="20190927 00:36:34.507" level="FAIL">No keyword with name 'Ui Suite Setup' found.</msg>
+<status status="FAIL" starttime="20190927 00:36:34.506" endtime="20190927 00:36:34.507"></status>
+</kw>
+<kw name="Ui Suite Teardown" type="teardown">
+<msg timestamp="20190927 00:36:34.521" level="FAIL">No keyword with name 'Ui Suite Teardown' found.</msg>
+<status status="FAIL" starttime="20190927 00:36:34.520" endtime="20190927 00:36:34.521">No keyword with name 'Ui Suite Teardown' found.</status>
+</kw>
+<test id="s1-s1-s10-t1" name="Test_001">
+<tags>
+<tag>para-test</tag>
+<tag>test-tag1</tag>
+<tag>test-tag2</tag>
+</tags>
+<timeout value="20 seconds"></timeout>
+<status status="FAIL" starttime="20190927 00:36:34.508" endtime="20190927 00:36:34.510" critical="yes">Parent suite setup failed:
+No keyword with name 'Ui Suite Setup' found.
+
+Also parent suite teardown failed:
+No keyword with name 'Ui Suite Teardown' found.</status>
+</test>
+<status status="FAIL" starttime="20190927 00:36:34.349" endtime="20190927 00:36:34.522">Suite setup failed:
+No keyword with name 'Ui Suite Setup' found.
+
+Also suite teardown failed:
+No keyword with name 'Ui Suite Teardown' found.</status>
+</suite>
+<status status="FAIL" starttime="20190927 00:36:32.344" endtime="20190927 00:36:38.879"></status>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 10 executions.</doc>
+<status status="FAIL" starttime="20190927 00:36:32.158" endtime="20190927 00:36:38.880"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="10">Critical Tests</stat>
+<stat pass="0" fail="10">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="10">para-test</stat>
+<stat pass="0" fail="10">test-tag1</stat>
+<stat pass="0" fail="10">test-tag2</stat>
+</tag>
+<suite>
+<stat pass="0" fail="10" id="s1" name="robotbase">robotbase</stat>
+<stat pass="0" fail="10" id="s1-s1" name="Parallel Test">robotbase.Parallel Test</stat>
+<stat pass="0" fail="1" id="s1-s1-s1" name="Suite111">robotbase.Parallel Test.Suite111</stat>
+<stat pass="0" fail="1" id="s1-s1-s2" name="Suite1">robotbase.Parallel Test.Suite1</stat>
+<stat pass="0" fail="1" id="s1-s1-s3" name="Suite211">robotbase.Parallel Test.Suite211</stat>
+<stat pass="0" fail="1" id="s1-s1-s4" name="Suite2">robotbase.Parallel Test.Suite2</stat>
+<stat pass="0" fail="1" id="s1-s1-s5" name="Suite311">robotbase.Parallel Test.Suite311</stat>
+<stat pass="0" fail="1" id="s1-s1-s6" name="Suite3">robotbase.Parallel Test.Suite3</stat>
+<stat pass="0" fail="1" id="s1-s1-s7" name="Suite411">robotbase.Parallel Test.Suite411</stat>
+<stat pass="0" fail="1" id="s1-s1-s8" name="Suite4">robotbase.Parallel Test.Suite4</stat>
+<stat pass="0" fail="1" id="s1-s1-s9" name="Suite511">robotbase.Parallel Test.Suite511</stat>
+<stat pass="0" fail="1" id="s1-s1-s10" name="Suite5">robotbase.Parallel Test.Suite5</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20190927 00:36:34.340" level="ERROR">Taking listener 'Listener' into use failed: Importing listener 'Listener' failed: ModuleNotFoundError: No module named 'Listener'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  F:\work\project\ui-api-robotframework\config
+  C:\Python3\Scripts\robot.exe
+  c:\python3\python37.zip
+  c:\python3\DLLs
+  c:\python3\lib
+  c:\python3
+  C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages
+  c:\python3\lib\site-packages
+  c:\python3\lib\site-packages\django-2.2.2-py3.7.egg
+  c:\python3\lib\site-packages\sqlparse-0.3.0-py3.7.egg</msg>
+<msg timestamp="20190927 00:36:34.435" level="ERROR">Error in file 'F:\work\project\ui-api-robotframework\uitest_base\parallel_test\suite111.robot': Resource file 'autotest.robot' does not exist.</msg>
+<msg timestamp="20190927 00:36:32.144" level="ERROR">Taking listener 'Listener' into use failed: Importing listener 'Listener' failed: ModuleNotFoundError: No module named 'Listener'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  F:\work\project\ui-api-robotframework\config
+  C:\Python3\Scripts\robot.exe
+  c:\python3\python37.zip
+  c:\python3\DLLs
+  c:\python3\lib
+  c:\python3
+  C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages
+  c:\python3\lib\site-packages
+  c:\python3\lib\site-packages\django-2.2.2-py3.7.egg
+  c:\python3\lib\site-packages\sqlparse-0.3.0-py3.7.egg</msg>
+<msg timestamp="20190927 00:36:32.366" level="ERROR">Error in file 'F:\work\project\ui-api-robotframework\uitest_base\parallel_test\suite1.robot': Resource file 'autotest.robot' does not exist.</msg>
+<msg timestamp="20190927 00:36:36.971" level="ERROR">Taking listener 'Listener' into use failed: Importing listener 'Listener' failed: ModuleNotFoundError: No module named 'Listener'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  F:\work\project\ui-api-robotframework\config
+  C:\Python3\Scripts\robot.exe
+  c:\python3\python37.zip
+  c:\python3\DLLs
+  c:\python3\lib
+  c:\python3
+  C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages
+  c:\python3\lib\site-packages
+  c:\python3\lib\site-packages\django-2.2.2-py3.7.egg
+  c:\python3\lib\site-packages\sqlparse-0.3.0-py3.7.egg</msg>
+<msg timestamp="20190927 00:36:37.070" level="ERROR">Error in file 'F:\work\project\ui-api-robotframework\uitest_base\parallel_test\suite211.robot': Resource file 'autotest.robot' does not exist.</msg>
+<msg timestamp="20190927 00:36:32.145" level="ERROR">Taking listener 'Listener' into use failed: Importing listener 'Listener' failed: ModuleNotFoundError: No module named 'Listener'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  F:\work\project\ui-api-robotframework\config
+  C:\Python3\Scripts\robot.exe
+  c:\python3\python37.zip
+  c:\python3\DLLs
+  c:\python3\lib
+  c:\python3
+  C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages
+  c:\python3\lib\site-packages
+  c:\python3\lib\site-packages\django-2.2.2-py3.7.egg
+  c:\python3\lib\site-packages\sqlparse-0.3.0-py3.7.egg</msg>
+<msg timestamp="20190927 00:36:32.359" level="ERROR">Error in file 'F:\work\project\ui-api-robotframework\uitest_base\parallel_test\suite2.robot': Resource file 'autotest.robot' does not exist.</msg>
+<msg timestamp="20190927 00:36:36.972" level="ERROR">Taking listener 'Listener' into use failed: Importing listener 'Listener' failed: ModuleNotFoundError: No module named 'Listener'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  F:\work\project\ui-api-robotframework\config
+  C:\Python3\Scripts\robot.exe
+  c:\python3\python37.zip
+  c:\python3\DLLs
+  c:\python3\lib
+  c:\python3
+  C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages
+  c:\python3\lib\site-packages
+  c:\python3\lib\site-packages\django-2.2.2-py3.7.egg
+  c:\python3\lib\site-packages\sqlparse-0.3.0-py3.7.egg</msg>
+<msg timestamp="20190927 00:36:37.076" level="ERROR">Error in file 'F:\work\project\ui-api-robotframework\uitest_base\parallel_test\suite311.robot': Resource file 'autotest.robot' does not exist.</msg>
+<msg timestamp="20190927 00:36:32.144" level="ERROR">Taking listener 'Listener' into use failed: Importing listener 'Listener' failed: ModuleNotFoundError: No module named 'Listener'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  F:\work\project\ui-api-robotframework\config
+  C:\Python3\Scripts\robot.exe
+  c:\python3\python37.zip
+  c:\python3\DLLs
+  c:\python3\lib
+  c:\python3
+  C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages
+  c:\python3\lib\site-packages
+  c:\python3\lib\site-packages\django-2.2.2-py3.7.egg
+  c:\python3\lib\site-packages\sqlparse-0.3.0-py3.7.egg</msg>
+<msg timestamp="20190927 00:36:32.365" level="ERROR">Error in file 'F:\work\project\ui-api-robotframework\uitest_base\parallel_test\suite3.robot': Resource file 'autotest.robot' does not exist.</msg>
+<msg timestamp="20190927 00:36:37.024" level="ERROR">Taking listener 'Listener' into use failed: Importing listener 'Listener' failed: ModuleNotFoundError: No module named 'Listener'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  F:\work\project\ui-api-robotframework\config
+  C:\Python3\Scripts\robot.exe
+  c:\python3\python37.zip
+  c:\python3\DLLs
+  c:\python3\lib
+  c:\python3
+  C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages
+  c:\python3\lib\site-packages
+  c:\python3\lib\site-packages\django-2.2.2-py3.7.egg
+  c:\python3\lib\site-packages\sqlparse-0.3.0-py3.7.egg</msg>
+<msg timestamp="20190927 00:36:37.120" level="ERROR">Error in file 'F:\work\project\ui-api-robotframework\uitest_base\parallel_test\suite411.robot': Resource file 'autotest.robot' does not exist.</msg>
+<msg timestamp="20190927 00:36:34.260" level="ERROR">Taking listener 'Listener' into use failed: Importing listener 'Listener' failed: ModuleNotFoundError: No module named 'Listener'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  F:\work\project\ui-api-robotframework\config
+  C:\Python3\Scripts\robot.exe
+  c:\python3\python37.zip
+  c:\python3\DLLs
+  c:\python3\lib
+  c:\python3
+  C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages
+  c:\python3\lib\site-packages
+  c:\python3\lib\site-packages\django-2.2.2-py3.7.egg
+  c:\python3\lib\site-packages\sqlparse-0.3.0-py3.7.egg</msg>
+<msg timestamp="20190927 00:36:34.359" level="ERROR">Error in file 'F:\work\project\ui-api-robotframework\uitest_base\parallel_test\suite4.robot': Resource file 'autotest.robot' does not exist.</msg>
+<msg timestamp="20190927 00:36:38.771" level="ERROR">Taking listener 'Listener' into use failed: Importing listener 'Listener' failed: ModuleNotFoundError: No module named 'Listener'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  F:\work\project\ui-api-robotframework\config
+  C:\Python3\Scripts\robot.exe
+  c:\python3\python37.zip
+  c:\python3\DLLs
+  c:\python3\lib
+  c:\python3
+  C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages
+  c:\python3\lib\site-packages
+  c:\python3\lib\site-packages\django-2.2.2-py3.7.egg
+  c:\python3\lib\site-packages\sqlparse-0.3.0-py3.7.egg</msg>
+<msg timestamp="20190927 00:36:38.863" level="ERROR">Error in file 'F:\work\project\ui-api-robotframework\uitest_base\parallel_test\suite511.robot': Resource file 'autotest.robot' does not exist.</msg>
+<msg timestamp="20190927 00:36:34.261" level="ERROR">Taking listener 'Listener' into use failed: Importing listener 'Listener' failed: ModuleNotFoundError: No module named 'Listener'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  F:\work\project\ui-api-robotframework\config
+  C:\Python3\Scripts\robot.exe
+  c:\python3\python37.zip
+  c:\python3\DLLs
+  c:\python3\lib
+  c:\python3
+  C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages
+  c:\python3\lib\site-packages
+  c:\python3\lib\site-packages\django-2.2.2-py3.7.egg
+  c:\python3\lib\site-packages\sqlparse-0.3.0-py3.7.egg</msg>
+<msg timestamp="20190927 00:36:34.359" level="ERROR">Error in file 'F:\work\project\ui-api-robotframework\uitest_base\parallel_test\suite5.robot': Resource file 'autotest.robot' does not exist.</msg>
+</errors>
+</robot>

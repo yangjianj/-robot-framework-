@@ -1,0 +1,15 @@
+[ ERROR ] Taking listener 'Listener' into use failed: Importing listener 'Listener' failed: ModuleNotFoundError: No module named 'Listener'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  F:\work\project\ui-api-robotframework\config
+  C:\Python3\Scripts\robot.exe
+  c:\python3\python37.zip
+  c:\python3\DLLs
+  c:\python3\lib
+  c:\python3
+  C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages
+  c:\python3\lib\site-packages
+  c:\python3\lib\site-packages\django-2.2.2-py3.7.egg
+  c:\python3\lib\site-packages\sqlparse-0.3.0-py3.7.egg
+[ ERROR ] Error in file 'F:\work\project\ui-api-robotframework\uitest_base\parallel_test\suite211.robot': Resource file 'autotest.robot' does not exist.

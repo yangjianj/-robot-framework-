@@ -1,0 +1,30 @@
+==============================================================================
+robotbase                                                                     
+==============================================================================
+robotbase.Parallel Test                                                       
+==============================================================================
+robotbase.Parallel Test.Suite5                                                
+==============================================================================
+Test_001                                                              | FAIL |
+Parent suite setup failed:
+No keyword with name 'Ui Suite Setup' found.
+------------------------------------------------------------------------------
+robotbase.Parallel Test.Suite5                                        | FAIL |
+Suite setup failed:
+No keyword with name 'Ui Suite Setup' found.
+
+Also suite teardown failed:
+No keyword with name 'Ui Suite Teardown' found.
+
+1 critical test, 0 passed, 1 failed
+1 test total, 0 passed, 1 failed
+==============================================================================
+robotbase.Parallel Test                                               | FAIL |
+1 critical test, 0 passed, 1 failed
+1 test total, 0 passed, 1 failed
+==============================================================================
+robotbase                                                             | FAIL |
+1 critical test, 0 passed, 1 failed
+1 test total, 0 passed, 1 failed
+==============================================================================
+Output:  F:\work\project\ui-api-robotframework\%~dp0\output\pabot_results\robotbase.Parallel Test.Suite5\output.xml
