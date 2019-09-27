@@ -2,8 +2,8 @@
 Documentation    对selenium库的封装，插入元素定位解析
 Library            Compute.py
 Library            Collections
-Resource           PageHandler.robot
-Resource           ResourcesSyn.robot
+Resource           Pagehandler.robot
+Resource           Resourcessyn.robot
 
 *** Variable ***
 ${HOST}        127.0.0.1

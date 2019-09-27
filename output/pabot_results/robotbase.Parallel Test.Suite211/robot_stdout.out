@@ -9,352 +9,68 @@ robotbase.Parallel Test.Suite211
 ==============================================================================
 ############start suiteSuite211:
 #############in log_message
-{'timestamp': '20190927 00:42:25.437', 'message': "#############in log_message\n{'timestamp': '20190927 00:42:25.433', 'message': 'Skipped in this item', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+{'timestamp': '20190927 15:43:13.301', 'message': "#############in log_message\n{'timestamp': '20190927 15:43:13.298', 'message': 'Skipped in this item', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx
 #############in log_message
-{'timestamp': '20190927 00:42:25.439', 'message': '#############in log_message\n{\'timestamp\': \'20190927 00:42:25.439\', \'message\': "[\'ui\', \'api\']", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
+{'timestamp': '20190927 15:43:13.303', 'message': '#############in log_message\n{\'timestamp\': \'20190927 15:43:13.303\', \'message\': "[\'ui\', \'api\']", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx
 #############in log_message
-{'timestamp': '20190927 00:42:25.441', 'message': '${interval} = 5', 'level': 'INFO', 'html': 'no'}
+{'timestamp': '20190927 15:43:13.304', 'message': '${interval} = 5', 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx
 #############in log_message
-{'timestamp': '20190927 00:42:25.455', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
+{'timestamp': '20190927 15:43:13.314', 'message': "${avialable} = [{'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2...", 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx
 #############in log_message
-{'timestamp': '20190927 00:42:25.457', 'message': '#############in log_message\n{\'timestamp\': \'20190927 00:42:25.457\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
+{'timestamp': '20190927 15:43:13.316', 'message': '#############in log_message\n{\'timestamp\': \'20190927 15:43:13.315\', \'message\': "[{\'type\': \'ui\', \'ip\': \'192.168.100.4\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'ui\', \'ip\': \'192.168.100.3\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx
 #############in log_message
-{'timestamp': '20190927 00:42:25.459', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
+{'timestamp': '20190927 15:43:13.317', 'message': "${result} = [[{'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}], [{'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'api', 'ip': '192.168.10...", 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx
 #############in log_message
-{'timestamp': '20190927 00:42:25.470', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
+{'timestamp': '20190927 15:43:13.322', 'message': "${suite_devices} = [{'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx
 #############in log_message
-{'timestamp': '20190927 00:42:30.495', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:42:30.499', 'message': '#############in log_message\n{\'timestamp\': \'20190927 00:42:30.498\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:42:30.503', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:42:30.519', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:42:35.545', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:42:35.549', 'message': '#############in log_message\n{\'timestamp\': \'20190927 00:42:35.548\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:42:35.553', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:42:35.573', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:42:40.601', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:42:40.604', 'message': '#############in log_message\n{\'timestamp\': \'20190927 00:42:40.604\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:42:40.608', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:42:40.629', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:42:45.660', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:42:45.663', 'message': '#############in log_message\n{\'timestamp\': \'20190927 00:42:45.663\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:42:45.667', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:42:45.687', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:42:50.714', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:42:50.717', 'message': '#############in log_message\n{\'timestamp\': \'20190927 00:42:50.717\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:42:50.721', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:42:50.738', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:42:55.765', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:42:55.769', 'message': '#############in log_message\n{\'timestamp\': \'20190927 00:42:55.769\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:42:55.774', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:42:55.794', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:00.820', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:00.824', 'message': '#############in log_message\n{\'timestamp\': \'20190927 00:43:00.824\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:00.829', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:00.846', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:05.871', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:05.874', 'message': '#############in log_message\n{\'timestamp\': \'20190927 00:43:05.874\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:05.879', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:05.901', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:10.928', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:10.932', 'message': '#############in log_message\n{\'timestamp\': \'20190927 00:43:10.931\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:10.936', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:10.957', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:15.986', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:15.989', 'message': '#############in log_message\n{\'timestamp\': \'20190927 00:43:15.989\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:15.993', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:16.003', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:21.030', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:21.033', 'message': '#############in log_message\n{\'timestamp\': \'20190927 00:43:21.033\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:21.037', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:21.058', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:26.081', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:26.083', 'message': '#############in log_message\n{\'timestamp\': \'20190927 00:43:26.083\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:26.085', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:26.097', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:31.114', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:31.116', 'message': '#############in log_message\n{\'timestamp\': \'20190927 00:43:31.116\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:31.119', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:31.131', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:36.157', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:36.161', 'message': '#############in log_message\n{\'timestamp\': \'20190927 00:43:36.160\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:36.165', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:36.186', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:41.218', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:41.221', 'message': '#############in log_message\n{\'timestamp\': \'20190927 00:43:41.221\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:41.224', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:41.238', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:46.262', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:46.267', 'message': '#############in log_message\n{\'timestamp\': \'20190927 00:43:46.266\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:46.270', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:46.289', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:51.310', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:51.312', 'message': '#############in log_message\n{\'timestamp\': \'20190927 00:43:51.312\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:51.314', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:51.326', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:56.347', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:56.349', 'message': '#############in log_message\n{\'timestamp\': \'20190927 00:43:56.349\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:56.351', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:43:56.363', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:44:01.389', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:44:01.393', 'message': '#############in log_message\n{\'timestamp\': \'20190927 00:44:01.392\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:44:01.396', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:44:01.415', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:44:06.442', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:44:06.446', 'message': '#############in log_message\n{\'timestamp\': \'20190927 00:44:06.445\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:44:06.449', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:44:06.462', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:44:11.488', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:44:11.492', 'message': '#############in log_message\n{\'timestamp\': \'20190927 00:44:11.491\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:44:11.496', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:44:11.516', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:44:16.544', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:44:16.547', 'message': '#############in log_message\n{\'timestamp\': \'20190927 00:44:16.547\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:44:16.551', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:44:16.569', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:44:21.594', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:44:21.597', 'message': '#############in log_message\n{\'timestamp\': \'20190927 00:44:21.597\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:44:21.602', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:44:21.623', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:44:26.758', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:44:26.761', 'message': '#############in log_message\n{\'timestamp\': \'20190927 00:44:26.761\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:44:26.766', 'message': '${result} = False', 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:44:26.787', 'message': "'1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:44:26.791', 'message': "Keyword 'Acquire Device' failed after retrying for 2 minutes. The last error was: '1 == 0' should be true.", 'level': 'FAIL', 'html': 'no'}
+{'timestamp': '20190927 15:43:13.332', 'message': '#############in log_message\n{\'timestamp\': \'20190927 15:43:13.332\', \'message\': "[{\'type\': \'ui\', \'ip\': \'192.168.100.4\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx
 Test_001                                                              #######start test:Test_001
 >>> Suite211 | Test_001
 
-| FAIL |
-Parent suite setup failed:
-Keyword 'Acquire Device' failed after retrying for 2 minutes. The last error was: '1 == 0' should be true.
+#############in log_message
+{'timestamp': '20190927 15:43:13.336', 'message': "#############in log_message\n{'timestamp': '20190927 15:43:13.336', 'message': '1', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190927 15:43:13.338', 'message': "#############in log_message\n{'timestamp': '20190927 15:43:13.338', 'message': '123', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190927 15:43:28.341', 'message': "#############in log_message\n{'timestamp': '20190927 15:43:28.341', 'message': 'Slept 15 seconds', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190927 15:43:28.344', 'message': "#############in log_message\n{'timestamp': '20190927 15:43:28.344', 'message': 'yangjian', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190927 15:43:28.347', 'message': "#############in log_message\n{'timestamp': '20190927 15:43:28.346', 'message': '1', 'level': 'INFO', 'html': 'no'}\nxxxxxxxxxxxxxxxx", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+| PASS |
 ------------------------------------------------------------------------------
 #############in log_message
-{'timestamp': '20190927 00:44:26.820', 'message': "${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
+{'timestamp': '20190927 15:43:28.353', 'message': "${avialable} = [{'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx
 #############in log_message
-{'timestamp': '20190927 00:44:26.823', 'message': "Variable '@{suite_devices}' not found.", 'level': 'FAIL', 'html': 'no'}
-xxxxxxxxxxxxxxxx
-#############in log_message
-{'timestamp': '20190927 00:44:26.825', 'message': '#############in log_message\n{\'timestamp\': \'20190927 00:44:26.824\', \'message\': "[{\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
+{'timestamp': '20190927 15:43:28.353', 'message': '#############in log_message\n{\'timestamp\': \'20190927 15:43:28.353\', \'message\': "[{\'type\': \'ui\', \'ip\': \'192.168.100.3\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.2\', \'health\': \'1\'}, {\'type\': \'ui\', \'ip\': \'192.168.100.4\', \'health\': \'1\'}, {\'type\': \'api\', \'ip\': \'192.168.100.1\', \'health\': \'1\'}]", \'level\': \'INFO\', \'html\': \'no\'}\nxxxxxxxxxxxxxxxx', 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx
 #################end suite:Suite211
-robotbase.Parallel Test.Suite211                                      | FAIL |
-Suite setup failed:
-Keyword 'Acquire Device' failed after retrying for 2 minutes. The last error was: '1 == 0' should be true.
-
-Also suite teardown failed:
-Variable '@{suite_devices}' not found.
-
-1 critical test, 0 passed, 1 failed
-1 test total, 0 passed, 1 failed
+robotbase.Parallel Test.Suite211                                      | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
 ==============================================================================
 #################end suite:Parallel Test
-robotbase.Parallel Test                                               | FAIL |
-1 critical test, 0 passed, 1 failed
-1 test total, 0 passed, 1 failed
+robotbase.Parallel Test                                               | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
 ==============================================================================
 #################end suite:robotbase
-robotbase                                                             | FAIL |
-1 critical test, 0 passed, 1 failed
-1 test total, 0 passed, 1 failed
+robotbase                                                             | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
 ==============================================================================
-Output:  F:\work\project\ui-api-robotframework\output\pabot_results\robotbase.Parallel Test.Suite211\output.xml
+Output:  D:\yangjian\project\ui-api-robotframework\output\pabot_results\robotbase.Parallel Test.Suite211\output.xml

@@ -1,7 +1,7 @@
 *** Settings ***
 Library  Collections
 Library  pabot.PabotLib
-Library  ResourcesSyn.py
+Library  Resourcessyn.py
 
 *** Variable ***
 ${HOST}        127.0.0.1

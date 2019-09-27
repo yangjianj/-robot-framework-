@@ -1,31 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.7.2 on win32)" generated="20190927 00:41:22.974" rpa="false">
-<suite id="s1" name="robotbase" source="F:\work\project\ui-api-robotframework\uitest_base">
-<suite id="s1-s1" name="Parallel Test" source="F:\work\project\ui-api-robotframework\uitest_base\parallel_test">
-<suite id="s1-s1-s1" name="Suite1" source="F:\work\project\ui-api-robotframework\uitest_base\parallel_test\suite1.robot">
-<kw name="Ui Suite Setup" library="autotest" type="setup">
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20190927 15:42:31.822" rpa="false">
+<suite id="s1" name="robotbase" source="D:\yangjian\project\ui-api-robotframework\uitest_base">
+<suite id="s1-s1" name="Parallel Test" source="D:\yangjian\project\ui-api-robotframework\uitest_base\parallel_test">
+<suite id="s1-s1-s1" name="Suite1" source="D:\yangjian\project\ui-api-robotframework\uitest_base\parallel_test\suite1.robot">
+<kw name="Ui Suite Setup1" type="setup">
 <kw name="Run Only Once" library="pabot.PabotLib">
 <doc>Runs a keyword only once in one of the parallel processes.
 [https://pabot.org/PabotLib.html?ref=log#run-only-once|Open online docs.]</doc>
 <arguments>
-<arg>Init Resource</arg>
+<arg>Init Resource1</arg>
 </arguments>
-<msg timestamp="20190927 00:41:24.830" level="INFO">Skipped in this item</msg>
-<msg timestamp="20190927 00:41:24.834" level="INFO">#############in log_message
-{'timestamp': '20190927 00:41:24.830', 'message': 'Skipped in this item', 'level': 'INFO', 'html': 'no'}
+<kw name="Init Resource1">
+<kw name="Log Many" library="BuiltIn">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>@{DEVICE_LIST}</arg>
+</arguments>
+<msg timestamp="20190927 15:42:33.397" level="INFO">ui</msg>
+<msg timestamp="20190927 15:42:33.397" level="INFO">ui</msg>
+<status status="PASS" starttime="20190927 15:42:33.396" endtime="20190927 15:42:33.398"></status>
+</kw>
+<kw name="Acquire Lock" library="pabot.PabotLib">
+<doc>Wait for a lock with name.
+[https://pabot.org/PabotLib.html?ref=log#acquire-lock|Open online docs.]</doc>
+<arguments>
+<arg>'DeviceLock'</arg>
+</arguments>
+<status status="PASS" starttime="20190927 15:42:33.398" endtime="20190927 15:42:33.514"></status>
+</kw>
+<kw name="Read Resources" library="ResourcesSyn">
+<assign>
+<var>${avialable_devices}</var>
+</assign>
+<msg timestamp="20190927 15:42:33.516" level="INFO">${avialable_devices} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4...</msg>
+<status status="PASS" starttime="20190927 15:42:33.515" endtime="20190927 15:42:33.516"></status>
+</kw>
+<kw name="Set Parallel Value For Key" library="pabot.PabotLib">
+<doc>Set a globally available key and value that can be accessed
+from all the pabot processes.
+[https://pabot.org/PabotLib.html?ref=log#set-parallel-value-for-key|Open online docs.]</doc>
+<arguments>
+<arg>'avialable_devices'</arg>
+<arg>${avialable_devices}</arg>
+</arguments>
+<status status="PASS" starttime="20190927 15:42:33.517" endtime="20190927 15:42:33.522"></status>
+</kw>
+<kw name="Release Lock" library="pabot.PabotLib">
+<doc>Release a lock with name.
+[https://pabot.org/PabotLib.html?ref=log#release-lock|Open online docs.]</doc>
+<arguments>
+<arg>'DeviceLock'</arg>
+</arguments>
+<status status="PASS" starttime="20190927 15:42:33.522" endtime="20190927 15:42:33.526"></status>
+</kw>
+<timeout value="10 seconds"></timeout>
+<status status="PASS" starttime="20190927 15:42:33.391" endtime="20190927 15:42:33.527"></status>
+</kw>
+<msg timestamp="20190927 15:42:33.532" level="INFO">#############in log_message
+{'timestamp': '20190927 15:42:33.397', 'message': 'ui', 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190927 15:42:33.397', 'message': 'ui', 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190927 15:42:33.516', 'message': "${avialable_devices} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4...", 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190927 00:41:24.820" endtime="20190927 00:41:24.834"></status>
+<status status="PASS" starttime="20190927 15:42:33.378" endtime="20190927 15:42:33.533"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${DEVICE_LIST}</arg>
 </arguments>
-<msg timestamp="20190927 00:41:24.836" level="INFO">['ui', 'ui']</msg>
-<msg timestamp="20190927 00:41:24.836" level="INFO">#############in log_message
-{'timestamp': '20190927 00:41:24.836', 'message': "['ui', 'ui']", 'level': 'INFO', 'html': 'no'}
+<msg timestamp="20190927 15:42:33.534" level="INFO">['ui', 'ui']</msg>
+<msg timestamp="20190927 15:42:33.534" level="INFO">#############in log_message
+{'timestamp': '20190927 15:42:33.534', 'message': "['ui', 'ui']", 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190927 00:41:24.836" endtime="20190927 00:41:24.837"></status>
+<status status="PASS" starttime="20190927 15:42:33.533" endtime="20190927 15:42:33.534"></status>
 </kw>
 <kw name="Return Randint" library="Compute">
 <arguments>
@@ -35,353 +86,281 @@ xxxxxxxxxxxxxxxx</msg>
 <assign>
 <var>${interval}</var>
 </assign>
-<msg timestamp="20190927 00:41:24.838" level="INFO">${interval} = 7</msg>
-<status status="PASS" starttime="20190927 00:41:24.837" endtime="20190927 00:41:24.838"></status>
+<msg timestamp="20190927 15:42:33.535" level="INFO">${interval} = 5</msg>
+<status status="PASS" starttime="20190927 15:42:33.535" endtime="20190927 15:42:33.535"></status>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <doc>Runs the specified keyword and retries if it fails.</doc>
 <arguments>
 <arg>2min</arg>
 <arg>${interval}s</arg>
-<arg>Acquire Device</arg>
+<arg>Acquire Device1</arg>
 </arguments>
-<kw name="Acquire Device" library="ResourcesSyn">
-<kw name="Acquire Lock">
+<kw name="Acquire Device1">
+<kw name="Acquire Lock" library="pabot.PabotLib">
+<doc>Wait for a lock with name.
+[https://pabot.org/PabotLib.html?ref=log#acquire-lock|Open online docs.]</doc>
 <arguments>
 <arg>'DeviceLock'</arg>
 </arguments>
-<msg timestamp="20190927 00:41:24.841" level="FAIL">Multiple keywords with name 'Acquire Lock' found. Give the full name of the keyword you want to use:
-    Remote.Acquire Lock
-    pabot.PabotLib.Acquire Lock</msg>
-<status status="FAIL" starttime="20190927 00:41:24.841" endtime="20190927 00:41:24.841"></status>
+<status status="PASS" starttime="20190927 15:42:33.537" endtime="20190927 15:42:33.541"></status>
 </kw>
-<status status="FAIL" starttime="20190927 00:41:24.840" endtime="20190927 00:41:24.842"></status>
-</kw>
-<kw name="Acquire Device" library="ResourcesSyn">
-<kw name="Acquire Lock">
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<msg timestamp="20190927 00:41:31.844" level="FAIL">Multiple keywords with name 'Acquire Lock' found. Give the full name of the keyword you want to use:
-    Remote.Acquire Lock
-    pabot.PabotLib.Acquire Lock</msg>
-<status status="FAIL" starttime="20190927 00:41:31.844" endtime="20190927 00:41:31.844"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:41:31.843" endtime="20190927 00:41:31.845"></status>
-</kw>
-<kw name="Acquire Device" library="ResourcesSyn">
-<kw name="Acquire Lock">
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<msg timestamp="20190927 00:41:38.848" level="FAIL">Multiple keywords with name 'Acquire Lock' found. Give the full name of the keyword you want to use:
-    Remote.Acquire Lock
-    pabot.PabotLib.Acquire Lock</msg>
-<status status="FAIL" starttime="20190927 00:41:38.848" endtime="20190927 00:41:38.849"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:41:38.845" endtime="20190927 00:41:38.850"></status>
-</kw>
-<kw name="Acquire Device" library="ResourcesSyn">
-<kw name="Acquire Lock">
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<msg timestamp="20190927 00:41:45.853" level="FAIL">Multiple keywords with name 'Acquire Lock' found. Give the full name of the keyword you want to use:
-    Remote.Acquire Lock
-    pabot.PabotLib.Acquire Lock</msg>
-<status status="FAIL" starttime="20190927 00:41:45.853" endtime="20190927 00:41:45.853"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:41:45.852" endtime="20190927 00:41:45.854"></status>
-</kw>
-<kw name="Acquire Device" library="ResourcesSyn">
-<kw name="Acquire Lock">
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<msg timestamp="20190927 00:41:52.856" level="FAIL">Multiple keywords with name 'Acquire Lock' found. Give the full name of the keyword you want to use:
-    Remote.Acquire Lock
-    pabot.PabotLib.Acquire Lock</msg>
-<status status="FAIL" starttime="20190927 00:41:52.856" endtime="20190927 00:41:52.857"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:41:52.854" endtime="20190927 00:41:52.857"></status>
-</kw>
-<kw name="Acquire Device" library="ResourcesSyn">
-<kw name="Acquire Lock">
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<msg timestamp="20190927 00:41:59.858" level="FAIL">Multiple keywords with name 'Acquire Lock' found. Give the full name of the keyword you want to use:
-    Remote.Acquire Lock
-    pabot.PabotLib.Acquire Lock</msg>
-<status status="FAIL" starttime="20190927 00:41:59.858" endtime="20190927 00:41:59.859"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:41:59.857" endtime="20190927 00:41:59.859"></status>
-</kw>
-<kw name="Acquire Device" library="ResourcesSyn">
-<kw name="Acquire Lock">
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<msg timestamp="20190927 00:42:06.863" level="FAIL">Multiple keywords with name 'Acquire Lock' found. Give the full name of the keyword you want to use:
-    Remote.Acquire Lock
-    pabot.PabotLib.Acquire Lock</msg>
-<status status="FAIL" starttime="20190927 00:42:06.863" endtime="20190927 00:42:06.863"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:42:06.861" endtime="20190927 00:42:06.864"></status>
-</kw>
-<kw name="Acquire Device" library="ResourcesSyn">
-<kw name="Acquire Lock">
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<msg timestamp="20190927 00:42:13.867" level="FAIL">Multiple keywords with name 'Acquire Lock' found. Give the full name of the keyword you want to use:
-    Remote.Acquire Lock
-    pabot.PabotLib.Acquire Lock</msg>
-<status status="FAIL" starttime="20190927 00:42:13.866" endtime="20190927 00:42:13.868"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:42:13.864" endtime="20190927 00:42:13.869"></status>
-</kw>
-<kw name="Acquire Device" library="ResourcesSyn">
-<kw name="Acquire Lock">
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<msg timestamp="20190927 00:42:20.874" level="FAIL">Multiple keywords with name 'Acquire Lock' found. Give the full name of the keyword you want to use:
-    Remote.Acquire Lock
-    pabot.PabotLib.Acquire Lock</msg>
-<status status="FAIL" starttime="20190927 00:42:20.874" endtime="20190927 00:42:20.875"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:42:20.871" endtime="20190927 00:42:20.876"></status>
-</kw>
-<kw name="Acquire Device" library="ResourcesSyn">
-<kw name="Acquire Lock">
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<msg timestamp="20190927 00:42:27.880" level="FAIL">Multiple keywords with name 'Acquire Lock' found. Give the full name of the keyword you want to use:
-    Remote.Acquire Lock
-    pabot.PabotLib.Acquire Lock</msg>
-<status status="FAIL" starttime="20190927 00:42:27.879" endtime="20190927 00:42:27.880"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:42:27.877" endtime="20190927 00:42:27.881"></status>
-</kw>
-<kw name="Acquire Device" library="ResourcesSyn">
-<kw name="Acquire Lock">
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<msg timestamp="20190927 00:42:34.885" level="FAIL">Multiple keywords with name 'Acquire Lock' found. Give the full name of the keyword you want to use:
-    Remote.Acquire Lock
-    pabot.PabotLib.Acquire Lock</msg>
-<status status="FAIL" starttime="20190927 00:42:34.884" endtime="20190927 00:42:34.886"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:42:34.882" endtime="20190927 00:42:34.887"></status>
-</kw>
-<kw name="Acquire Device" library="ResourcesSyn">
-<kw name="Acquire Lock">
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<msg timestamp="20190927 00:42:41.892" level="FAIL">Multiple keywords with name 'Acquire Lock' found. Give the full name of the keyword you want to use:
-    Remote.Acquire Lock
-    pabot.PabotLib.Acquire Lock</msg>
-<status status="FAIL" starttime="20190927 00:42:41.891" endtime="20190927 00:42:41.892"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:42:41.889" endtime="20190927 00:42:41.893"></status>
-</kw>
-<kw name="Acquire Device" library="ResourcesSyn">
-<kw name="Acquire Lock">
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<msg timestamp="20190927 00:42:48.901" level="FAIL">Multiple keywords with name 'Acquire Lock' found. Give the full name of the keyword you want to use:
-    Remote.Acquire Lock
-    pabot.PabotLib.Acquire Lock</msg>
-<status status="FAIL" starttime="20190927 00:42:48.900" endtime="20190927 00:42:48.901"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:42:48.894" endtime="20190927 00:42:48.902"></status>
-</kw>
-<kw name="Acquire Device" library="ResourcesSyn">
-<kw name="Acquire Lock">
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<msg timestamp="20190927 00:42:55.907" level="FAIL">Multiple keywords with name 'Acquire Lock' found. Give the full name of the keyword you want to use:
-    Remote.Acquire Lock
-    pabot.PabotLib.Acquire Lock</msg>
-<status status="FAIL" starttime="20190927 00:42:55.906" endtime="20190927 00:42:55.908"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:42:55.904" endtime="20190927 00:42:55.909"></status>
-</kw>
-<kw name="Acquire Device" library="ResourcesSyn">
-<kw name="Acquire Lock">
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<msg timestamp="20190927 00:43:02.913" level="FAIL">Multiple keywords with name 'Acquire Lock' found. Give the full name of the keyword you want to use:
-    Remote.Acquire Lock
-    pabot.PabotLib.Acquire Lock</msg>
-<status status="FAIL" starttime="20190927 00:43:02.912" endtime="20190927 00:43:02.913"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:43:02.910" endtime="20190927 00:43:02.914"></status>
-</kw>
-<kw name="Acquire Device" library="ResourcesSyn">
-<kw name="Acquire Lock">
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<msg timestamp="20190927 00:43:09.919" level="FAIL">Multiple keywords with name 'Acquire Lock' found. Give the full name of the keyword you want to use:
-    Remote.Acquire Lock
-    pabot.PabotLib.Acquire Lock</msg>
-<status status="FAIL" starttime="20190927 00:43:09.918" endtime="20190927 00:43:09.919"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:43:09.916" endtime="20190927 00:43:09.920"></status>
-</kw>
-<kw name="Acquire Device" library="ResourcesSyn">
-<kw name="Acquire Lock">
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<msg timestamp="20190927 00:43:16.925" level="FAIL">Multiple keywords with name 'Acquire Lock' found. Give the full name of the keyword you want to use:
-    Remote.Acquire Lock
-    pabot.PabotLib.Acquire Lock</msg>
-<status status="FAIL" starttime="20190927 00:43:16.924" endtime="20190927 00:43:16.925"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:43:16.922" endtime="20190927 00:43:16.926"></status>
-</kw>
-<kw name="Acquire Device" library="ResourcesSyn">
-<kw name="Acquire Lock">
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<msg timestamp="20190927 00:43:23.930" level="FAIL">Multiple keywords with name 'Acquire Lock' found. Give the full name of the keyword you want to use:
-    Remote.Acquire Lock
-    pabot.PabotLib.Acquire Lock</msg>
-<status status="FAIL" starttime="20190927 00:43:23.930" endtime="20190927 00:43:23.931"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:43:23.927" endtime="20190927 00:43:23.932"></status>
-</kw>
-<kw name="Acquire Device" library="ResourcesSyn">
-<kw name="Acquire Lock">
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<msg timestamp="20190927 00:43:30.937" level="FAIL">Multiple keywords with name 'Acquire Lock' found. Give the full name of the keyword you want to use:
-    Remote.Acquire Lock
-    pabot.PabotLib.Acquire Lock</msg>
-<status status="FAIL" starttime="20190927 00:43:30.936" endtime="20190927 00:43:30.937"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:43:30.934" endtime="20190927 00:43:30.938"></status>
-</kw>
-<msg timestamp="20190927 00:43:30.940" level="FAIL">Keyword 'Acquire Device' failed after retrying for 2 minutes. The last error was: Multiple keywords with name 'Acquire Lock' found. Give the full name of the keyword you want to use:
-    Remote.Acquire Lock
-    pabot.PabotLib.Acquire Lock</msg>
-<status status="FAIL" starttime="20190927 00:41:24.839" endtime="20190927 00:43:30.940"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:41:24.819" endtime="20190927 00:43:30.941"></status>
-</kw>
-<test id="s1-s1-s1-t1" name="Test_001">
-<tags>
-<tag>para-test</tag>
-<tag>test-tag1</tag>
-<tag>test-tag2</tag>
-</tags>
-<timeout value="2 minutes 30 seconds"></timeout>
-<status status="FAIL" starttime="20190927 00:43:30.943" endtime="20190927 00:43:30.947" critical="yes">Parent suite setup failed:
-Keyword 'Acquire Device' failed after retrying for 2 minutes. The last error was: Multiple keywords with name 'Acquire Lock' found. Give the full name of the keyword you want to use:
-    Remote.Acquire Lock
-    pabot.PabotLib.Acquire Lock</status>
-</test>
-<kw name="Ui Suite Teardown" library="autotest" type="teardown">
-<kw name="Release Device" library="ResourcesSyn">
-<kw name="Get Parallel Value For Key">
+<kw name="Get Parallel Value For Key" library="pabot.PabotLib">
+<doc>Get the value for a key. If there is no value for the key then empty
+string is returned.
+[https://pabot.org/PabotLib.html?ref=log#get-parallel-value-for-key|Open online docs.]</doc>
 <arguments>
 <arg>'avialable_devices'</arg>
 </arguments>
 <assign>
-<var>${avialable}=</var>
+<var>${avialable}</var>
 </assign>
-<msg timestamp="20190927 00:43:30.959" level="FAIL">Multiple keywords with name 'Get Parallel Value For Key' found. Give the full name of the keyword you want to use:
-    Remote.Get Parallel Value For Key
-    pabot.PabotLib.Get Parallel Value For Key</msg>
-<status status="FAIL" starttime="20190927 00:43:30.958" endtime="20190927 00:43:30.960"></status>
-</kw>
-<kw name="${device} IN [ @{suite_devices} ]" type="for">
-<msg timestamp="20190927 00:43:30.963" level="FAIL">Variable '@{suite_devices}' not found.</msg>
-<status status="FAIL" starttime="20190927 00:43:30.961" endtime="20190927 00:43:30.963"></status>
+<msg timestamp="20190927 15:42:33.546" level="INFO">${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4...</msg>
+<status status="PASS" starttime="20190927 15:42:33.541" endtime="20190927 15:42:33.546"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${avialable}</arg>
 </arguments>
-<msg timestamp="20190927 00:43:30.967" level="FAIL">Variable '${avialable}' not found.</msg>
-<status status="FAIL" starttime="20190927 00:43:30.964" endtime="20190927 00:43:30.967"></status>
+<msg timestamp="20190927 15:42:33.548" level="INFO">[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]</msg>
+<msg timestamp="20190927 15:42:33.548" level="INFO">#############in log_message
+{'timestamp': '20190927 15:42:33.548', 'message': "[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx</msg>
+<status status="PASS" starttime="20190927 15:42:33.547" endtime="20190927 15:42:33.548"></status>
 </kw>
-<kw name="Set Parallel Value For Key">
+<kw name="Search Device" library="ResourcesSyn">
+<arguments>
+<arg>${DEVICE_LIST}</arg>
+<arg>${avialable}</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20190927 15:42:33.549" level="INFO">${result} = [[{'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}], [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.10...</msg>
+<status status="PASS" starttime="20190927 15:42:33.548" endtime="20190927 15:42:33.549"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${result}==${False}</arg>
+<arg>Release Lock</arg>
+<arg>'DeviceLock'</arg>
+</arguments>
+<status status="PASS" starttime="20190927 15:42:33.550" endtime="20190927 15:42:33.551"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${result}==${False}</arg>
+<arg>Should Be True</arg>
+<arg>${1} == ${0}</arg>
+</arguments>
+<status status="PASS" starttime="20190927 15:42:33.551" endtime="20190927 15:42:33.552"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${suite_devices}</arg>
+<arg>${result}[0]</arg>
+</arguments>
+<msg timestamp="20190927 15:42:33.555" level="INFO">${suite_devices} = [{'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]</msg>
+<status status="PASS" starttime="20190927 15:42:33.553" endtime="20190927 15:42:33.555"></status>
+</kw>
+<kw name="Set Parallel Value For Key" library="pabot.PabotLib">
+<doc>Set a globally available key and value that can be accessed
+from all the pabot processes.
+[https://pabot.org/PabotLib.html?ref=log#set-parallel-value-for-key|Open online docs.]</doc>
+<arguments>
+<arg>'avialable_devices'</arg>
+<arg>${result}[1]</arg>
+</arguments>
+<status status="PASS" starttime="20190927 15:42:33.556" endtime="20190927 15:42:33.560"></status>
+</kw>
+<kw name="Release Lock" library="pabot.PabotLib">
+<doc>Release a lock with name.
+[https://pabot.org/PabotLib.html?ref=log#release-lock|Open online docs.]</doc>
+<arguments>
+<arg>'DeviceLock'</arg>
+</arguments>
+<status status="PASS" starttime="20190927 15:42:33.560" endtime="20190927 15:42:33.564"></status>
+</kw>
+<status status="PASS" starttime="20190927 15:42:33.536" endtime="20190927 15:42:33.564"></status>
+</kw>
+<status status="PASS" starttime="20190927 15:42:33.536" endtime="20190927 15:42:33.564"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${suite_devices}</arg>
+</arguments>
+<msg timestamp="20190927 15:42:33.565" level="INFO">[{'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]</msg>
+<msg timestamp="20190927 15:42:33.566" level="INFO">#############in log_message
+{'timestamp': '20190927 15:42:33.565', 'message': "[{'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx</msg>
+<status status="PASS" starttime="20190927 15:42:33.565" endtime="20190927 15:42:33.566"></status>
+</kw>
+<status status="PASS" starttime="20190927 15:42:33.377" endtime="20190927 15:42:33.566"></status>
+</kw>
+<test id="s1-s1-s1-t1" name="Test_001">
+<kw name="Ui Test Setup" library="autotest" type="setup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20190927 15:42:33.569" level="INFO">1</msg>
+<msg timestamp="20190927 15:42:33.570" level="INFO">#############in log_message
+{'timestamp': '20190927 15:42:33.569', 'message': '1', 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx</msg>
+<status status="PASS" starttime="20190927 15:42:33.569" endtime="20190927 15:42:33.570"></status>
+</kw>
+<status status="PASS" starttime="20190927 15:42:33.568" endtime="20190927 15:42:33.570"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>123</arg>
+</arguments>
+<msg timestamp="20190927 15:42:33.572" level="INFO">123</msg>
+<msg timestamp="20190927 15:42:33.572" level="INFO">#############in log_message
+{'timestamp': '20190927 15:42:33.572', 'message': '123', 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx</msg>
+<status status="PASS" starttime="20190927 15:42:33.571" endtime="20190927 15:42:33.572"></status>
+</kw>
+<kw name="Remote Keyword1" library="Remote">
+<msg timestamp="20190927 15:42:33.582" level="INFO">this is remote library</msg>
+<status status="PASS" starttime="20190927 15:42:33.572" endtime="20190927 15:42:33.582"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>130s</arg>
+</arguments>
+<msg timestamp="20190927 15:44:43.585" level="INFO">Slept 2 minutes 10 seconds</msg>
+<msg timestamp="20190927 15:44:43.585" level="INFO">#############in log_message
+{'timestamp': '20190927 15:44:43.585', 'message': 'Slept 2 minutes 10 seconds', 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx</msg>
+<status status="PASS" starttime="20190927 15:42:33.583" endtime="20190927 15:44:43.586"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${name}</arg>
+</arguments>
+<msg timestamp="20190927 15:44:43.589" level="INFO">yangjian</msg>
+<msg timestamp="20190927 15:44:43.590" level="INFO">#############in log_message
+{'timestamp': '20190927 15:44:43.589', 'message': 'yangjian', 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx</msg>
+<status status="PASS" starttime="20190927 15:44:43.587" endtime="20190927 15:44:43.590"></status>
+</kw>
+<kw name="Ui Test Teardown" library="autotest" type="teardown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20190927 15:44:43.593" level="INFO">1</msg>
+<msg timestamp="20190927 15:44:43.594" level="INFO">#############in log_message
+{'timestamp': '20190927 15:44:43.593', 'message': '1', 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx</msg>
+<status status="PASS" starttime="20190927 15:44:43.592" endtime="20190927 15:44:43.594"></status>
+</kw>
+<status status="PASS" starttime="20190927 15:44:43.591" endtime="20190927 15:44:43.595"></status>
+</kw>
+<tags>
+<tag>para-test</tag>
+<tag>test-tag1</tag>
+<tag>test-tag2</tag>
+</tags>
+<timeout value="2 minutes 30 seconds"></timeout>
+<status status="PASS" starttime="20190927 15:42:33.567" endtime="20190927 15:44:43.596" critical="yes"></status>
+</test>
+<kw name="Ui Suite Teardown1" type="teardown">
+<kw name="Release Device1">
+<kw name="Get Parallel Value For Key" library="pabot.PabotLib">
+<doc>Get the value for a key. If there is no value for the key then empty
+string is returned.
+[https://pabot.org/PabotLib.html?ref=log#get-parallel-value-for-key|Open online docs.]</doc>
+<arguments>
+<arg>'avialable_devices'</arg>
+</arguments>
+<assign>
+<var>${avialable}</var>
+</assign>
+<msg timestamp="20190927 15:44:43.612" level="INFO">${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]</msg>
+<status status="PASS" starttime="20190927 15:44:43.605" endtime="20190927 15:44:43.613"></status>
+</kw>
+<kw name="${device} IN [ @{suite_devices} ]" type="for">
+<kw name="${device} = {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}" type="foritem">
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${avialable}</arg>
+<arg>${device}</arg>
+</arguments>
+<status status="PASS" starttime="20190927 15:44:43.615" endtime="20190927 15:44:43.615"></status>
+</kw>
+<status status="PASS" starttime="20190927 15:44:43.614" endtime="20190927 15:44:43.616"></status>
+</kw>
+<kw name="${device} = {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}" type="foritem">
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${avialable}</arg>
+<arg>${device}</arg>
+</arguments>
+<status status="PASS" starttime="20190927 15:44:43.616" endtime="20190927 15:44:43.617"></status>
+</kw>
+<status status="PASS" starttime="20190927 15:44:43.616" endtime="20190927 15:44:43.617"></status>
+</kw>
+<status status="PASS" starttime="20190927 15:44:43.613" endtime="20190927 15:44:43.618"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${avialable}</arg>
+</arguments>
+<msg timestamp="20190927 15:44:43.618" level="INFO">[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]</msg>
+<msg timestamp="20190927 15:44:43.619" level="INFO">#############in log_message
+{'timestamp': '20190927 15:44:43.618', 'message': "[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx</msg>
+<status status="PASS" starttime="20190927 15:44:43.618" endtime="20190927 15:44:43.619"></status>
+</kw>
+<kw name="Set Parallel Value For Key" library="pabot.PabotLib">
+<doc>Set a globally available key and value that can be accessed
+from all the pabot processes.
+[https://pabot.org/PabotLib.html?ref=log#set-parallel-value-for-key|Open online docs.]</doc>
 <arguments>
 <arg>'avialable_devices'</arg>
 <arg>${avialable}</arg>
 </arguments>
-<msg timestamp="20190927 00:43:30.969" level="FAIL">Multiple keywords with name 'Set Parallel Value For Key' found. Give the full name of the keyword you want to use:
-    Remote.Set Parallel Value For Key
-    pabot.PabotLib.Set Parallel Value For Key</msg>
-<status status="FAIL" starttime="20190927 00:43:30.968" endtime="20190927 00:43:30.969"></status>
+<status status="PASS" starttime="20190927 15:44:43.620" endtime="20190927 15:44:43.624"></status>
 </kw>
-<status status="FAIL" starttime="20190927 00:43:30.957" endtime="20190927 00:43:30.970"></status>
+<status status="PASS" starttime="20190927 15:44:43.604" endtime="20190927 15:44:43.624"></status>
 </kw>
-<status status="FAIL" starttime="20190927 00:43:30.955" endtime="20190927 00:43:30.970">Several failures occurred:
-
-1) Multiple keywords with name 'Get Parallel Value For Key' found. Give the full name of the keyword you want to use:
-    Remote.Get Parallel Value For Key
-    pabot.PabotLib.Get Parallel Value For Key
-
-2) Variable '@{suite_devices}' not found.
-
-3) Variable '${avialable}' not found.
-
-4) Multiple keywords with name 'Set Parallel Value For Key' found. Give the full name of the keyword you want to use:
-    Remote.Set Parallel Value For Key
-    pabot.PabotLib.Set Parallel Value For Key</status>
+<status status="PASS" starttime="20190927 15:44:43.603" endtime="20190927 15:44:43.624"></status>
 </kw>
-<status status="FAIL" starttime="20190927 00:41:23.106" endtime="20190927 00:43:30.971">Suite setup failed:
-Keyword 'Acquire Device' failed after retrying for 2 minutes. The last error was: Multiple keywords with name 'Acquire Lock' found. Give the full name of the keyword you want to use:
-    Remote.Acquire Lock
-    pabot.PabotLib.Acquire Lock
-
-Also suite teardown failed:
-Several failures occurred:
-
-1) Multiple keywords with name 'Get Parallel Value For Key' found. Give the full name of the keyword you want to use:
-    Remote.Get Parallel Value For Key
-    pabot.PabotLib.Get Parallel Value For Key
-
-2) Variable '@{suite_devices}' not found.
-
-3) Variable '${avialable}' not found.
-
-4) Multiple keywords with name 'Set Parallel Value For Key' found. Give the full name of the keyword you want to use:
-    Remote.Set Parallel Value For Key
-    pabot.PabotLib.Set Parallel Value For Key</status>
+<status status="PASS" starttime="20190927 15:42:31.994" endtime="20190927 15:44:43.625"></status>
 </suite>
-<status status="FAIL" starttime="20190927 00:41:23.099" endtime="20190927 00:43:30.975"></status>
+<status status="PASS" starttime="20190927 15:42:31.968" endtime="20190927 15:44:43.629"></status>
 </suite>
-<status status="FAIL" starttime="20190927 00:41:23.023" endtime="20190927 00:43:30.978"></status>
+<status status="PASS" starttime="20190927 15:42:31.893" endtime="20190927 15:44:43.631"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1">para-test</stat>
-<stat pass="0" fail="1">test-tag1</stat>
-<stat pass="0" fail="1">test-tag2</stat>
+<stat pass="1" fail="0">para-test</stat>
+<stat pass="1" fail="0">test-tag1</stat>
+<stat pass="1" fail="0">test-tag2</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="robotbase">robotbase</stat>
-<stat pass="0" fail="1" id="s1-s1" name="Parallel Test">robotbase.Parallel Test</stat>
-<stat pass="0" fail="1" id="s1-s1-s1" name="Suite1">robotbase.Parallel Test.Suite1</stat>
+<stat pass="1" fail="0" id="s1" name="robotbase">robotbase</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Parallel Test">robotbase.Parallel Test</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="Suite1">robotbase.Parallel Test.Suite1</stat>
 </suite>
 </statistics>
 <errors>

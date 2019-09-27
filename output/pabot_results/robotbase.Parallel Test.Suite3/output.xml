@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.7.2 on win32)" generated="20190927 00:41:22.968" rpa="false">
-<suite id="s1" name="robotbase" source="F:\work\project\ui-api-robotframework\uitest_base">
-<suite id="s1-s1" name="Parallel Test" source="F:\work\project\ui-api-robotframework\uitest_base\parallel_test">
-<suite id="s1-s1-s1" name="Suite3" source="F:\work\project\ui-api-robotframework\uitest_base\parallel_test\suite3.robot">
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20190927 15:42:31.046" rpa="false">
+<suite id="s1" name="robotbase" source="D:\yangjian\project\ui-api-robotframework\uitest_base">
+<suite id="s1-s1" name="Parallel Test" source="D:\yangjian\project\ui-api-robotframework\uitest_base\parallel_test">
+<suite id="s1-s1-s1" name="Suite3" source="D:\yangjian\project\ui-api-robotframework\uitest_base\parallel_test\suite3.robot">
 <kw name="Ui Suite Setup" library="autotest" type="setup">
 <kw name="Run Only Once" library="pabot.PabotLib">
 <doc>Runs a keyword only once in one of the parallel processes.
@@ -10,22 +10,72 @@
 <arguments>
 <arg>Init Resource</arg>
 </arguments>
-<msg timestamp="20190927 00:41:24.721" level="INFO">Skipped in this item</msg>
-<msg timestamp="20190927 00:41:24.726" level="INFO">#############in log_message
-{'timestamp': '20190927 00:41:24.721', 'message': 'Skipped in this item', 'level': 'INFO', 'html': 'no'}
+<kw name="Init Resource" library="ResourcesSyn">
+<kw name="Log Many" library="BuiltIn">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>@{DEVICE_LIST}</arg>
+</arguments>
+<msg timestamp="20190927 15:42:32.463" level="INFO">ui</msg>
+<msg timestamp="20190927 15:42:32.463" level="INFO">ui</msg>
+<status status="PASS" starttime="20190927 15:42:32.463" endtime="20190927 15:42:32.463"></status>
+</kw>
+<kw name="Acquire Lock" library="pabot.PabotLib">
+<doc>Wait for a lock with name.
+[https://pabot.org/PabotLib.html?ref=log#acquire-lock|Open online docs.]</doc>
+<arguments>
+<arg>'DeviceLock'</arg>
+</arguments>
+<status status="PASS" starttime="20190927 15:42:32.464" endtime="20190927 15:42:32.474"></status>
+</kw>
+<kw name="Read Resources" library="ResourcesSyn">
+<assign>
+<var>${avialable_devices}</var>
+</assign>
+<msg timestamp="20190927 15:42:32.475" level="INFO">${avialable_devices} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4...</msg>
+<status status="PASS" starttime="20190927 15:42:32.475" endtime="20190927 15:42:32.476"></status>
+</kw>
+<kw name="Set Parallel Value For Key" library="pabot.PabotLib">
+<doc>Set a globally available key and value that can be accessed
+from all the pabot processes.
+[https://pabot.org/PabotLib.html?ref=log#set-parallel-value-for-key|Open online docs.]</doc>
+<arguments>
+<arg>'avialable_devices'</arg>
+<arg>${avialable_devices}</arg>
+</arguments>
+<status status="PASS" starttime="20190927 15:42:32.476" endtime="20190927 15:42:32.482"></status>
+</kw>
+<kw name="Release Lock" library="pabot.PabotLib">
+<doc>Release a lock with name.
+[https://pabot.org/PabotLib.html?ref=log#release-lock|Open online docs.]</doc>
+<arguments>
+<arg>'DeviceLock'</arg>
+</arguments>
+<status status="PASS" starttime="20190927 15:42:32.483" endtime="20190927 15:42:32.524"></status>
+</kw>
+<status status="PASS" starttime="20190927 15:42:32.462" endtime="20190927 15:42:32.524"></status>
+</kw>
+<msg timestamp="20190927 15:42:32.595" level="INFO">#############in log_message
+{'timestamp': '20190927 15:42:32.463', 'message': 'ui', 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190927 15:42:32.463', 'message': 'ui', 'level': 'INFO', 'html': 'no'}
+xxxxxxxxxxxxxxxx
+#############in log_message
+{'timestamp': '20190927 15:42:32.475', 'message': "${avialable_devices} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4...", 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190927 00:41:24.558" endtime="20190927 00:41:24.727"></status>
+<status status="PASS" starttime="20190927 15:42:32.372" endtime="20190927 15:42:32.596"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${DEVICE_LIST}</arg>
 </arguments>
-<msg timestamp="20190927 00:41:24.728" level="INFO">['ui', 'ui']</msg>
-<msg timestamp="20190927 00:41:24.728" level="INFO">#############in log_message
-{'timestamp': '20190927 00:41:24.728', 'message': "['ui', 'ui']", 'level': 'INFO', 'html': 'no'}
+<msg timestamp="20190927 15:42:32.597" level="INFO">['ui', 'ui']</msg>
+<msg timestamp="20190927 15:42:32.597" level="INFO">#############in log_message
+{'timestamp': '20190927 15:42:32.597', 'message': "['ui', 'ui']", 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190927 00:41:24.727" endtime="20190927 00:41:24.729"></status>
+<status status="PASS" starttime="20190927 15:42:32.596" endtime="20190927 15:42:32.597"></status>
 </kw>
 <kw name="Return Randint" library="Compute">
 <arguments>
@@ -35,8 +85,8 @@ xxxxxxxxxxxxxxxx</msg>
 <assign>
 <var>${interval}</var>
 </assign>
-<msg timestamp="20190927 00:41:24.730" level="INFO">${interval} = 6</msg>
-<status status="PASS" starttime="20190927 00:41:24.729" endtime="20190927 00:41:24.730"></status>
+<msg timestamp="20190927 15:42:32.598" level="INFO">${interval} = 4</msg>
+<status status="PASS" starttime="20190927 15:42:32.598" endtime="20190927 15:42:32.599"></status>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <doc>Runs the specified keyword and retries if it fails.</doc>
@@ -52,7 +102,7 @@ xxxxxxxxxxxxxxxx</msg>
 <arguments>
 <arg>'DeviceLock'</arg>
 </arguments>
-<status status="PASS" starttime="20190927 00:41:24.733" endtime="20190927 00:41:24.740"></status>
+<status status="PASS" starttime="20190927 15:42:32.601" endtime="20190927 15:42:32.610"></status>
 </kw>
 <kw name="Get Parallel Value For Key" library="pabot.PabotLib">
 <doc>Get the value for a key. If there is no value for the key then empty
@@ -64,19 +114,19 @@ string is returned.
 <assign>
 <var>${avialable}</var>
 </assign>
-<msg timestamp="20190927 00:41:24.747" level="INFO">${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]</msg>
-<status status="PASS" starttime="20190927 00:41:24.741" endtime="20190927 00:41:24.747"></status>
+<msg timestamp="20190927 15:42:32.670" level="INFO">${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4...</msg>
+<status status="PASS" starttime="20190927 15:42:32.611" endtime="20190927 15:42:32.670"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${avialable}</arg>
 </arguments>
-<msg timestamp="20190927 00:41:24.748" level="INFO">[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]</msg>
-<msg timestamp="20190927 00:41:24.748" level="INFO">#############in log_message
-{'timestamp': '20190927 00:41:24.748', 'message': "[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
+<msg timestamp="20190927 15:42:32.671" level="INFO">[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]</msg>
+<msg timestamp="20190927 15:42:32.672" level="INFO">#############in log_message
+{'timestamp': '20190927 15:42:32.671', 'message': "[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190927 00:41:24.748" endtime="20190927 00:41:24.749"></status>
+<status status="PASS" starttime="20190927 15:42:32.671" endtime="20190927 15:42:32.672"></status>
 </kw>
 <kw name="Search Device" library="ResourcesSyn">
 <arguments>
@@ -86,8 +136,8 @@ xxxxxxxxxxxxxxxx</msg>
 <assign>
 <var>${result}</var>
 </assign>
-<msg timestamp="20190927 00:41:24.751" level="INFO">${result} = False</msg>
-<status status="PASS" starttime="20190927 00:41:24.750" endtime="20190927 00:41:24.751"></status>
+<msg timestamp="20190927 15:42:32.673" level="INFO">${result} = [[{'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}], [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.10...</msg>
+<status status="PASS" starttime="20190927 15:42:32.672" endtime="20190927 15:42:32.673"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -96,15 +146,7 @@ xxxxxxxxxxxxxxxx</msg>
 <arg>Release Lock</arg>
 <arg>'DeviceLock'</arg>
 </arguments>
-<kw name="Release Lock" library="pabot.PabotLib">
-<doc>Release a lock with name.
-[https://pabot.org/PabotLib.html?ref=log#release-lock|Open online docs.]</doc>
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<status status="PASS" starttime="20190927 00:41:24.753" endtime="20190927 00:41:24.758"></status>
-</kw>
-<status status="PASS" starttime="20190927 00:41:24.752" endtime="20190927 00:41:24.759"></status>
+<status status="PASS" starttime="20190927 15:42:32.674" endtime="20190927 15:42:32.677"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -113,559 +155,7 @@ xxxxxxxxxxxxxxxx</msg>
 <arg>Should Be True</arg>
 <arg>${1} == ${0}</arg>
 </arguments>
-<kw name="Should Be True" library="BuiltIn">
-<doc>Fails if the given condition is not true.</doc>
-<arguments>
-<arg>${1} == ${0}</arg>
-</arguments>
-<msg timestamp="20190927 00:41:24.763" level="FAIL">'1 == 0' should be true.</msg>
-<status status="FAIL" starttime="20190927 00:41:24.761" endtime="20190927 00:41:24.763"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:41:24.760" endtime="20190927 00:41:24.763"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:41:24.732" endtime="20190927 00:41:24.764"></status>
-</kw>
-<kw name="Acquire Device" library="ResourcesSyn">
-<kw name="Acquire Lock" library="pabot.PabotLib">
-<doc>Wait for a lock with name.
-[https://pabot.org/PabotLib.html?ref=log#acquire-lock|Open online docs.]</doc>
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<status status="PASS" starttime="20190927 00:41:30.767" endtime="20190927 00:41:30.776"></status>
-</kw>
-<kw name="Get Parallel Value For Key" library="pabot.PabotLib">
-<doc>Get the value for a key. If there is no value for the key then empty
-string is returned.
-[https://pabot.org/PabotLib.html?ref=log#get-parallel-value-for-key|Open online docs.]</doc>
-<arguments>
-<arg>'avialable_devices'</arg>
-</arguments>
-<assign>
-<var>${avialable}</var>
-</assign>
-<msg timestamp="20190927 00:41:30.789" level="INFO">${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]</msg>
-<status status="PASS" starttime="20190927 00:41:30.778" endtime="20190927 00:41:30.789"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${avialable}</arg>
-</arguments>
-<msg timestamp="20190927 00:41:30.792" level="INFO">[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]</msg>
-<msg timestamp="20190927 00:41:30.792" level="INFO">#############in log_message
-{'timestamp': '20190927 00:41:30.792', 'message': "[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190927 00:41:30.790" endtime="20190927 00:41:30.793"></status>
-</kw>
-<kw name="Search Device" library="ResourcesSyn">
-<arguments>
-<arg>${DEVICE_LIST}</arg>
-<arg>${avialable}</arg>
-</arguments>
-<assign>
-<var>${result}</var>
-</assign>
-<msg timestamp="20190927 00:41:30.796" level="INFO">${result} = False</msg>
-<status status="PASS" starttime="20190927 00:41:30.794" endtime="20190927 00:41:30.796"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>${result}==${False}</arg>
-<arg>Release Lock</arg>
-<arg>'DeviceLock'</arg>
-</arguments>
-<kw name="Release Lock" library="pabot.PabotLib">
-<doc>Release a lock with name.
-[https://pabot.org/PabotLib.html?ref=log#release-lock|Open online docs.]</doc>
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<status status="PASS" starttime="20190927 00:41:30.800" endtime="20190927 00:41:30.810"></status>
-</kw>
-<status status="PASS" starttime="20190927 00:41:30.798" endtime="20190927 00:41:30.811"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>${result}==${False}</arg>
-<arg>Should Be True</arg>
-<arg>${1} == ${0}</arg>
-</arguments>
-<kw name="Should Be True" library="BuiltIn">
-<doc>Fails if the given condition is not true.</doc>
-<arguments>
-<arg>${1} == ${0}</arg>
-</arguments>
-<msg timestamp="20190927 00:41:30.816" level="FAIL">'1 == 0' should be true.</msg>
-<status status="FAIL" starttime="20190927 00:41:30.814" endtime="20190927 00:41:30.816"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:41:30.813" endtime="20190927 00:41:30.816"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:41:30.765" endtime="20190927 00:41:30.817"></status>
-</kw>
-<kw name="Acquire Device" library="ResourcesSyn">
-<kw name="Acquire Lock" library="pabot.PabotLib">
-<doc>Wait for a lock with name.
-[https://pabot.org/PabotLib.html?ref=log#acquire-lock|Open online docs.]</doc>
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<status status="PASS" starttime="20190927 00:41:36.819" endtime="20190927 00:41:36.828"></status>
-</kw>
-<kw name="Get Parallel Value For Key" library="pabot.PabotLib">
-<doc>Get the value for a key. If there is no value for the key then empty
-string is returned.
-[https://pabot.org/PabotLib.html?ref=log#get-parallel-value-for-key|Open online docs.]</doc>
-<arguments>
-<arg>'avialable_devices'</arg>
-</arguments>
-<assign>
-<var>${avialable}</var>
-</assign>
-<msg timestamp="20190927 00:41:36.840" level="INFO">${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]</msg>
-<status status="PASS" starttime="20190927 00:41:36.830" endtime="20190927 00:41:36.840"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${avialable}</arg>
-</arguments>
-<msg timestamp="20190927 00:41:36.843" level="INFO">[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]</msg>
-<msg timestamp="20190927 00:41:36.843" level="INFO">#############in log_message
-{'timestamp': '20190927 00:41:36.843', 'message': "[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190927 00:41:36.842" endtime="20190927 00:41:36.843"></status>
-</kw>
-<kw name="Search Device" library="ResourcesSyn">
-<arguments>
-<arg>${DEVICE_LIST}</arg>
-<arg>${avialable}</arg>
-</arguments>
-<assign>
-<var>${result}</var>
-</assign>
-<msg timestamp="20190927 00:41:36.845" level="INFO">${result} = False</msg>
-<status status="PASS" starttime="20190927 00:41:36.844" endtime="20190927 00:41:36.845"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>${result}==${False}</arg>
-<arg>Release Lock</arg>
-<arg>'DeviceLock'</arg>
-</arguments>
-<kw name="Release Lock" library="pabot.PabotLib">
-<doc>Release a lock with name.
-[https://pabot.org/PabotLib.html?ref=log#release-lock|Open online docs.]</doc>
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<status status="PASS" starttime="20190927 00:41:36.848" endtime="20190927 00:41:36.853"></status>
-</kw>
-<status status="PASS" starttime="20190927 00:41:36.846" endtime="20190927 00:41:36.854"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>${result}==${False}</arg>
-<arg>Should Be True</arg>
-<arg>${1} == ${0}</arg>
-</arguments>
-<kw name="Should Be True" library="BuiltIn">
-<doc>Fails if the given condition is not true.</doc>
-<arguments>
-<arg>${1} == ${0}</arg>
-</arguments>
-<msg timestamp="20190927 00:41:36.858" level="FAIL">'1 == 0' should be true.</msg>
-<status status="FAIL" starttime="20190927 00:41:36.857" endtime="20190927 00:41:36.858"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:41:36.855" endtime="20190927 00:41:36.859"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:41:36.817" endtime="20190927 00:41:36.860"></status>
-</kw>
-<kw name="Acquire Device" library="ResourcesSyn">
-<kw name="Acquire Lock" library="pabot.PabotLib">
-<doc>Wait for a lock with name.
-[https://pabot.org/PabotLib.html?ref=log#acquire-lock|Open online docs.]</doc>
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<status status="PASS" starttime="20190927 00:41:42.862" endtime="20190927 00:41:42.872"></status>
-</kw>
-<kw name="Get Parallel Value For Key" library="pabot.PabotLib">
-<doc>Get the value for a key. If there is no value for the key then empty
-string is returned.
-[https://pabot.org/PabotLib.html?ref=log#get-parallel-value-for-key|Open online docs.]</doc>
-<arguments>
-<arg>'avialable_devices'</arg>
-</arguments>
-<assign>
-<var>${avialable}</var>
-</assign>
-<msg timestamp="20190927 00:41:42.881" level="INFO">${avialable} = [{'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]</msg>
-<status status="PASS" starttime="20190927 00:41:42.874" endtime="20190927 00:41:42.881"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${avialable}</arg>
-</arguments>
-<msg timestamp="20190927 00:41:42.883" level="INFO">[{'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]</msg>
-<msg timestamp="20190927 00:41:42.883" level="INFO">#############in log_message
-{'timestamp': '20190927 00:41:42.883', 'message': "[{'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190927 00:41:42.882" endtime="20190927 00:41:42.883"></status>
-</kw>
-<kw name="Search Device" library="ResourcesSyn">
-<arguments>
-<arg>${DEVICE_LIST}</arg>
-<arg>${avialable}</arg>
-</arguments>
-<assign>
-<var>${result}</var>
-</assign>
-<msg timestamp="20190927 00:41:42.885" level="INFO">${result} = False</msg>
-<status status="PASS" starttime="20190927 00:41:42.884" endtime="20190927 00:41:42.886"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>${result}==${False}</arg>
-<arg>Release Lock</arg>
-<arg>'DeviceLock'</arg>
-</arguments>
-<kw name="Release Lock" library="pabot.PabotLib">
-<doc>Release a lock with name.
-[https://pabot.org/PabotLib.html?ref=log#release-lock|Open online docs.]</doc>
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<status status="PASS" starttime="20190927 00:41:42.888" endtime="20190927 00:41:42.893"></status>
-</kw>
-<status status="PASS" starttime="20190927 00:41:42.886" endtime="20190927 00:41:42.894"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>${result}==${False}</arg>
-<arg>Should Be True</arg>
-<arg>${1} == ${0}</arg>
-</arguments>
-<kw name="Should Be True" library="BuiltIn">
-<doc>Fails if the given condition is not true.</doc>
-<arguments>
-<arg>${1} == ${0}</arg>
-</arguments>
-<msg timestamp="20190927 00:41:42.898" level="FAIL">'1 == 0' should be true.</msg>
-<status status="FAIL" starttime="20190927 00:41:42.897" endtime="20190927 00:41:42.898"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:41:42.895" endtime="20190927 00:41:42.899"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:41:42.860" endtime="20190927 00:41:42.900"></status>
-</kw>
-<kw name="Acquire Device" library="ResourcesSyn">
-<kw name="Acquire Lock" library="pabot.PabotLib">
-<doc>Wait for a lock with name.
-[https://pabot.org/PabotLib.html?ref=log#acquire-lock|Open online docs.]</doc>
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<status status="PASS" starttime="20190927 00:41:48.907" endtime="20190927 00:41:48.917"></status>
-</kw>
-<kw name="Get Parallel Value For Key" library="pabot.PabotLib">
-<doc>Get the value for a key. If there is no value for the key then empty
-string is returned.
-[https://pabot.org/PabotLib.html?ref=log#get-parallel-value-for-key|Open online docs.]</doc>
-<arguments>
-<arg>'avialable_devices'</arg>
-</arguments>
-<assign>
-<var>${avialable}</var>
-</assign>
-<msg timestamp="20190927 00:41:48.929" level="INFO">${avialable} = [{'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]</msg>
-<status status="PASS" starttime="20190927 00:41:48.918" endtime="20190927 00:41:48.929"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${avialable}</arg>
-</arguments>
-<msg timestamp="20190927 00:41:48.932" level="INFO">[{'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]</msg>
-<msg timestamp="20190927 00:41:48.933" level="INFO">#############in log_message
-{'timestamp': '20190927 00:41:48.932', 'message': "[{'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190927 00:41:48.931" endtime="20190927 00:41:48.933"></status>
-</kw>
-<kw name="Search Device" library="ResourcesSyn">
-<arguments>
-<arg>${DEVICE_LIST}</arg>
-<arg>${avialable}</arg>
-</arguments>
-<assign>
-<var>${result}</var>
-</assign>
-<msg timestamp="20190927 00:41:48.936" level="INFO">${result} = False</msg>
-<status status="PASS" starttime="20190927 00:41:48.934" endtime="20190927 00:41:48.937"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>${result}==${False}</arg>
-<arg>Release Lock</arg>
-<arg>'DeviceLock'</arg>
-</arguments>
-<kw name="Release Lock" library="pabot.PabotLib">
-<doc>Release a lock with name.
-[https://pabot.org/PabotLib.html?ref=log#release-lock|Open online docs.]</doc>
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<status status="PASS" starttime="20190927 00:41:48.940" endtime="20190927 00:41:48.949"></status>
-</kw>
-<status status="PASS" starttime="20190927 00:41:48.938" endtime="20190927 00:41:48.950"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>${result}==${False}</arg>
-<arg>Should Be True</arg>
-<arg>${1} == ${0}</arg>
-</arguments>
-<kw name="Should Be True" library="BuiltIn">
-<doc>Fails if the given condition is not true.</doc>
-<arguments>
-<arg>${1} == ${0}</arg>
-</arguments>
-<msg timestamp="20190927 00:41:48.956" level="FAIL">'1 == 0' should be true.</msg>
-<status status="FAIL" starttime="20190927 00:41:48.954" endtime="20190927 00:41:48.957"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:41:48.952" endtime="20190927 00:41:48.958"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:41:48.905" endtime="20190927 00:41:48.960"></status>
-</kw>
-<kw name="Acquire Device" library="ResourcesSyn">
-<kw name="Acquire Lock" library="pabot.PabotLib">
-<doc>Wait for a lock with name.
-[https://pabot.org/PabotLib.html?ref=log#acquire-lock|Open online docs.]</doc>
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<status status="PASS" starttime="20190927 00:41:54.963" endtime="20190927 00:41:54.969"></status>
-</kw>
-<kw name="Get Parallel Value For Key" library="pabot.PabotLib">
-<doc>Get the value for a key. If there is no value for the key then empty
-string is returned.
-[https://pabot.org/PabotLib.html?ref=log#get-parallel-value-for-key|Open online docs.]</doc>
-<arguments>
-<arg>'avialable_devices'</arg>
-</arguments>
-<assign>
-<var>${avialable}</var>
-</assign>
-<msg timestamp="20190927 00:41:54.975" level="INFO">${avialable} = [{'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]</msg>
-<status status="PASS" starttime="20190927 00:41:54.969" endtime="20190927 00:41:54.975"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${avialable}</arg>
-</arguments>
-<msg timestamp="20190927 00:41:54.977" level="INFO">[{'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]</msg>
-<msg timestamp="20190927 00:41:54.977" level="INFO">#############in log_message
-{'timestamp': '20190927 00:41:54.977', 'message': "[{'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190927 00:41:54.976" endtime="20190927 00:41:54.977"></status>
-</kw>
-<kw name="Search Device" library="ResourcesSyn">
-<arguments>
-<arg>${DEVICE_LIST}</arg>
-<arg>${avialable}</arg>
-</arguments>
-<assign>
-<var>${result}</var>
-</assign>
-<msg timestamp="20190927 00:41:54.979" level="INFO">${result} = False</msg>
-<status status="PASS" starttime="20190927 00:41:54.978" endtime="20190927 00:41:54.979"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>${result}==${False}</arg>
-<arg>Release Lock</arg>
-<arg>'DeviceLock'</arg>
-</arguments>
-<kw name="Release Lock" library="pabot.PabotLib">
-<doc>Release a lock with name.
-[https://pabot.org/PabotLib.html?ref=log#release-lock|Open online docs.]</doc>
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<status status="PASS" starttime="20190927 00:41:54.981" endtime="20190927 00:41:54.987"></status>
-</kw>
-<status status="PASS" starttime="20190927 00:41:54.980" endtime="20190927 00:41:54.987"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>${result}==${False}</arg>
-<arg>Should Be True</arg>
-<arg>${1} == ${0}</arg>
-</arguments>
-<kw name="Should Be True" library="BuiltIn">
-<doc>Fails if the given condition is not true.</doc>
-<arguments>
-<arg>${1} == ${0}</arg>
-</arguments>
-<msg timestamp="20190927 00:41:54.990" level="FAIL">'1 == 0' should be true.</msg>
-<status status="FAIL" starttime="20190927 00:41:54.989" endtime="20190927 00:41:54.991"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:41:54.988" endtime="20190927 00:41:54.991"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:41:54.961" endtime="20190927 00:41:54.992"></status>
-</kw>
-<kw name="Acquire Device" library="ResourcesSyn">
-<kw name="Acquire Lock" library="pabot.PabotLib">
-<doc>Wait for a lock with name.
-[https://pabot.org/PabotLib.html?ref=log#acquire-lock|Open online docs.]</doc>
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<status status="PASS" starttime="20190927 00:42:00.994" endtime="20190927 00:42:01.004"></status>
-</kw>
-<kw name="Get Parallel Value For Key" library="pabot.PabotLib">
-<doc>Get the value for a key. If there is no value for the key then empty
-string is returned.
-[https://pabot.org/PabotLib.html?ref=log#get-parallel-value-for-key|Open online docs.]</doc>
-<arguments>
-<arg>'avialable_devices'</arg>
-</arguments>
-<assign>
-<var>${avialable}</var>
-</assign>
-<msg timestamp="20190927 00:42:01.018" level="INFO">${avialable} = [{'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]</msg>
-<status status="PASS" starttime="20190927 00:42:01.006" endtime="20190927 00:42:01.018"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${avialable}</arg>
-</arguments>
-<msg timestamp="20190927 00:42:01.021" level="INFO">[{'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]</msg>
-<msg timestamp="20190927 00:42:01.021" level="INFO">#############in log_message
-{'timestamp': '20190927 00:42:01.021', 'message': "[{'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190927 00:42:01.020" endtime="20190927 00:42:01.022"></status>
-</kw>
-<kw name="Search Device" library="ResourcesSyn">
-<arguments>
-<arg>${DEVICE_LIST}</arg>
-<arg>${avialable}</arg>
-</arguments>
-<assign>
-<var>${result}</var>
-</assign>
-<msg timestamp="20190927 00:42:01.023" level="INFO">${result} = False</msg>
-<status status="PASS" starttime="20190927 00:42:01.022" endtime="20190927 00:42:01.023"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>${result}==${False}</arg>
-<arg>Release Lock</arg>
-<arg>'DeviceLock'</arg>
-</arguments>
-<kw name="Release Lock" library="pabot.PabotLib">
-<doc>Release a lock with name.
-[https://pabot.org/PabotLib.html?ref=log#release-lock|Open online docs.]</doc>
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<status status="PASS" starttime="20190927 00:42:01.025" endtime="20190927 00:42:01.030"></status>
-</kw>
-<status status="PASS" starttime="20190927 00:42:01.024" endtime="20190927 00:42:01.031"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>${result}==${False}</arg>
-<arg>Should Be True</arg>
-<arg>${1} == ${0}</arg>
-</arguments>
-<kw name="Should Be True" library="BuiltIn">
-<doc>Fails if the given condition is not true.</doc>
-<arguments>
-<arg>${1} == ${0}</arg>
-</arguments>
-<msg timestamp="20190927 00:42:01.034" level="FAIL">'1 == 0' should be true.</msg>
-<status status="FAIL" starttime="20190927 00:42:01.033" endtime="20190927 00:42:01.034"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:42:01.031" endtime="20190927 00:42:01.034"></status>
-</kw>
-<status status="FAIL" starttime="20190927 00:42:00.992" endtime="20190927 00:42:01.035"></status>
-</kw>
-<kw name="Acquire Device" library="ResourcesSyn">
-<kw name="Acquire Lock" library="pabot.PabotLib">
-<doc>Wait for a lock with name.
-[https://pabot.org/PabotLib.html?ref=log#acquire-lock|Open online docs.]</doc>
-<arguments>
-<arg>'DeviceLock'</arg>
-</arguments>
-<status status="PASS" starttime="20190927 00:42:07.038" endtime="20190927 00:42:07.048"></status>
-</kw>
-<kw name="Get Parallel Value For Key" library="pabot.PabotLib">
-<doc>Get the value for a key. If there is no value for the key then empty
-string is returned.
-[https://pabot.org/PabotLib.html?ref=log#get-parallel-value-for-key|Open online docs.]</doc>
-<arguments>
-<arg>'avialable_devices'</arg>
-</arguments>
-<assign>
-<var>${avialable}</var>
-</assign>
-<msg timestamp="20190927 00:42:07.061" level="INFO">${avialable} = [{'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2...</msg>
-<status status="PASS" starttime="20190927 00:42:07.049" endtime="20190927 00:42:07.062"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${avialable}</arg>
-</arguments>
-<msg timestamp="20190927 00:42:07.065" level="INFO">[{'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]</msg>
-<msg timestamp="20190927 00:42:07.065" level="INFO">#############in log_message
-{'timestamp': '20190927 00:42:07.065', 'message': "[{'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
-xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190927 00:42:07.063" endtime="20190927 00:42:07.067"></status>
-</kw>
-<kw name="Search Device" library="ResourcesSyn">
-<arguments>
-<arg>${DEVICE_LIST}</arg>
-<arg>${avialable}</arg>
-</arguments>
-<assign>
-<var>${result}</var>
-</assign>
-<msg timestamp="20190927 00:42:07.070" level="INFO">${result} = [[{'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}], [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.10...</msg>
-<status status="PASS" starttime="20190927 00:42:07.068" endtime="20190927 00:42:07.071"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>${result}==${False}</arg>
-<arg>Release Lock</arg>
-<arg>'DeviceLock'</arg>
-</arguments>
-<status status="PASS" starttime="20190927 00:42:07.072" endtime="20190927 00:42:07.074"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>${result}==${False}</arg>
-<arg>Should Be True</arg>
-<arg>${1} == ${0}</arg>
-</arguments>
-<status status="PASS" starttime="20190927 00:42:07.076" endtime="20190927 00:42:07.078"></status>
+<status status="PASS" starttime="20190927 15:42:32.677" endtime="20190927 15:42:32.678"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -673,8 +163,8 @@ xxxxxxxxxxxxxxxx</msg>
 <arg>${suite_devices}</arg>
 <arg>${result}[0]</arg>
 </arguments>
-<msg timestamp="20190927 00:42:07.084" level="INFO">${suite_devices} = [{'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}]</msg>
-<status status="PASS" starttime="20190927 00:42:07.079" endtime="20190927 00:42:07.084"></status>
+<msg timestamp="20190927 15:42:32.681" level="INFO">${suite_devices} = [{'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]</msg>
+<status status="PASS" starttime="20190927 15:42:32.679" endtime="20190927 15:42:32.681"></status>
 </kw>
 <kw name="Set Parallel Value For Key" library="pabot.PabotLib">
 <doc>Set a globally available key and value that can be accessed
@@ -684,7 +174,7 @@ from all the pabot processes.
 <arg>'avialable_devices'</arg>
 <arg>${result}[1]</arg>
 </arguments>
-<status status="PASS" starttime="20190927 00:42:07.085" endtime="20190927 00:42:07.091"></status>
+<status status="PASS" starttime="20190927 15:42:32.681" endtime="20190927 15:42:32.734"></status>
 </kw>
 <kw name="Release Lock" library="pabot.PabotLib">
 <doc>Release a lock with name.
@@ -692,24 +182,24 @@ from all the pabot processes.
 <arguments>
 <arg>'DeviceLock'</arg>
 </arguments>
-<status status="PASS" starttime="20190927 00:42:07.092" endtime="20190927 00:42:07.098"></status>
+<status status="PASS" starttime="20190927 15:42:32.735" endtime="20190927 15:42:32.781"></status>
 </kw>
-<status status="PASS" starttime="20190927 00:42:07.036" endtime="20190927 00:42:07.099"></status>
+<status status="PASS" starttime="20190927 15:42:32.600" endtime="20190927 15:42:32.782"></status>
 </kw>
-<status status="PASS" starttime="20190927 00:41:24.731" endtime="20190927 00:42:07.099"></status>
+<status status="PASS" starttime="20190927 15:42:32.599" endtime="20190927 15:42:32.782"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${suite_devices}</arg>
 </arguments>
-<msg timestamp="20190927 00:42:07.101" level="INFO">[{'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}]</msg>
-<msg timestamp="20190927 00:42:07.101" level="INFO">#############in log_message
-{'timestamp': '20190927 00:42:07.101', 'message': "[{'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
+<msg timestamp="20190927 15:42:32.783" level="INFO">[{'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]</msg>
+<msg timestamp="20190927 15:42:32.784" level="INFO">#############in log_message
+{'timestamp': '20190927 15:42:32.783', 'message': "[{'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190927 00:42:07.100" endtime="20190927 00:42:07.102"></status>
+<status status="PASS" starttime="20190927 15:42:32.783" endtime="20190927 15:42:32.784"></status>
 </kw>
-<status status="PASS" starttime="20190927 00:41:24.556" endtime="20190927 00:42:07.102"></status>
+<status status="PASS" starttime="20190927 15:42:32.371" endtime="20190927 15:42:32.784"></status>
 </kw>
 <test id="s1-s1-s1-t1" name="Test_001">
 <kw name="Ui Test Setup" library="autotest" type="setup">
@@ -718,46 +208,46 @@ xxxxxxxxxxxxxxxx</msg>
 <arguments>
 <arg>1</arg>
 </arguments>
-<msg timestamp="20190927 00:42:07.108" level="INFO">1</msg>
-<msg timestamp="20190927 00:42:07.109" level="INFO">#############in log_message
-{'timestamp': '20190927 00:42:07.108', 'message': '1', 'level': 'INFO', 'html': 'no'}
+<msg timestamp="20190927 15:42:32.818" level="INFO">1</msg>
+<msg timestamp="20190927 15:42:32.819" level="INFO">#############in log_message
+{'timestamp': '20190927 15:42:32.818', 'message': '1', 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190927 00:42:07.106" endtime="20190927 00:42:07.109"></status>
+<status status="PASS" starttime="20190927 15:42:32.787" endtime="20190927 15:42:32.819"></status>
 </kw>
-<status status="PASS" starttime="20190927 00:42:07.105" endtime="20190927 00:42:07.110"></status>
+<status status="PASS" starttime="20190927 15:42:32.786" endtime="20190927 15:42:32.819"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>123</arg>
 </arguments>
-<msg timestamp="20190927 00:42:07.112" level="INFO">123</msg>
-<msg timestamp="20190927 00:42:07.112" level="INFO">#############in log_message
-{'timestamp': '20190927 00:42:07.112', 'message': '123', 'level': 'INFO', 'html': 'no'}
+<msg timestamp="20190927 15:42:32.857" level="INFO">123</msg>
+<msg timestamp="20190927 15:42:32.857" level="INFO">#############in log_message
+{'timestamp': '20190927 15:42:32.857', 'message': '123', 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190927 00:42:07.110" endtime="20190927 00:42:07.113"></status>
+<status status="PASS" starttime="20190927 15:42:32.820" endtime="20190927 15:42:32.857"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>15s</arg>
 </arguments>
-<msg timestamp="20190927 00:42:22.116" level="INFO">Slept 15 seconds</msg>
-<msg timestamp="20190927 00:42:22.117" level="INFO">#############in log_message
-{'timestamp': '20190927 00:42:22.116', 'message': 'Slept 15 seconds', 'level': 'INFO', 'html': 'no'}
+<msg timestamp="20190927 15:42:47.863" level="INFO">Slept 15 seconds</msg>
+<msg timestamp="20190927 15:42:47.863" level="INFO">#############in log_message
+{'timestamp': '20190927 15:42:47.863', 'message': 'Slept 15 seconds', 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190927 00:42:07.113" endtime="20190927 00:42:22.117"></status>
+<status status="PASS" starttime="20190927 15:42:32.859" endtime="20190927 15:42:47.864"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${name}</arg>
 </arguments>
-<msg timestamp="20190927 00:42:22.123" level="INFO">yangjian</msg>
-<msg timestamp="20190927 00:42:22.123" level="INFO">#############in log_message
-{'timestamp': '20190927 00:42:22.123', 'message': 'yangjian', 'level': 'INFO', 'html': 'no'}
+<msg timestamp="20190927 15:42:47.867" level="INFO">yangjian</msg>
+<msg timestamp="20190927 15:42:47.867" level="INFO">#############in log_message
+{'timestamp': '20190927 15:42:47.867', 'message': 'yangjian', 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190927 00:42:22.119" endtime="20190927 00:42:22.124"></status>
+<status status="PASS" starttime="20190927 15:42:47.865" endtime="20190927 15:42:47.868"></status>
 </kw>
 <kw name="Ui Test Teardown" library="autotest" type="teardown">
 <kw name="Log" library="BuiltIn">
@@ -765,13 +255,13 @@ xxxxxxxxxxxxxxxx</msg>
 <arguments>
 <arg>1</arg>
 </arguments>
-<msg timestamp="20190927 00:42:22.129" level="INFO">1</msg>
-<msg timestamp="20190927 00:42:22.130" level="INFO">#############in log_message
-{'timestamp': '20190927 00:42:22.129', 'message': '1', 'level': 'INFO', 'html': 'no'}
+<msg timestamp="20190927 15:42:47.871" level="INFO">1</msg>
+<msg timestamp="20190927 15:42:47.871" level="INFO">#############in log_message
+{'timestamp': '20190927 15:42:47.871', 'message': '1', 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190927 00:42:22.128" endtime="20190927 00:42:22.130"></status>
+<status status="PASS" starttime="20190927 15:42:47.870" endtime="20190927 15:42:47.872"></status>
 </kw>
-<status status="PASS" starttime="20190927 00:42:22.125" endtime="20190927 00:42:22.132"></status>
+<status status="PASS" starttime="20190927 15:42:47.869" endtime="20190927 15:42:47.873"></status>
 </kw>
 <tags>
 <tag>para-test</tag>
@@ -779,7 +269,7 @@ xxxxxxxxxxxxxxxx</msg>
 <tag>test-tag2</tag>
 </tags>
 <timeout value="20 seconds"></timeout>
-<status status="PASS" starttime="20190927 00:42:07.103" endtime="20190927 00:42:22.133" critical="yes"></status>
+<status status="PASS" starttime="20190927 15:42:32.785" endtime="20190927 15:42:47.873" critical="yes"></status>
 </test>
 <kw name="Ui Suite Teardown" library="autotest" type="teardown">
 <kw name="Release Device" library="ResourcesSyn">
@@ -793,21 +283,10 @@ string is returned.
 <assign>
 <var>${avialable}</var>
 </assign>
-<msg timestamp="20190927 00:42:22.156" level="INFO">${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]</msg>
-<status status="PASS" starttime="20190927 00:42:22.145" endtime="20190927 00:42:22.156"></status>
+<msg timestamp="20190927 15:42:47.889" level="INFO">${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]</msg>
+<status status="PASS" starttime="20190927 15:42:47.882" endtime="20190927 15:42:47.889"></status>
 </kw>
 <kw name="${device} IN [ @{suite_devices} ]" type="for">
-<kw name="${device} = {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}" type="foritem">
-<kw name="Append To List" library="Collections">
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<arguments>
-<arg>${avialable}</arg>
-<arg>${device}</arg>
-</arguments>
-<status status="PASS" starttime="20190927 00:42:22.159" endtime="20190927 00:42:22.161"></status>
-</kw>
-<status status="PASS" starttime="20190927 00:42:22.158" endtime="20190927 00:42:22.161"></status>
-</kw>
 <kw name="${device} = {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}" type="foritem">
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
@@ -815,22 +294,33 @@ string is returned.
 <arg>${avialable}</arg>
 <arg>${device}</arg>
 </arguments>
-<status status="PASS" starttime="20190927 00:42:22.163" endtime="20190927 00:42:22.165"></status>
+<status status="PASS" starttime="20190927 15:42:47.892" endtime="20190927 15:42:47.893"></status>
 </kw>
-<status status="PASS" starttime="20190927 00:42:22.162" endtime="20190927 00:42:22.165"></status>
+<status status="PASS" starttime="20190927 15:42:47.891" endtime="20190927 15:42:47.893"></status>
 </kw>
-<status status="PASS" starttime="20190927 00:42:22.157" endtime="20190927 00:42:22.166"></status>
+<kw name="${device} = {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}" type="foritem">
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${avialable}</arg>
+<arg>${device}</arg>
+</arguments>
+<status status="PASS" starttime="20190927 15:42:47.895" endtime="20190927 15:42:47.896"></status>
+</kw>
+<status status="PASS" starttime="20190927 15:42:47.894" endtime="20190927 15:42:47.896"></status>
+</kw>
+<status status="PASS" starttime="20190927 15:42:47.890" endtime="20190927 15:42:47.897"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${avialable}</arg>
 </arguments>
-<msg timestamp="20190927 00:42:22.168" level="INFO">[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}]</msg>
-<msg timestamp="20190927 00:42:22.169" level="INFO">#############in log_message
-{'timestamp': '20190927 00:42:22.168', 'message': "[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
+<msg timestamp="20190927 15:42:47.899" level="INFO">[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]</msg>
+<msg timestamp="20190927 15:42:47.899" level="INFO">#############in log_message
+{'timestamp': '20190927 15:42:47.899', 'message': "[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]", 'level': 'INFO', 'html': 'no'}
 xxxxxxxxxxxxxxxx</msg>
-<status status="PASS" starttime="20190927 00:42:22.167" endtime="20190927 00:42:22.170"></status>
+<status status="PASS" starttime="20190927 15:42:47.898" endtime="20190927 15:42:47.899"></status>
 </kw>
 <kw name="Set Parallel Value For Key" library="pabot.PabotLib">
 <doc>Set a globally available key and value that can be accessed
@@ -840,17 +330,17 @@ from all the pabot processes.
 <arg>'avialable_devices'</arg>
 <arg>${avialable}</arg>
 </arguments>
-<status status="PASS" starttime="20190927 00:42:22.171" endtime="20190927 00:42:22.179"></status>
+<status status="PASS" starttime="20190927 15:42:47.900" endtime="20190927 15:42:47.906"></status>
 </kw>
-<status status="PASS" starttime="20190927 00:42:22.143" endtime="20190927 00:42:22.180"></status>
+<status status="PASS" starttime="20190927 15:42:47.881" endtime="20190927 15:42:47.907"></status>
 </kw>
-<status status="PASS" starttime="20190927 00:42:22.142" endtime="20190927 00:42:22.180"></status>
+<status status="PASS" starttime="20190927 15:42:47.880" endtime="20190927 15:42:47.907"></status>
 </kw>
-<status status="PASS" starttime="20190927 00:41:23.095" endtime="20190927 00:42:22.181"></status>
+<status status="PASS" starttime="20190927 15:42:31.153" endtime="20190927 15:42:47.907"></status>
 </suite>
-<status status="PASS" starttime="20190927 00:41:23.089" endtime="20190927 00:42:22.187"></status>
+<status status="PASS" starttime="20190927 15:42:31.148" endtime="20190927 15:42:47.911"></status>
 </suite>
-<status status="PASS" starttime="20190927 00:41:23.019" endtime="20190927 00:42:22.192"></status>
+<status status="PASS" starttime="20190927 15:42:31.084" endtime="20190927 15:42:47.914"></status>
 </suite>
 <statistics>
 <total>

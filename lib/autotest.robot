@@ -1,8 +1,8 @@
 *** Settings ***
 Library            Compute.py
 Library            Collections
-Resource           PageHandler.robot
-Resource           ResourcesSyn.robot
+Resource           Pagehandler.robot
+Resource           Resourcessyn.robot
 
 *** Variable ***
 ${HOST}        127.0.0.1

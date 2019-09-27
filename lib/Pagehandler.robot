@@ -1,6 +1,6 @@
 *** Settings ***
-Library           SeleniumLibrary
-Library           ElementIdentify.py
+Library           Seleniumlibrary
+Library           Elementidentify.py
 
 *** Variable ***
 ${HOST}        127.0.0.1

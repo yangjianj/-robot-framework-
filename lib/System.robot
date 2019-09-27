@@ -1,5 +1,5 @@
 *** Settings ***
-Resource           PageHandler.robot
+Resource           Pagehandler.robot
 
 *** Variable ***
 ${HOST}        127.0.0.1
