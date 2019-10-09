@@ -18,6 +18,8 @@ Acquire Device
     Acquire Lock  'DeviceLock'
     ${avialable}=    Get Parallel Value For Key    'avialable_devices'
     log    ${avialable}
+    ${dev}=    Run Keyword And Return Status     Variable Should Exist    ${DEVICE_LIST}
+    Return From Keyword If	    ${dev}==${False}    'devicelist is null'
     ${result}=    search_device    ${DEVICE_LIST}    ${avialable}
     Run Keyword If  ${result}==${False}    Release Lock    'DeviceLock'
     Run Keyword If  ${result}==${False}    Should Be True  ${1} == ${0}
@@ -28,6 +30,8 @@ Acquire Device
 Release Device
     #Acquire Lock  'DeviceLock'
     ${avialable}=    Get Parallel Value For Key    'avialable_devices'
+    ${dev}=    Run Keyword And Return Status     Variable Should Exist    ${DEVICE_LIST}
+    Return From Keyword If	    ${dev}==${False}    'devicelist is null'
     :FOR  ${device}  IN  @{suite_devices}
     \    Append To List    ${avialable}    ${device}
     log    ${avialable}

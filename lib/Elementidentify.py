@@ -14,7 +14,7 @@ class ElementIdentify():
             self.logger.error('load element yaml file failed')
             self.logger.error(e)
 
-    def _locate_element(self,element,page=None):
+    def locate_element(self,element,page=None):
         if page == '' or page == None:
             page = self.curr_page
         elif page != self.curr_page:
