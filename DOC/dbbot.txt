@@ -1,0 +1,3 @@
+python -m dbbot.run -b F:\work\project\django_web\sqlite3.db  output.xml
+
+python -m dbbot.run output.xml

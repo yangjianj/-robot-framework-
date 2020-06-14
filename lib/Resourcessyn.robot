@@ -1,7 +1,7 @@
 *** Settings ***
 Library  Collections
 Library  pabot.PabotLib
-Library  Resourcessyn.py
+Library  ResourcesSyn.py
 
 *** Variable ***
 ${HOST}        127.0.0.1
@@ -32,8 +32,9 @@ Release Device
     ${avialable}=    Get Parallel Value For Key    'avialable_devices'
     ${dev}=    Run Keyword And Return Status     Variable Should Exist    ${DEVICE_LIST}
     Return From Keyword If	    ${dev}==${False}    'devicelist is null'
-    :FOR  ${device}  IN  @{suite_devices}
-    \    Append To List    ${avialable}    ${device}
+    FOR  ${device}  IN  @{suite_devices}
+        Append To List    ${avialable}    ${device}
+    END
     log    ${avialable}
     Set Parallel Value For Key    'avialable_devices'    ${avialable}
     #Release Lock    'DeviceLock'

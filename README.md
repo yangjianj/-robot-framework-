@@ -47,4 +47,16 @@ rebot组装log
 4.robot脚本中python调用    
 5.
 
-Python自动化框架对比：https://www.jianshu.com/p/b87ec158aad8    
+Python自动化框架对比：https://www.jianshu.com/p/b87ec158aad8   
+
+
+### 难点：   
+1.日志收集：按文件名、文件夹名   
+1.1 pabot执行日志按文件名区分--pabot执行不自动标记log所属suites,脚本分析xml来完成日志与suite文件的对应   
+
+
+## 20200614对接分布式自动化任务调度平台     
+1.在调度平台中的角色：robotframework相关脚本的调度执行器   
+2.需要完成的任务：   
+2.1根据接收参数执行任务（接收参数：脚本路径，日志路径，数据库，任务名，其他变量）    
+2.2执行结果上传（执行数据到数据库，log文件到指定文件服务器）
