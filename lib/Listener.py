@@ -90,8 +90,10 @@ class Listener():
 
         if attrs["status"] == "PASS":
             self.passlog.write("%s\n" % (self.current_suite))
+            self.passlog.write("%s\n" % (attrs))
         elif attrs["status"] == "FAIL":
             self.faillog.write("%s\n" % (self.current_suite))
+            self.faillog.write("%s\n" % (attrs))
 
     def start_keyword(self,name,attributes):
         pass

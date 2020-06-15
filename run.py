@@ -51,6 +51,12 @@ class Runner():
                     "--include  para-test","uitest_base"]
         subprocess.call(self.cmd,creationflags =subprocess.CREATE_NEW_CONSOLE)
         #subprocess.call([self._exec_run] + self._arg + variable + testdir + outputdir + selected + rerun + self._testsuites,shell=True)
+    
+    def run_by_tag(self):
+        pass
+    
+    def run_by_suite(self):
+        pass
 
 if __name__ == '__main__':
     Runner().run()
