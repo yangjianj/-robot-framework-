@@ -1,7 +1,7 @@
 Suite2
 {'id': 's1-s1-s1', 'longname': 'robotbase.Parallel Test.Suite2', 'doc': '', 'metadata': {}, 'starttime': '20200615 23:56:17.433', 'endtime': '20200615 23:56:34.034', 'elapsedtime': 16601, 'status': 'PASS', 'message': '', 'tests': ['Test_001'], 'suites': [], 'totaltests': 1, 'source': 'F:\\work\\project\\ui-api-robotframework\\uitest_base\\parallel_test\\suite2.robot', 'statistics': '1 critical test, 1 passed, 0 failed\n1 test total, 1 passed, 0 failed'}
 Suite2
-{'id': 's1-s1', 'longname': 'robotbase.Parallel Test', 'doc': '', 'metadata': {}, 'starttime': '20200615 23:56:17.423', 'endtime': '20200615 23:56:34.041', 'elapsedtime': 16618, 'status': 'PASS', 'message': '', 'tests': [], 'suites': ['Suite2'], 'totaltests': 1, 'source': 'F:\\work\\project\\ui-api-robotframework\\uitest_base\\parallel_test', 'statistics': '1 critical test, 1 passed, 0 failed\n1 test total, 1 passed, 0 failed'}
+{'id': 's1-s1', 'longname': 'robotbase.Parallel Test', 'doc': '', 'metadata': {}, 'starttime': '20200615 23:56:17.423', 'endtime': '20200615 23:56:34.041', '': 16618, 'status': 'PASS', 'message': '', 'tests': [], 'suites': ['Suite2'], 'totaltests': 1, 'source': 'F:\\work\\project\\ui-api-robotframework\\uitest_base\\parallel_test', 'statistics': '1 critical test, 1 passed, 0 failed\n1 test total, 1 passed, 0 failed'}
 Suite2
 {'id': 's1', 'longname': 'robotbase', 'doc': '', 'metadata': {}, 'starttime': '20200615 23:56:17.351', 'endtime': '20200615 23:56:34.046', 'elapsedtime': 16695, 'status': 'PASS', 'message': '', 'tests': [], 'suites': ['Parallel Test'], 'totaltests': 1, 'source': 'F:\\work\\project\\ui-api-robotframework\\uitest_base', 'statistics': '1 critical test, 1 passed, 0 failed\n1 test total, 1 passed, 0 failed'}
 Suite211
