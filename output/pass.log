@@ -1,42 +1,60 @@
-Suite2
-{'id': 's1-s1-s1', 'longname': 'robotbase.Parallel Test.Suite2', 'doc': '', 'metadata': {}, 'starttime': '20200615 23:56:17.433', 'endtime': '20200615 23:56:34.034', 'elapsedtime': 16601, 'status': 'PASS', 'message': '', 'tests': ['Test_001'], 'suites': [], 'totaltests': 1, 'source': 'F:\\work\\project\\ui-api-robotframework\\uitest_base\\parallel_test\\suite2.robot', 'statistics': '1 critical test, 1 passed, 0 failed\n1 test total, 1 passed, 0 failed'}
-Suite2
-{'id': 's1-s1', 'longname': 'robotbase.Parallel Test', 'doc': '', 'metadata': {}, 'starttime': '20200615 23:56:17.423', 'endtime': '20200615 23:56:34.041', '': 16618, 'status': 'PASS', 'message': '', 'tests': [], 'suites': ['Suite2'], 'totaltests': 1, 'source': 'F:\\work\\project\\ui-api-robotframework\\uitest_base\\parallel_test', 'statistics': '1 critical test, 1 passed, 0 failed\n1 test total, 1 passed, 0 failed'}
-Suite2
-{'id': 's1', 'longname': 'robotbase', 'doc': '', 'metadata': {}, 'starttime': '20200615 23:56:17.351', 'endtime': '20200615 23:56:34.046', 'elapsedtime': 16695, 'status': 'PASS', 'message': '', 'tests': [], 'suites': ['Parallel Test'], 'totaltests': 1, 'source': 'F:\\work\\project\\ui-api-robotframework\\uitest_base', 'statistics': '1 critical test, 1 passed, 0 failed\n1 test total, 1 passed, 0 failed'}
-Suite211
-{'id': 's1-s1-s1', 'longname': 'robotbase.Parallel Test.Suite211', 'doc': '', 'metadata': {}, 'starttime': '20200615 23:56:36.059', 'endtime': '20200615 23:56:52.461', 'elapsedtime': 16402, 'status': 'PASS', 'message': '', 'tests': ['Test_001'], 'suites': [], 'totaltests': 1, 'source': 'F:\\work\\project\\ui-api-robotframework\\uitest_base\\parallel_test\\suite211.robot', 'statistics': '1 critical test, 1 passed, 0 failed\n1 test total, 1 passed, 0 failed'}
-Suite211
-{'id': 's1-s1', 'longname': 'robotbase.Parallel Test', 'doc': '', 'metadata': {}, 'starttime': '20200615 23:56:36.050', 'endtime': '20200615 23:56:52.467', 'elapsedtime': 16417, 'status': 'PASS', 'message': '', 'tests': [], 'suites': ['Suite211'], 'totaltests': 1, 'source': 'F:\\work\\project\\ui-api-robotframework\\uitest_base\\parallel_test', 'statistics': '1 critical test, 1 passed, 0 failed\n1 test total, 1 passed, 0 failed'}
-Suite211
-{'id': 's1', 'longname': 'robotbase', 'doc': '', 'metadata': {}, 'starttime': '20200615 23:56:35.984', 'endtime': '20200615 23:56:52.472', 'elapsedtime': 16488, 'status': 'PASS', 'message': '', 'tests': [], 'suites': ['Parallel Test'], 'totaltests': 1, 'source': 'F:\\work\\project\\ui-api-robotframework\\uitest_base', 'statistics': '1 critical test, 1 passed, 0 failed\n1 test total, 1 passed, 0 failed'}
-Suite111
-{'id': 's1-s1-s1', 'longname': 'robotbase.Parallel Test.Suite111', 'doc': '', 'metadata': {}, 'starttime': '20200615 23:56:17.431', 'endtime': '20200615 23:59:04.308', 'elapsedtime': 166877, 'status': 'PASS', 'message': '', 'tests': ['Test_001'], 'suites': [], 'totaltests': 1, 'source': 'F:\\work\\project\\ui-api-robotframework\\uitest_base\\parallel_test\\suite111.robot', 'statistics': '1 critical test, 1 passed, 0 failed\n1 test total, 1 passed, 0 failed'}
-Suite111
-{'id': 's1-s1', 'longname': 'robotbase.Parallel Test', 'doc': '', 'metadata': {}, 'starttime': '20200615 23:56:17.422', 'endtime': '20200615 23:59:04.315', 'elapsedtime': 166893, 'status': 'PASS', 'message': '', 'tests': [], 'suites': ['Suite111'], 'totaltests': 1, 'source': 'F:\\work\\project\\ui-api-robotframework\\uitest_base\\parallel_test', 'statistics': '1 critical test, 1 passed, 0 failed\n1 test total, 1 passed, 0 failed'}
-Suite111
-{'id': 's1', 'longname': 'robotbase', 'doc': '', 'metadata': {}, 'starttime': '20200615 23:56:17.352', 'endtime': '20200615 23:59:04.320', 'elapsedtime': 166968, 'status': 'PASS', 'message': '', 'tests': [], 'suites': ['Parallel Test'], 'totaltests': 1, 'source': 'F:\\work\\project\\ui-api-robotframework\\uitest_base', 'statistics': '1 critical test, 1 passed, 0 failed\n1 test total, 1 passed, 0 failed'}
-Suite5
-{'id': 's1-s1-s1', 'longname': 'robotbase.Parallel Test.Suite5', 'doc': '', 'metadata': {}, 'starttime': '20200615 23:59:21.590', 'endtime': '20200615 23:59:27.964', 'elapsedtime': 6374, 'status': 'PASS', 'message': '', 'tests': ['Test_001'], 'suites': [], 'totaltests': 1, 'source': 'F:\\work\\project\\ui-api-robotframework\\uitest_base\\parallel_test\\suite5.robot', 'statistics': '1 critical test, 1 passed, 0 failed\n1 test total, 1 passed, 0 failed'}
-Suite5
-{'id': 's1-s1', 'longname': 'robotbase.Parallel Test', 'doc': '', 'metadata': {}, 'starttime': '20200615 23:59:21.581', 'endtime': '20200615 23:59:27.970', 'elapsedtime': 6389, 'status': 'PASS', 'message': '', 'tests': [], 'suites': ['Suite5'], 'totaltests': 1, 'source': 'F:\\work\\project\\ui-api-robotframework\\uitest_base\\parallel_test', 'statistics': '1 critical test, 1 passed, 0 failed\n1 test total, 1 passed, 0 failed'}
-Suite5
-{'id': 's1', 'longname': 'robotbase', 'doc': '', 'metadata': {}, 'starttime': '20200615 23:59:21.515', 'endtime': '20200615 23:59:27.975', 'elapsedtime': 6460, 'status': 'PASS', 'message': '', 'tests': [], 'suites': ['Parallel Test'], 'totaltests': 1, 'source': 'F:\\work\\project\\ui-api-robotframework\\uitest_base', 'statistics': '1 critical test, 1 passed, 0 failed\n1 test total, 1 passed, 0 failed'}
-Suite511
-{'id': 's1-s1-s1', 'longname': 'robotbase.Parallel Test.Suite511', 'doc': '', 'metadata': {}, 'starttime': '20200615 23:59:29.747', 'endtime': '20200615 23:59:36.123', 'elapsedtime': 6376, 'status': 'PASS', 'message': '', 'tests': ['Test_001'], 'suites': [], 'totaltests': 1, 'source': 'F:\\work\\project\\ui-api-robotframework\\uitest_base\\parallel_test\\suite511.robot', 'statistics': '1 critical test, 1 passed, 0 failed\n1 test total, 1 passed, 0 failed'}
-Suite511
-{'id': 's1-s1', 'longname': 'robotbase.Parallel Test', 'doc': '', 'metadata': {}, 'starttime': '20200615 23:59:29.738', 'endtime': '20200615 23:59:36.130', 'elapsedtime': 6392, 'status': 'PASS', 'message': '', 'tests': [], 'suites': ['Suite511'], 'totaltests': 1, 'source': 'F:\\work\\project\\ui-api-robotframework\\uitest_base\\parallel_test', 'statistics': '1 critical test, 1 passed, 0 failed\n1 test total, 1 passed, 0 failed'}
-Suite511
-{'id': 's1', 'longname': 'robotbase', 'doc': '', 'metadata': {}, 'starttime': '20200615 23:59:29.670', 'endtime': '20200615 23:59:36.135', 'elapsedtime': 6465, 'status': 'PASS', 'message': '', 'tests': [], 'suites': ['Parallel Test'], 'totaltests': 1, 'source': 'F:\\work\\project\\ui-api-robotframework\\uitest_base', 'statistics': '1 critical test, 1 passed, 0 failed\n1 test total, 1 passed, 0 failed'}
-Suite4
-{'id': 's1-s1-s1', 'longname': 'robotbase.Parallel Test.Suite4', 'doc': '', 'metadata': {}, 'starttime': '20200615 23:59:06.998', 'endtime': '20200615 23:59:37.501', 'elapsedtime': 30503, 'status': 'PASS', 'message': '', 'tests': ['Test_001'], 'suites': [], 'totaltests': 1, 'source': 'F:\\work\\project\\ui-api-robotframework\\uitest_base\\parallel_test\\suite4.robot', 'statistics': '1 critical test, 1 passed, 0 failed\n1 test total, 1 passed, 0 failed'}
-Suite4
-{'id': 's1-s1', 'longname': 'robotbase.Parallel Test', 'doc': '', 'metadata': {}, 'starttime': '20200615 23:59:06.990', 'endtime': '20200615 23:59:37.509', 'elapsedtime': 30519, 'status': 'PASS', 'message': '', 'tests': [], 'suites': ['Suite4'], 'totaltests': 1, 'source': 'F:\\work\\project\\ui-api-robotframework\\uitest_base\\parallel_test', 'statistics': '1 critical test, 1 passed, 0 failed\n1 test total, 1 passed, 0 failed'}
-Suite4
-{'id': 's1', 'longname': 'robotbase', 'doc': '', 'metadata': {}, 'starttime': '20200615 23:59:06.922', 'endtime': '20200615 23:59:37.515', 'elapsedtime': 30593, 'status': 'PASS', 'message': '', 'tests': [], 'suites': ['Parallel Test'], 'totaltests': 1, 'source': 'F:\\work\\project\\ui-api-robotframework\\uitest_base', 'statistics': '1 critical test, 1 passed, 0 failed\n1 test total, 1 passed, 0 failed'}
-Suite411
-{'id': 's1-s1-s1', 'longname': 'robotbase.Parallel Test.Suite411', 'doc': '', 'metadata': {}, 'starttime': '20200615 23:59:13.475', 'endtime': '20200615 23:59:57.007', 'elapsedtime': 43532, 'status': 'PASS', 'message': '', 'tests': ['Test_001'], 'suites': [], 'totaltests': 1, 'source': 'F:\\work\\project\\ui-api-robotframework\\uitest_base\\parallel_test\\suite411.robot', 'statistics': '1 critical test, 1 passed, 0 failed\n1 test total, 1 passed, 0 failed'}
-Suite411
-{'id': 's1-s1', 'longname': 'robotbase.Parallel Test', 'doc': '', 'metadata': {}, 'starttime': '20200615 23:59:13.466', 'endtime': '20200615 23:59:57.015', 'elapsedtime': 43549, 'status': 'PASS', 'message': '', 'tests': [], 'suites': ['Suite411'], 'totaltests': 1, 'source': 'F:\\work\\project\\ui-api-robotframework\\uitest_base\\parallel_test', 'statistics': '1 critical test, 1 passed, 0 failed\n1 test total, 1 passed, 0 failed'}
-Suite411
-{'id': 's1', 'longname': 'robotbase', 'doc': '', 'metadata': {}, 'starttime': '20200615 23:59:13.400', 'endtime': '20200615 23:59:57.020', 'elapsedtime': 43620, 'status': 'PASS', 'message': '', 'tests': [], 'suites': ['Parallel Test'], 'totaltests': 1, 'source': 'F:\\work\\project\\ui-api-robotframework\\uitest_base', 'statistics': '1 critical test, 1 passed, 0 failed\n1 test total, 1 passed, 0 failed'}
+in end test-: PASS,15029123456788900-Suite2
+PASS
+123456788900-Parallel Test
+PASS
+123456788900-robotbase
+PASS
+in end test-: FAIL,3123456788900-Suite211
+FAIL
+123456788900-Parallel Test
+FAIL
+123456788900-robotbase
+FAIL
+in end test-: PASS,130027123456788900-Suite111
+PASS
+123456788900-Parallel Test
+PASS
+123456788900-robotbase
+PASS
+in end test-: FAIL,30123456788900-Suite1
+FAIL
+123456788900-Parallel Test
+FAIL
+123456788900-robotbase
+FAIL
+in end test-: FAIL,15014123456788900-Suite311
+FAIL
+123456788900-Parallel Test
+FAIL
+123456788900-robotbase
+FAIL
+in end test-: PASS,15028123456788900-Suite4
+PASS
+123456788900-Parallel Test
+PASS
+123456788900-robotbase
+PASS
+in end test-: PASS,15018123456788900-Suite411
+PASS
+123456788900-Parallel Test
+PASS
+123456788900-robotbase
+PASS
+in end test-: PASS,5025123456788900-Suite5
+PASS
+123456788900-Parallel Test
+PASS
+123456788900-robotbase
+PASS
+in end test-: PASS,5019123456788900-Suite511
+PASS
+123456788900-Parallel Test
+PASS
+123456788900-robotbase
+PASS
+in end test-: PASS,15028123456788900-Suite3
+PASS
+123456788900-Parallel Test
+PASS
+123456788900-robotbase
+PASS

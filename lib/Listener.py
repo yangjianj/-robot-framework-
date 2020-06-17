@@ -1,11 +1,11 @@
 import os
 from robot.libraries.BuiltIn import BuiltIn
-import config.settings as Settings
+import settings as Settings
 from DataManager import DataManager
 
 class Listener():
     ROBOT_LIBRARY_SCOPE = 'GLOBAL'
-    ROBOT_LISTENER_API_VERSION = 3.2.1
+    ROBOT_LISTENER_API_VERSION = 3
 
     def __init__(self):
         # get output folder from file _autotest_output (written by run.py)
@@ -55,7 +55,8 @@ class Listener():
         if self._is_pabot_autorun():
             return
 
-        self.current_messages.append((data["level"], data["message"]))
+        # self.current_messages.append((data["level"], data["message"]))
+        # self.current_messages.append(data)
 
     def message(self,message):
         pass
@@ -78,19 +79,22 @@ class Listener():
                 self.runlog.write("| %s | %s | %s\n" % (self.current_suite, self.current_test, message))
 
         self.runlog.write("<<< %s | %s\n" % (self.current_suite, self.current_test))
+        self.passlog.write("in end test-: {0},{1}".format(attrs.status,attrs.elapsedtime))
         self.runlog.flush()
         self.current_messages = []
         self.current_test = None
 
-    def end_suite(self, name, attrs):
-        print("#################end suite:%s"%(name))
+    def end_suite(self, data, result):
         if self._is_pabot_autorun():
             return
-        if attrs["status"] == "PASS":
-            self.passlog.write("%s\n" % (self.current_suite))
-        elif attrs["status"] == "FAIL":
-            self.faillog.write("%s\n" % (self.current_suite))
-
+        self.passlog.write("123456788900-")
+        self.passlog.write("{0}\n".format(str(data)))
+        self.passlog.write("{0}\n".format(str(result.status)))
+        # if attrs["status"] == "PASS":
+        #     self.passlog.write("%s\n" % (self.current_suite))
+        # elif attrs["status"] == "FAIL":
+        #     self.faillog.write("%s\n" % (self.current_suite))
+        '''
         if(len(attrs["tests"]) != 0):
             msg={}
             msg["taskid"] = BuiltIn().get_variable_value("${TASKID}")
@@ -100,7 +104,7 @@ class Listener():
             msg["endtime"]= attrs["endtime"]
             msg["elapsedtime"]= attrs["elapsedtime"]
             self.datamanager.save_robot_suite_result(msg)
-
+        '''
 
     def start_keyword(self,name,attributes):
         pass

@@ -1,6 +1,6 @@
 # -*-coding:UTF-8 -*-
 import sqlite3
-import config.settings as Settings
+import settings as Settings
 
 class DataManager():
     def __init__(self):
