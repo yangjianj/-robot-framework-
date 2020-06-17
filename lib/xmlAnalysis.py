@@ -9,7 +9,6 @@ def get_result_from_outputxml(outputfile):
     result['suites']= get_suite_test_msg(root)
     return result
 
-
 def get_suite_test_msg(suite,result=[]):
     #获取xml文件suite,test执行结果信息
     sub_suite= suite.findall('suite')
