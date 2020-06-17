@@ -1,6 +1,6 @@
 import os
 from robot.libraries.BuiltIn import BuiltIn
-import settings as Settings
+import config.settings as Settings
 from DataManager import DataManager
 
 class Listener():
