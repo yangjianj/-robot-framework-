@@ -15,6 +15,7 @@ class Runner():
         pass
     
     def run_task(self,taskparam):
+        #taskparam: 执行任务的必要参数
         cmd_param= {}
         cmd_param["processes"] = SETTING.PROCESSES
         cmd_param["lib"] = SETTING.LIB
@@ -23,11 +24,12 @@ class Runner():
         cmd_param["taskname"] = taskparam["taskname"]
         cmd_param["include"] = taskparam["include"]
         cmd_param["suitedir"] = taskparam["suitedir"]
-        cmd_param["variable"] = taskparam["variable"]
+        cmd_param["variable"] = taskparam["variable"]  #包含变量TASKID listener中需要
         self._build_command(cmd_param)
         self.run()
     
     def _build_command(self,cmd_param):
+        #构造robot执行命令
         result = {}
         result["processes"]= " --processes "+cmd_param['processes']
         result["outputdir"] = " --outputdir "+cmd_param['outputdir']
@@ -53,9 +55,11 @@ class Runner():
         #subprocess.call([self._exec_run] + self._arg + variable + testdir + outputdir + selected + rerun + self._testsuites,shell=True)
     
     def run_by_tag(self):
+        #根据tag匹配执行
         pass
     
     def run_by_suite(self):
+        #根据suite名匹配执行（文件名，非目录名）
         pass
 
 if __name__ == '__main__':

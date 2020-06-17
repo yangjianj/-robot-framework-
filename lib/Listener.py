@@ -5,7 +5,7 @@ from DataManager import DataManager
 
 class Listener():
     ROBOT_LIBRARY_SCOPE = 'GLOBAL'
-    ROBOT_LISTENER_API_VERSION = 2
+    ROBOT_LISTENER_API_VERSION = 3.2.1
 
     def __init__(self):
         # get output folder from file _autotest_output (written by run.py)
@@ -20,7 +20,7 @@ class Listener():
         self.current_suite = None
         self.current_test = None
         self.current_messages = []
-        #self.datamanager = DataManager()
+        self.datamanager = DataManager()
 
     def __del__(self):
         self.passlog.close()
@@ -79,7 +79,6 @@ class Listener():
 
         self.runlog.write("<<< %s | %s\n" % (self.current_suite, self.current_test))
         self.runlog.flush()
-
         self.current_messages = []
         self.current_test = None
 
@@ -87,15 +86,21 @@ class Listener():
         print("#################end suite:%s"%(name))
         if self._is_pabot_autorun():
             return
-        if(len(attrs["tests"]) != 0):
-            status = attrs["status"]
-
         if attrs["status"] == "PASS":
             self.passlog.write("%s\n" % (self.current_suite))
-            self.passlog.write("%s\n" % (attrs))
         elif attrs["status"] == "FAIL":
             self.faillog.write("%s\n" % (self.current_suite))
-            self.faillog.write("%s\n" % (attrs))
+
+        if(len(attrs["tests"]) != 0):
+            msg={}
+            msg["taskid"] = BuiltIn().get_variable_value("${TASKID}")
+            msg["caseid"] = name
+            msg["status"] = attrs["status"]
+            msg["starttime"]= attrs["starttime"]
+            msg["endtime"]= attrs["endtime"]
+            msg["elapsedtime"]= attrs["elapsedtime"]
+            self.datamanager.save_robot_suite_result(msg)
+
 
     def start_keyword(self,name,attributes):
         pass

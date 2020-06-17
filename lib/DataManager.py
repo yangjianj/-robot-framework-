@@ -29,8 +29,8 @@ class DataManager():
 
     def update_user(self,name,workid,role,project,telephone):
         try:
-            table=self._cc.execute("update Users set workid='%s', role='%s',project='%s',telephone='%s'  \
-            where name='%s'"%(workid,role,project,telephone,name))
+            table=self._cc.execute("update Users set workid='{1}', role='{2}',project='{3}',telephone='{4}'  \
+            where name='{5}'".format(workid,role,project,telephone,name))
             self._conn.commit()
             return True
         except Exception as e:
@@ -56,7 +56,7 @@ class DataManager():
             _end_time = apiresult["end-time"]
             try:
                 table = self._cc.execute("insert into api_case_result (caseid,version,api_link,request_data,response,result,spend,start_time,end_time) \
-	            values('%s','%s','%s','%s','%s','%s','%s','%s','%s')"%(_caseid,_version,_apilink,_request_data,_response,_result,_spend,_start_time,_end_time))
+	            values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}')".format(_caseid,_version,_apilink,_request_data,_response,_result,_spend,_start_time,_end_time))
                 self._conn.commit()
                 return True
             except Exception as e:
@@ -75,7 +75,7 @@ class DataManager():
             _end_time = apiresult["end-time"]
             try:
                 table = self._cc.execute("insert into api_case_result (caseid,version,api_link,request_data,response,result,spend,start_time,end_time) \
-                	            values('%s','%s','%s','%s','%s','%s','%s','%s','%s')" % (
+                	            values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}')".format(
                 _caseid, _version, _apilink, _request_data, _response, _result, _spend, _start_time, _end_time))
                 self._conn.commit()
                 return True
@@ -92,7 +92,7 @@ class DataManager():
             _result = "error"
             try:
                 table = self._cc.execute("insert into api_case_result (caseid,version,api_link,request_data,response,result) \
-                	            values('%s','%s','%s','%s','%s'')" %(_caseid, _version, _apilink, _request_data, _response, _result))
+                	            values({0},{1},{2},{3},{4},{5})".format(_caseid, _version, _apilink, _request_data, _response, _result))
                 self._conn.commit()
                 return True
             except Exception as e:
@@ -101,11 +101,19 @@ class DataManager():
                 return e
 
 
-    def save_api_result(self):
-        pass
-
-
-
+    def save_robot_suite_result(self,result):
+        #suite文件结束后listener存储结果到DB
+        taskid= result["taskid"]
+        caseid = result["caseid"]
+        caseresult = result["status"]
+        starttime = result["starttime"]
+        endtime = result["endtime"]
+        elapsedtime = result["elapsedtime"]
+        try:
+            table = self._cc.execute("insert into ui_task_case_table (taskid,caseid,caseresult,starttime,endtime,elapsedtime) \
+                                     values({0},{1},{2},{3},{4},{5})".format(result["taskid"],result["caseid"],result["status"],result["starttime"],result["endtime"],result["elapsedtime"]))
+        except Exception as e:
+            print("sql error-----")
 
 if __name__ == '__main__':
     dd=DataManager()
