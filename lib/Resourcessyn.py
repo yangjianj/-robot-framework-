@@ -2,6 +2,7 @@ import copy
 from robot.libraries.BuiltIn import BuiltIn
 from pabot.pabotlib import PabotLib
 
+
 class ResourcesSyn():
     def __init__(self):
         pass

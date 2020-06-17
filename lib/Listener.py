@@ -1,7 +1,7 @@
 import os
 from robot.libraries.BuiltIn import BuiltIn
 import settings as Settings
-from database_con import DataManager
+from DataManager import DataManager
 
 class Listener():
     ROBOT_LIBRARY_SCOPE = 'GLOBAL'
@@ -87,6 +87,8 @@ class Listener():
         print("#################end suite:%s"%(name))
         if self._is_pabot_autorun():
             return
+        if(len(attrs["tests"]) != 0):
+            status = attrs["status"]
 
         if attrs["status"] == "PASS":
             self.passlog.write("%s\n" % (self.current_suite))
