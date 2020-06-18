@@ -1,12 +1,14 @@
 # -*-coding:UTF-8 -*-
 import sqlite3
+from LogMan import LogManager as logmanager
 import settings as Settings
 
 class DataManager():
     def __init__(self):
         dbpath= Settings.DATABASE
         self._conn = sqlite3.connect(dbpath,check_same_thread=False)
-        self._cc = self._conn.cursor()
+        self._cursor = self._conn.cursor()
+        self.logmanager = logmanager("auto")
 
     def __new__(cls,*args,**kwargs):
         if not hasattr(cls,"_instance"):
@@ -102,20 +104,23 @@ class DataManager():
 
     def save_robot_suite_result(self,result):
         #suite文件结束后listener存储结果到DB
-        taskid= result["taskid"]
-        caseid = result["caseid"]
-        caseresult = result["status"]
-        starttime = result["starttime"]
-        endtime = result["endtime"]
-        elapsedtime = result["elapsedtime"]
         try:
-            table = self._cc.execute("insert into ui_task_case_table (taskid,caseid,caseresult,starttime,endtime,elapsedtime) \
-                                     values({0},{1},{2},{3},{4},{5})".format(result["taskid"],result["caseid"],result["status"],result["starttime"],result["endtime"],result["elapsedtime"]))
+            table = self._cursor.execute("insert into ui_task_case_table(taskid,caseid,caseresult,starttime,endtime,elapsedtime) \
+                                     values('{0}','{1}','{2}','{3}','{4}','{5}')".format(result["taskid"],result["caseid"],result["status"],result["starttime"],result["endtime"],result["elapsedtime"]))
+            self._conn.commit()
         except Exception as e:
-            print("sql error-----")
+            self.logmanager.error(e)
+            print("sql error:",e)
 
 if __name__ == '__main__':
     dd=DataManager()
-    re=dd.query_Users()
-    for i in re:
-        print(i)
+    # re=dd.query_Users()
+    # for i in re:
+    #     print(i)
+    result = {"taskid": "111", "caseid": "eee", "status": "pass", "starttime": "12454e6757", "endtime": "676776767887",
+              "elapsedtime": "122344"}
+    ss= "insert into ui_task_case_table(taskid,caseid,caseresult,starttime,endtime,elapsedtime) \
+                                     values('{0}','{1}','{2}','{3}','{4}','{5}')".format(result["taskid"],result["caseid"],result["status"],result["starttime"],result["endtime"],result["elapsedtime"])
+    print(ss)
+    
+    dd.save_robot_suite_result(result)

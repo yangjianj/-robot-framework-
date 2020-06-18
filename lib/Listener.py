@@ -79,7 +79,6 @@ class Listener():
                 self.runlog.write("| %s | %s | %s\n" % (self.current_suite, self.current_test, message))
 
         self.runlog.write("<<< %s | %s\n" % (self.current_suite, self.current_test))
-        self.passlog.write("in end test-: {0},{1}".format(attrs.status,attrs.elapsedtime))
         self.runlog.flush()
         self.current_messages = []
         self.current_test = None
@@ -88,26 +87,20 @@ class Listener():
         if self._is_pabot_autorun():
             return
         if result.status == "PASS":
-            self.passlog.write("{0}\n" % (self.current_suite))
-            self.passlog.write("%s\n" % (self.current_suite))
-            self.passlog.write("%s\n" % (self.current_suite))
-            self.passlog.write("%s\n" % (self.current_suite))
-            self.passlog.write("%s\n" % (self.current_suite))
-            self.passlog.write("%s\n" % (self.current_suite))
-
+            self.passlog.write("{0}\n".format(result.name))
         elif result.status == "FAIL":
             self.faillog.write("%s\n" % (self.current_suite))
-'''
-        if(len(attrs["tests"]) != 0):
+
+        if(len(result.tests) != 0): #suite.robot文件，非目录
             msg={}
             msg["taskid"] = BuiltIn().get_variable_value("${TASKID}")
-            msg["caseid"] = name
-            msg["status"] = attrs["status"]
-            msg["starttime"]= attrs["starttime"]
-            msg["endtime"]= attrs["endtime"]
-            msg["elapsedtime"]= attrs["elapsedtime"]
+            msg["caseid"] = result.name
+            msg["status"] = result.status
+            msg["starttime"]= result.starttime
+            msg["endtime"]= result.endtime
+            msg["elapsedtime"]= result.elapsedtime
             self.datamanager.save_robot_suite_result(msg)
-'''
+
 
     def start_keyword(self,name,attributes):
         pass
