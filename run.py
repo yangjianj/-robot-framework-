@@ -27,6 +27,7 @@ class Runner():
         cmd_param["variable"] = taskparam["variable"]  #包含变量TASKID listener中需要
         self._build_command(cmd_param)
         self.run()
+        self.log_collection()
     
     def _build_command(self,cmd_param):
         #构造robot执行命令
@@ -46,6 +47,10 @@ class Runner():
             self.cmd=self.cmd+v
         self.cmd = self.cmd+ ' '+cmd_param['suitedir']
     
+    def log_collection(self):
+        #对执行后生成的log文件处理
+        pass
+    
 
     def run(self):
         run_list = ["pabot","--pabotlib","--processes 3","--outputdir %~dp0\output","--name robotbase",
@@ -63,4 +68,6 @@ class Runner():
         pass
 
 if __name__ == '__main__':
-    Runner().run()
+    taskparam={}
+    runner= Runner()
+    runner.run_task(taskparam)
