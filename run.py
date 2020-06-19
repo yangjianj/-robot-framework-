@@ -38,12 +38,15 @@ class Runner():
         result["lib"] = " --pythonpath "+cmd_param['lib']
         result["listener"] = " --listener "+cmd_param['listener']
         result["include"] = " --include "+cmd_param['include']
+        result["suite"] = " --suite "+cmd_param['suite']
         result["variable"] = ''
         for k,v in cmd_param['variable']:
             tmp= " --variable "+str(k)+':'+str(v)
             result["variable"] = result["variable"]+tmp
         self.cmd = self.exec_cmd + " --pabotlib "
         for k,v in result:
+        	if v == '' or v == None:
+        		continue
             self.cmd=self.cmd+v
         self.cmd = self.cmd+ ' '+cmd_param['suitedir']
     
@@ -58,14 +61,7 @@ class Runner():
                     "--include  para-test","uitest_base"]
         subprocess.call(self.cmd,creationflags =subprocess.CREATE_NEW_CONSOLE)
         #subprocess.call([self._exec_run] + self._arg + variable + testdir + outputdir + selected + rerun + self._testsuites,shell=True)
-    
-    def run_by_tag(self):
-        #根据tag匹配执行
-        pass
-    
-    def run_by_suite(self):
-        #根据suite名匹配执行（文件名，非目录名）
-        pass
+ 
 
 if __name__ == '__main__':
     taskparam={}
