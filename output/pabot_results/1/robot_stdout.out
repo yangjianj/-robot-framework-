@@ -1,16 +1,22 @@
 ==============================================================================
-robotbase                                                                     
+taskname123                                                                   
 ==============================================================================
-############start suiterobotbase:
-robotbase.Parallel Test                                                       
+############start suitetaskname123:
+taskname123.Parallel Test                                                     
 ==============================================================================
 ############start suiteParallel Test:
-robotbase.Parallel Test.Suite111                                              
+taskname123.Parallel Test.Suite111                                            
 ==============================================================================
 ############start suiteSuite111:
 #############in log_message
 #############in log_message
-Skipped in this item
+ui
+xxxxxxxxxxxxxxxx
+#############in log_message
+ui
+xxxxxxxxxxxxxxxx
+#############in log_message
+${avialable_devices} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4...
 xxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxx
 #############in log_message
@@ -22,76 +28,25 @@ xxxxxxxxxxxxxxxx
 ${interval} = 6
 xxxxxxxxxxxxxxxx
 #############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]
+${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4...
 xxxxxxxxxxxxxxxx
 #############in log_message
 #############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxx
-#############in log_message
-${dev} = True
-xxxxxxxxxxxxxxxx
-#############in log_message
-${result} = False
-xxxxxxxxxxxxxxxx
-#############in log_message
-'1 == 0' should be true.
-xxxxxxxxxxxxxxxx
-#############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-#############in log_message
-#############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]
+[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxx
 #############in log_message
 ${dev} = True
 xxxxxxxxxxxxxxxx
 #############in log_message
-${result} = False
+${result} = [[{'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}], [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.10...
 xxxxxxxxxxxxxxxx
 #############in log_message
-'1 == 0' should be true.
-xxxxxxxxxxxxxxxx
-#############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]
+${suite_devices} = [{'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 #############in log_message
 #############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxx
-#############in log_message
-${dev} = True
-xxxxxxxxxxxxxxxx
-#############in log_message
-${result} = False
-xxxxxxxxxxxxxxxx
-#############in log_message
-'1 == 0' should be true.
-xxxxxxxxxxxxxxxx
-#############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2...
-xxxxxxxxxxxxxxxx
-#############in log_message
-#############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxx
-#############in log_message
-${dev} = True
-xxxxxxxxxxxxxxxx
-#############in log_message
-${result} = [[{'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}], [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.10...
-xxxxxxxxxxxxxxxx
-#############in log_message
-${suite_devices} = [{'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-#############in log_message
-#############in log_message
-[{'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}]
+[{'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxx
 Test_001                                                              #######start test:Test_001
@@ -113,38 +68,39 @@ Slept 2 minutes 10 seconds
 xxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxx
 #############in log_message
-#############in log_message
-yangjian
-xxxxxxxxxxxxxxxx
+Variable '${name}' not found. Did you mean:
+    ${TEST_NAME}
 xxxxxxxxxxxxxxxx
 #############in log_message
 #############in log_message
 1
 xxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxx
-| PASS |
+| FAIL |
+Variable '${name}' not found. Did you mean:
+    ${TEST_NAME}
 ------------------------------------------------------------------------------
 #############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 #############in log_message
 ${dev} = True
 xxxxxxxxxxxxxxxx
 #############in log_message
 #############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}]
+[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxx
-robotbase.Parallel Test.Suite111                                      | PASS |
-1 critical test, 1 passed, 0 failed
-1 test total, 1 passed, 0 failed
+taskname123.Parallel Test.Suite111                                    | FAIL |
+1 critical test, 0 passed, 1 failed
+1 test total, 0 passed, 1 failed
 ==============================================================================
-robotbase.Parallel Test                                               | PASS |
-1 critical test, 1 passed, 0 failed
-1 test total, 1 passed, 0 failed
+taskname123.Parallel Test                                             | FAIL |
+1 critical test, 0 passed, 1 failed
+1 test total, 0 passed, 1 failed
 ==============================================================================
-robotbase                                                             | PASS |
-1 critical test, 1 passed, 0 failed
-1 test total, 1 passed, 0 failed
+taskname123                                                           | FAIL |
+1 critical test, 0 passed, 1 failed
+1 test total, 0 passed, 1 failed
 ==============================================================================
-Output:  F:\work\project\ui-api-robotframework\output\pabot_results\1\output.xml
+Output:  F:\work\project\robotRunner\output\pabot_results\1\output.xml

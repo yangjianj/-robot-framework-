@@ -1,6 +1,9 @@
-import time
+import time,sys,os
 import configparser
 import subprocess
+
+currffpath = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(currffpath)
 import robotRunner.config.settings as SETTING
 
 class Runner():
@@ -35,17 +38,15 @@ class Runner():
         command = {}
         command["processes"]= str(cmd_param['processes'])
         command["outputdir"] = cmd_param['outputdir']
-        command["taskname"] = cmd_param['taskname']
-        command["lib"] = cmd_param['lib']
+        command["name"] = cmd_param['taskname']
+        command["pythonpath"] = cmd_param['lib']
         command["listener"] = cmd_param['listener']
         command["include"] = cmd_param['include']
         command["suite"] = cmd_param['suite']
         command["variable"] = cmd_param['variable']
         
         self.command = self.exec_cmd + " --pabotlib "
-        for k,v in cmd_param['variable'].items():
-            tmp= " --variable "+str(k)+':'+str(v)
-            self.command = self.command+tmp
+        
         
         for k,v in command.items():
             if v == '' or v == None:
@@ -54,8 +55,12 @@ class Runner():
                 for vk,vv in command['variable'].items():
                     tmp = " --variable " + str(vk) + ':' + str(vv)
                     self.command = self.command + tmp
+            elif type(v) == list:
+                for vi in v:
+                   self.command=self.command+" --"+k+" "+str(vi) 
             else:
                 self.command=self.command+" --"+k+" "+str(v)
+        
         self.command = self.command+ ' '+cmd_param['suitedir']
     
     def log_collection(self):
@@ -64,15 +69,16 @@ class Runner():
     
 
     def run(self):
-        run_list = ["pabot","--pabotlib","--processes 3","--outputdir %~dp0\output","--name robotbase",
-                    "--variable n name:yangjia","--pythonpath  %~dp0\lib:config","--listener  Listener",
-                    "--include  para-test","uitest_base"]
-        print(self.command)
+        runcmd = "pabot  --pabotlib  --processes 3  --outputdir %~dp0\output  --name robotbase "+ \
+        "--variable n name:yangjia --pythonpath  %~dp0\lib:config --listener  Listener "+ \
+                    "--include  para-test uitest_base"
+        if self.command == '':
+            self.command = runcmd
         subprocess.call(self.command,creationflags =subprocess.CREATE_NEW_CONSOLE)
         #subprocess.call([self._exec_run] + self._arg + variable + testdir + outputdir + selected + rerun + self._testsuites,shell=True)
- 
 
 if __name__ == '__main__':
-    taskparam={}
+    taskparam={"outputdir":"F:\\work\\project\\robotRunner\\output","taskname":"taskname123","include":"para-test", \
+    "suite":"","suitedir":"F:\\work\\project\\robotRunner\\uitest_base","variable":{"taskid":"taskid123456","name":"yangjian"}}
     runner= Runner()
     runner.run_task(taskparam)

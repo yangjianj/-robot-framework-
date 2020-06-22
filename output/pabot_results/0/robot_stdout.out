@@ -1,11 +1,11 @@
 ==============================================================================
-robotbase                                                                     
+taskname123                                                                   
 ==============================================================================
-############start suiterobotbase:
-robotbase.Parallel Test                                                       
+############start suitetaskname123:
+taskname123.Parallel Test                                                     
 ==============================================================================
 ############start suiteParallel Test:
-robotbase.Parallel Test.Suite1                                                
+taskname123.Parallel Test.Suite1                                              
 ==============================================================================
 ############start suiteSuite1:
 #############in log_message
@@ -19,31 +19,14 @@ xxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxx
 #############in log_message
-${interval} = 4
+${interval} = 5
 xxxxxxxxxxxxxxxx
 #############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-#############in log_message
-#############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxx
-#############in log_message
-${dev} = True
-xxxxxxxxxxxxxxxx
-#############in log_message
-${result} = False
-xxxxxxxxxxxxxxxx
-#############in log_message
-'1 == 0' should be true.
-xxxxxxxxxxxxxxxx
-#############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 #############in log_message
 #############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxx
 #############in log_message
@@ -56,28 +39,11 @@ xxxxxxxxxxxxxxxx
 '1 == 0' should be true.
 xxxxxxxxxxxxxxxx
 #############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 #############in log_message
 #############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxx
-#############in log_message
-${dev} = True
-xxxxxxxxxxxxxxxx
-#############in log_message
-${result} = False
-xxxxxxxxxxxxxxxx
-#############in log_message
-'1 == 0' should be true.
-xxxxxxxxxxxxxxxx
-#############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-#############in log_message
-#############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxx
 #############in log_message
@@ -90,28 +56,11 @@ xxxxxxxxxxxxxxxx
 '1 == 0' should be true.
 xxxxxxxxxxxxxxxx
 #############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 #############in log_message
 #############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxx
-#############in log_message
-${dev} = True
-xxxxxxxxxxxxxxxx
-#############in log_message
-${result} = False
-xxxxxxxxxxxxxxxx
-#############in log_message
-'1 == 0' should be true.
-xxxxxxxxxxxxxxxx
-#############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-#############in log_message
-#############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxx
 #############in log_message
@@ -124,28 +73,11 @@ xxxxxxxxxxxxxxxx
 '1 == 0' should be true.
 xxxxxxxxxxxxxxxx
 #############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 #############in log_message
 #############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxx
-#############in log_message
-${dev} = True
-xxxxxxxxxxxxxxxx
-#############in log_message
-${result} = False
-xxxxxxxxxxxxxxxx
-#############in log_message
-'1 == 0' should be true.
-xxxxxxxxxxxxxxxx
-#############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-#############in log_message
-#############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxx
 #############in log_message
@@ -158,28 +90,11 @@ xxxxxxxxxxxxxxxx
 '1 == 0' should be true.
 xxxxxxxxxxxxxxxx
 #############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 #############in log_message
 #############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxx
-#############in log_message
-${dev} = True
-xxxxxxxxxxxxxxxx
-#############in log_message
-${result} = False
-xxxxxxxxxxxxxxxx
-#############in log_message
-'1 == 0' should be true.
-xxxxxxxxxxxxxxxx
-#############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-#############in log_message
-#############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxx
 #############in log_message
@@ -192,28 +107,11 @@ xxxxxxxxxxxxxxxx
 '1 == 0' should be true.
 xxxxxxxxxxxxxxxx
 #############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 #############in log_message
 #############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxx
-#############in log_message
-${dev} = True
-xxxxxxxxxxxxxxxx
-#############in log_message
-${result} = False
-xxxxxxxxxxxxxxxx
-#############in log_message
-'1 == 0' should be true.
-xxxxxxxxxxxxxxxx
-#############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-#############in log_message
-#############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxx
 #############in log_message
@@ -226,28 +124,11 @@ xxxxxxxxxxxxxxxx
 '1 == 0' should be true.
 xxxxxxxxxxxxxxxx
 #############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 #############in log_message
 #############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxx
-#############in log_message
-${dev} = True
-xxxxxxxxxxxxxxxx
-#############in log_message
-${result} = False
-xxxxxxxxxxxxxxxx
-#############in log_message
-'1 == 0' should be true.
-xxxxxxxxxxxxxxxx
-#############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-#############in log_message
-#############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxx
 #############in log_message
@@ -260,28 +141,11 @@ xxxxxxxxxxxxxxxx
 '1 == 0' should be true.
 xxxxxxxxxxxxxxxx
 #############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 #############in log_message
 #############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxx
-#############in log_message
-${dev} = True
-xxxxxxxxxxxxxxxx
-#############in log_message
-${result} = False
-xxxxxxxxxxxxxxxx
-#############in log_message
-'1 == 0' should be true.
-xxxxxxxxxxxxxxxx
-#############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-#############in log_message
-#############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxx
 #############in log_message
@@ -294,28 +158,11 @@ xxxxxxxxxxxxxxxx
 '1 == 0' should be true.
 xxxxxxxxxxxxxxxx
 #############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 #############in log_message
 #############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxx
-#############in log_message
-${dev} = True
-xxxxxxxxxxxxxxxx
-#############in log_message
-${result} = False
-xxxxxxxxxxxxxxxx
-#############in log_message
-'1 == 0' should be true.
-xxxxxxxxxxxxxxxx
-#############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-#############in log_message
-#############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxx
 #############in log_message
@@ -328,28 +175,11 @@ xxxxxxxxxxxxxxxx
 '1 == 0' should be true.
 xxxxxxxxxxxxxxxx
 #############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 #############in log_message
 #############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxx
-#############in log_message
-${dev} = True
-xxxxxxxxxxxxxxxx
-#############in log_message
-${result} = False
-xxxxxxxxxxxxxxxx
-#############in log_message
-'1 == 0' should be true.
-xxxxxxxxxxxxxxxx
-#############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-#############in log_message
-#############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxx
 #############in log_message
@@ -362,28 +192,11 @@ xxxxxxxxxxxxxxxx
 '1 == 0' should be true.
 xxxxxxxxxxxxxxxx
 #############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 #############in log_message
 #############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxx
-#############in log_message
-${dev} = True
-xxxxxxxxxxxxxxxx
-#############in log_message
-${result} = False
-xxxxxxxxxxxxxxxx
-#############in log_message
-'1 == 0' should be true.
-xxxxxxxxxxxxxxxx
-#############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-#############in log_message
-#############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxx
 #############in log_message
@@ -396,28 +209,11 @@ xxxxxxxxxxxxxxxx
 '1 == 0' should be true.
 xxxxxxxxxxxxxxxx
 #############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 #############in log_message
 #############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxx
-#############in log_message
-${dev} = True
-xxxxxxxxxxxxxxxx
-#############in log_message
-${result} = False
-xxxxxxxxxxxxxxxx
-#############in log_message
-'1 == 0' should be true.
-xxxxxxxxxxxxxxxx
-#############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-#############in log_message
-#############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxx
 #############in log_message
@@ -430,28 +226,11 @@ xxxxxxxxxxxxxxxx
 '1 == 0' should be true.
 xxxxxxxxxxxxxxxx
 #############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 #############in log_message
 #############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxx
-#############in log_message
-${dev} = True
-xxxxxxxxxxxxxxxx
-#############in log_message
-${result} = False
-xxxxxxxxxxxxxxxx
-#############in log_message
-'1 == 0' should be true.
-xxxxxxxxxxxxxxxx
-#############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
-xxxxxxxxxxxxxxxx
-#############in log_message
-#############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxx
 #############in log_message
@@ -464,25 +243,161 @@ xxxxxxxxxxxxxxxx
 '1 == 0' should be true.
 xxxxxxxxxxxxxxxx
 #############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3...
+${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 #############in log_message
 #############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}]
+[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxx
 #############in log_message
 ${dev} = True
 xxxxxxxxxxxxxxxx
 #############in log_message
-${result} = [[{'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}], [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.10...
+${result} = False
 xxxxxxxxxxxxxxxx
 #############in log_message
-${suite_devices} = [{'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}]
+'1 == 0' should be true.
+xxxxxxxxxxxxxxxx
+#############in log_message
+${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 #############in log_message
 #############in log_message
-[{'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}]
+[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
+xxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxx
+#############in log_message
+${dev} = True
+xxxxxxxxxxxxxxxx
+#############in log_message
+${result} = False
+xxxxxxxxxxxxxxxx
+#############in log_message
+'1 == 0' should be true.
+xxxxxxxxxxxxxxxx
+#############in log_message
+${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
+xxxxxxxxxxxxxxxx
+#############in log_message
+#############in log_message
+[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
+xxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxx
+#############in log_message
+${dev} = True
+xxxxxxxxxxxxxxxx
+#############in log_message
+${result} = False
+xxxxxxxxxxxxxxxx
+#############in log_message
+'1 == 0' should be true.
+xxxxxxxxxxxxxxxx
+#############in log_message
+${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
+xxxxxxxxxxxxxxxx
+#############in log_message
+#############in log_message
+[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
+xxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxx
+#############in log_message
+${dev} = True
+xxxxxxxxxxxxxxxx
+#############in log_message
+${result} = False
+xxxxxxxxxxxxxxxx
+#############in log_message
+'1 == 0' should be true.
+xxxxxxxxxxxxxxxx
+#############in log_message
+${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
+xxxxxxxxxxxxxxxx
+#############in log_message
+#############in log_message
+[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
+xxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxx
+#############in log_message
+${dev} = True
+xxxxxxxxxxxxxxxx
+#############in log_message
+${result} = False
+xxxxxxxxxxxxxxxx
+#############in log_message
+'1 == 0' should be true.
+xxxxxxxxxxxxxxxx
+#############in log_message
+${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
+xxxxxxxxxxxxxxxx
+#############in log_message
+#############in log_message
+[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
+xxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxx
+#############in log_message
+${dev} = True
+xxxxxxxxxxxxxxxx
+#############in log_message
+${result} = False
+xxxxxxxxxxxxxxxx
+#############in log_message
+'1 == 0' should be true.
+xxxxxxxxxxxxxxxx
+#############in log_message
+${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
+xxxxxxxxxxxxxxxx
+#############in log_message
+#############in log_message
+[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
+xxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxx
+#############in log_message
+${dev} = True
+xxxxxxxxxxxxxxxx
+#############in log_message
+${result} = False
+xxxxxxxxxxxxxxxx
+#############in log_message
+'1 == 0' should be true.
+xxxxxxxxxxxxxxxx
+#############in log_message
+${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
+xxxxxxxxxxxxxxxx
+#############in log_message
+#############in log_message
+[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
+xxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxx
+#############in log_message
+${dev} = True
+xxxxxxxxxxxxxxxx
+#############in log_message
+${result} = False
+xxxxxxxxxxxxxxxx
+#############in log_message
+'1 == 0' should be true.
+xxxxxxxxxxxxxxxx
+#############in log_message
+${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4...
+xxxxxxxxxxxxxxxx
+#############in log_message
+#############in log_message
+[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]
+xxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxx
+#############in log_message
+${dev} = True
+xxxxxxxxxxxxxxxx
+#############in log_message
+${result} = [[{'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}], [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.10...
+xxxxxxxxxxxxxxxx
+#############in log_message
+${suite_devices} = [{'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]
+xxxxxxxxxxxxxxxx
+#############in log_message
+#############in log_message
+[{'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxx
 Test_001                                                              #######start test:Test_001
@@ -510,26 +425,26 @@ xxxxxxxxxxxxxxxx
 No keyword with name 'remote_keyword1' found.
 ------------------------------------------------------------------------------
 #############in log_message
-${avialable} = [{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}]
+${avialable} = [{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 #############in log_message
 ${dev} = True
 xxxxxxxxxxxxxxxx
 #############in log_message
 #############in log_message
-[{'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}]
+[{'type': 'api', 'ip': '192.168.100.2', 'health': '1'}, {'type': 'api', 'ip': '192.168.100.1', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.3', 'health': '1'}, {'type': 'ui', 'ip': '192.168.100.4', 'health': '1'}]
 xxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxx
-robotbase.Parallel Test.Suite1                                        | FAIL |
+taskname123.Parallel Test.Suite1                                      | FAIL |
 1 critical test, 0 passed, 1 failed
 1 test total, 0 passed, 1 failed
 ==============================================================================
-robotbase.Parallel Test                                               | FAIL |
+taskname123.Parallel Test                                             | FAIL |
 1 critical test, 0 passed, 1 failed
 1 test total, 0 passed, 1 failed
 ==============================================================================
-robotbase                                                             | FAIL |
+taskname123                                                           | FAIL |
 1 critical test, 0 passed, 1 failed
 1 test total, 0 passed, 1 failed
 ==============================================================================
-Output:  F:\work\project\ui-api-robotframework\output\pabot_results\0\output.xml
+Output:  F:\work\project\robotRunner\output\pabot_results\0\output.xml
