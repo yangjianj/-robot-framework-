@@ -1,8 +1,6 @@
 # -robot-framework-
-测试脚本：脚本统一格式  
-按需统一suite_setup,teardown   
-
-测试数据：数据与脚本分离  
+测试数据：  
+数据与脚本分离  
 环境数据与脚本分离  
 数据驱动相关脚本的数据存放csv  
 
@@ -19,12 +17,11 @@ rebot组装log
 3.用例分类规划：tag casename suitename id  
 4.执行：脚本调动cmd/shell命令执行pabot并行执行   
 5.log收集与结果存储：rebot工具，除robot生成报告外在监听类中加入结果存储处理，将测试结果存储到数据库    
-6.监听事件：--listener参数导入监听库     
-7.失败用例收集：listener库方法记录异常用例并输出收集    
-8.异常防范：case级超时，suite级超时,keyword级超时        
-9.pabot并行执行并行执行资源锁+同步的使用    
-10.分布式执行解决方案：remote库/ssh库/rabbitmq/运行web服务    
-11.日志查看-同suite各版本日志关联:版本/suitepath/suite.log--time    
+6.监听事件：--listener参数导入监听库       
+7.异常防范：case级超时，suite级超时,keyword级超时        
+8.pabot并行执行并行执行资源锁+同步的使用    
+9.分布式执行解决方案：remote库/ssh库/rabbitmq/运行web服务    
+   
 
 ###ui自动化实现：  
 1.yml管理页面元素信息    
@@ -45,18 +42,14 @@ rebot组装log
  3.1记录用例状态到本地/数据库      
  3.2提送当前执行状态到指定监控平台    
 4.robot脚本中python调用    
-5.
+
 
 Python自动化框架对比：https://www.jianshu.com/p/b87ec158aad8   
-
-
-### 难点：   
-1.日志收集：按文件名、文件夹名   
-1.1 pabot执行日志按文件名区分--pabot执行不自动标记log所属suites,脚本分析xml来完成日志与suite文件的对应   
 
 
 ## 20200614对接分布式自动化任务调度平台     
 1.在调度平台中的角色：robotframework相关脚本的调度执行器   
 2.需要完成的任务：   
 2.1根据接收参数执行任务（接收参数：脚本路径，日志路径，数据库，任务名，其他变量）    
-2.2执行结果上传（执行数据到数据库，log文件到指定文件服务器）   
+2.2执行结果上传（suite执行完后通过信息上传到数据库（完成），log文件到指定文件服务器（未完成））   
+3.脚本解析xml来完成日志与suite文件的对应
